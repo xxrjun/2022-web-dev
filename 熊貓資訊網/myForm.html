@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>熊貓問卷調查</title>
+
+       <!-- 網頁 bookmark -->
+       <link rel="shortcut icon" href="/src/pandaIcon.png" />
+       <link rel="bookmark" href="/src/pandaIcon.png" />
+       <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+       <h1>熊貓問卷調查</h1>
+       <hr>
+       <!-- 表單 -->
+       <form action="" method="GET">
+              <!-- 姓名 : text -->
+              <label for="myname">姓名</label>
+              <input id="myname" type="text" name="InputName" placeholder="請輸入真實姓名" required />
+              <br />
+
+              <!-- 性別 : select -->
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender" required>
+                     <option></option>
+                     <option value="male">男性</option>
+                     <option value="female">女性</option>
+                     <option value="others">其他</option>
+              </select>
+              <br />
+
+              <!-- 電話 : input text-->
+              <label for="mytele">電話</label>
+              <input id="mytele" type="text" name="InputTele" placeholder="請輸入電話" required />
+              <br />
+
+              <!-- 信箱 : input emal -->
+              <label for="email">信箱</label>
+              <input id="email" type="email" name="Email" placeholder="請輸入信箱" required />
+              <br />
+
+              <!-- 年齡、身高 : input number -->
+              <label for="age">年齡</label>
+              <input id="age" type="number" name="Age" value="18" min="1" max="150" step="1" required />
+              <br />
+              <label for="height">身高</label>
+              <input id="height" type="number" name="Height" min="30" max="240" step="0.1" />
+              <br />
+
+              <!-- 地區 : input text, list ; datalist-->
+              <label for="area">地區：</label>
+              <input type="text" list="areaList" id="area" name="area">
+              <datalist id="areaList">
+                     <option value="台北市">台北</option>
+                     <option value="台中市">台中</option>
+                     <option value="高雄市">高雄</option>
+              </datalist>
+              <br />
+
+              <!-- 建議 : textarea-->
+              <label for="suggestion">給網站提供建議:</label>
+              <br />
+              <textarea id="suggestion" name="suggestion" rows="10" cols="30" placeholder="謝謝您提供建議！">
+              </textarea>
+              <br />
+
+              <!-- 訂閱 : input checked box -->
+              <input id="subscription" type="checkbox" name="Subscription" value="subscribed" checked>
+              <label for="subscription">訂閱熊貓電子報</label>
+              <br />
+
+              <!-- 密碼 : input password -->
+              <label for="password">密碼</label>
+              <input id="password" type="password" name="" value="" minlength="8" maxlength="20" required />
+              <br />
+
+              <!-- 拉桿 : input range -->
+              0<input type="range" step="10" min="0" max="100" name="" value="">100
+              <br />
+
+              <!-- 提交表單 button submit-->
+              <button type="submit">提交表單</button>
+       </form>
+</body>
+
+</html>

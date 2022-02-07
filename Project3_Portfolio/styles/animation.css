@@ -1,0 +1,83 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #E08958;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  opacity: 0.95;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#font1 {
+  stroke-dasharray: 656.73px;
+  stroke-dashoffset: 656.73px;
+  -webkit-animation: fadeInSide 0.6s ease-in forwards;
+          animation: fadeInSide 0.6s ease-in forwards;
+}
+
+#font2 {
+  stroke-dasharray: 878.26px;
+  stroke-dashoffset: 878.26px;
+  -webkit-animation: fadeInSide 0.6s ease-in forwards 0.3s;
+          animation: fadeInSide 0.6s ease-in forwards 0.3s;
+}
+
+#font3 {
+  stroke-dasharray: 1105.69px;
+  stroke-dashoffset: 1105.69px;
+  -webkit-animation: fadeInSide 0.6s ease-in forwards 0.6s;
+          animation: fadeInSide 0.6s ease-in forwards 0.6s;
+}
+
+#font4 {
+  stroke-dasharray: 1111.95px;
+  stroke-dashoffset: 1111.95px;
+  -webkit-animation: fadeInSide 0.6s ease-in forwards 0.9s;
+          animation: fadeInSide 0.6s ease-in forwards 0.9s;
+}
+
+svg {
+  margin: 0rem 1rem;
+  -webkit-animation: fillFont 0.75s ease-in forwards 0.9s;
+          animation: fillFont 0.75s ease-in forwards 0.9s;
+}
+
+@-webkit-keyframes fadeInSide {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInSide {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes fillFont {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fillFont {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+/*# sourceMappingURL=animation.css.map */

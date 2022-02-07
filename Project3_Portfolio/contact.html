@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="rjun" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="rating" content="General" />
+    <meta name="description" content="rjun's websites" />
+    <base target="_self" />
+    <title>聯絡方式｜rjun's portfolio</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- header and navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="resume.html">我的履歷</a></li>
+          <li><a class="active" href="#">聯絡方式</a></li>
+          <li>
+            <a href="Project1_台灣經濟歷史發展/index.html"
+              >台灣經濟發展歷史 Project</a
+            >
+          </li>
+          <li>
+            <a href="Project2_Hawaii旅遊租借服務/index.html"
+              >夏威夷租借服務 Project</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form">
+        <form>
+          <div>
+            <label for="name" type="text">姓名： </label>
+            <input id="name" type="text" name="name" />
+            <br />
+          </div>
+          <div>
+            <label for="email" type="text">郵件： </label>
+            <input id="email" type="email" name="email" />
+            <br />
+          </div>
+          <div>
+            <label for="tele" type="text">電話： </label>
+            <input id="tele" type="text" name="tele" />
+            <br />
+          </div>
+          <div>
+            <label for="content" type="text">內容： </label>
+            <textarea name="content" id="content" rows="10"></textarea>
+            <br />
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </section>
+      <div class="line"></div>
+
+      <section class="contactWays">
+        <div class="contents">
+          <h2>Tele : 0800-000-000</h2>
+          <h2>E-mail : fake@mail.com</h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer with links -->
+    <footer>
+      <a href="#"><img src="./Icons/github-brands 1.svg" alt="Github" /></a>
+      <a href="#"
+        ><img src="./Icons/LinkedIn_icon_circle.svg" alt="LinkedIn"
+      /></a>
+    </footer>
+  </body>
+</html>

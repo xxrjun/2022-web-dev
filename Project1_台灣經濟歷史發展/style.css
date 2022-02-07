@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+p{
+  text-indent: 32px;
+}
+
+.headerTitle{
+  margin: 0.3rem 0.5rem;
+  font-size: 2.5rem;
+}
+
+.headerText{
+  margin: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+header{
+  padding: 0.75rem;
+  background-color: #C4C4C4;
+}
+
+nav {
+  background-color: #3C3636;
+  font-size: 1.25rem;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul {
+  display:flex;
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+
+nav ul li{
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a{
+  color: rgb(173, 168, 168);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+main hr{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.right, section.left{
+  padding: 1.25rem;
+}
+
+section.left{
+  flex: 4 1 550px;
+}
+
+section.right{
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+section.right h4{
+  font-size: 1.25rem;
+  font-weight:bold;
+}
+
+section.right p{
+  margin: 1.25rem 0rem;
+}
+
+.active{
+  color: white;
+}
+
+
+@media screen and (max-width: 612px){
+  nav ul{
+    flex-direction: column;
+  }
+}
+
+#curve_chart{
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 1035px){
+  #curve_chart{
+    width:100%;
+    height: 40%; 
+  }
+}

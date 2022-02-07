@@ -1,0 +1,38 @@
+.container{
+  background-color: black;
+  width:500px;
+  height: 500px;
+  /* position:relative; */
+}
+
+div.box{
+  background-color:cornflowerblue;
+  width:100px;
+  height:100px;
+  position:relative;
+
+  /* @keyframes name | duration | timing-function | delay | iteration-count | direction | fill-mode */
+  animation: cross 1s ease-in 2 alternate forwards;
+  
+}
+
+
+
+/* div.box:active{
+  cursor:grabbing;
+  transform:scale(3);
+  transform:rotateX(30deg);
+} */
+
+/* animation */
+@keyframes cross{
+  from{
+    top: 0px;
+    left: 0px;
+  }
+  to{
+    background-color: red;
+    top: 400px;
+    left: 400px;
+  }
+}

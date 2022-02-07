@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+
+.orangeBackground {
+  position: absolute;
+  right: 0;
+  top: -10vh;
+  z-index: -1;
+  width: 50vw;
+  height: 130vh;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 3px -3px #c3c3c3;
+          box-shadow: 0 5px 3px -3px #c3c3c3;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  padding: 0rem 0.5rem;
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #ff975bb4;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 75vh;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main section.left h1 {
+  font-size: 5rem;
+  color: #E08958;
+}
+
+main section.left p {
+  font-size: 2rem;
+  padding: 2rem 0rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.right img {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 14vh;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 5rem 2rem;
+}
+
+main section.table table {
+  width: 100%;
+  height: 80%;
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  font-size: 1.5rem;
+}
+
+main section.table table tr td {
+  padding: 0.75rem;
+}
+
+main section.table table tr:hover {
+  background-color: #f4c7ad;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+main section.picture img {
+  width: 30vw;
+  height: 30vw;
+}
+
+main section.picture div.orangeSquare {
+  position: absolute;
+  background-color: #E08958;
+  width: 30vw;
+  height: 35vw;
+  top: 70px;
+  left: 85px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 650px;
+          flex: 1 1 650px;
+  margin-top: 5vh;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1.5rem;
+}
+
+main section.form form div {
+  margin: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main section.form form div input, main section.form form div textarea {
+  width: 80%;
+  background-color: #e08a58b4;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  color: white;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #e08a58;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  color: white;
+  margin: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+main section.form form button:hover {
+  background-color: #ff9d64;
+}
+
+main div.line {
+  background-color: gray;
+  width: 3px;
+  height: 50vh;
+  margin-top: 10vh;
+}
+
+main section.contactWays {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 450px;
+          flex: 1 1 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main section.contactWays div.contents h2 {
+  margin: 1rem 0rem;
+}
+
+footer {
+  margin-left: 2.5vw;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.active {
+  color: #ff975b;
+}
+
+@media screen and (max-width: 1100px) {
+  .orangeBackground {
+    opacity: 0.5;
+  }
+  header {
+    position: static;
+    z-index: 0;
+  }
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 2rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  main section.right img {
+    position: static;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.picture img {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.picture .orangeSquare {
+    display: none;
+  }
+  main div.line {
+    width: 0;
+    height: 0;
+    margin-top: 0;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  footer a img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

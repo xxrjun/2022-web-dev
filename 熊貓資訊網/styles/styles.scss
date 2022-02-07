@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$themeColor: yellow;
+
+.pic{
+  object-fit: cover;
+}
+
+@import "./header";
+
+@mixin flexbox($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+div.link1 {
+  @include flexbox(column);
+}
+
+
+@font-face {
+  font-family: "fontName";
+  src:url(./JasonHandwriting5.ttf);
+}
+
+*{
+  font-family:"fontName", "JasonHandwriting5";
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.survey{
+  background-color:greenyellow;
+  color:black;
+  text-decoration: none;
+  padding: 0.75em;
+  margin: 2em;
+}
+
+.survey:hover{
+  background-color:green;
+}
+
+
+/* body{
+  background-image: url(./src/pand_backgroud.jpg);
+  background-size: cover;
+  background-position: center;
+  color:white;
+} */
+
+
+/* Pseudo class */
+button:hover{
+  color: green;
+}
+input[type="text"]:active {
+  color:red;
+}
+
+
+/* Pseudo element */
+p::before{
+  content:">>";
+  color:red;
+}
+
+*::selection{
+  background:lightgreen;
+}
+
+h1::after{
+  content:"↓";
+  color:red;
+}
+
+/* Attribute selector */
+input[type="text"]{
+  color:red;
+}
+
+
+
+/* descendants selector */
+div.link1 a{
+  color:red;
+}
+
+
+
+
+/* element selector */
+/* h1 {
+    color: red;
+} */
+
+/* id selector */
+/* #redH1{
+  color: red;
+} */
+
+/* class selector */
+/* .greenText{
+  color:chartreuse
+} */
+
+/* grouping selector */
+/* h1,
+h2,
+h3{
+  color: green;
+} */
+
+
+/* table styling */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.55rem;
+}
+
+table{
+  width:500px;
+  height: 350px;
+}
+
+th{
+  background-color:rgb(50, 152, 50);
+}
+
+tr:hover{
+  background-color: rgb(164, 193, 164);
+  color:gray;
+  
+}
+
+

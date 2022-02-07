@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+
+
+header{
+  padding: 0.75rem;
+  background-color: #C4C4C4;
+}
+
+.headerTitle{
+  margin: 0.3rem 0.5rem;
+  font-size: 2.5rem;
+}
+
+.headerText{
+  margin: 0.3rem 0.5rem;
+  font-size: 1rem;
+}
+
+nav {
+  background-color: #3C3636;
+  font-size: 1.25rem;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul{
+  display: flex;
+  padding-left:1.5rem;
+  list-style-type: none;
+}
+
+nav ul li{
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a{
+  color:rgb(173, 168, 168);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color:white;
+}
+
+.active {
+  color:white;
+}
+
+main section{
+  margin: 2rem;
+}
+
+main div{
+  margin: 2rem;
+}
+
+
+main section h2{
+  font-weight: bold;
+}
+
+div.center{
+  display: flex;
+  margin: 2rem;
+}
+
+div.center p{
+  padding: 1rem;
+  background-color: rgb(221, 221, 221);
+  margin: 1rem;
+}
+
+main section ol{
+  margin-left:1.25rem;
+}
+
+.link{
+  color:rgb(175, 140, 14)
+}
+
+.special{
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+
+@media screen and (max-width: 612px){
+  nav ul{
+    flex-direction: column;
+  }
+}
