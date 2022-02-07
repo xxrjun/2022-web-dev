@@ -2,8 +2,6 @@
 
 ## Notes
 
----
-
 [CSS-Basics 1](CSS%202bfcb99c975a4aeba793def3f0a2edf9/CSS-Basics%201%207ac21c4cc7c143b989612e979686b0ef.md)
 
 [CSS-Basics 2](CSS%202bfcb99c975a4aeba793def3f0a2edf9/CSS-Basics%202%206658a332ca5846b8b05a29a6620cbd6e.md)
@@ -21,8 +19,6 @@
 [Projects](CSS%202bfcb99c975a4aeba793def3f0a2edf9/Projects%204c3c6705afc24fb7a0b5c77c77b45b02.md)
 
 ## Link
-
----
 
 Web Course  
 
