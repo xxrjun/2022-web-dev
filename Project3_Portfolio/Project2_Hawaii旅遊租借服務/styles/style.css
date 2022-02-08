@@ -24,10 +24,10 @@ header {
   z-index: 5;
   top: 0;
   background-color: white;
-  -webkit-box-shadow: 0 5px 3px -3px black;
-          box-shadow: 0 5px 3px -3px black;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 5px 3px -3px #6d6d6d;
+          box-shadow: 0 5px 3px -3px #6d6d6d;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 header div.logo {

@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 避免點到 completeButton 及 trashButton 中的圖片
+i {
+  pointer-events: none;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 102%, rgba(242,248,247,1) 0%,rgba(249,249,28,1) 3%,rgba(247,214,46,1) 8%, rgba(248,200,95,1) 12%,rgba(201,165,132,1) 30%,rgba(115,130,133,1) 51%,rgba(46,97,122,1) 85%,rgba(24,75,106,1) 100%); 
+}
+
+
+header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input, button {
+    border: none;
+    margin: 0.1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.75rem;
+  }
+
+  input[type="number"] {
+    text-align: center;
+    width: 50px;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: #000000c4;
+    color: rgba(255, 255, 255, 0.767);
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div.todo {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem 0rem;
+    transition: all 0.1s ease;
+    p {
+      background-color: white;
+      padding: 0.25rem 0.5rem;
+      font-size: 1.75rem;
+    }
+    p.todo-text {
+      width: 50%;
+    }
+    p.todo-time {
+      width: 20%;
+      text-align: center;
+    }
+    button {
+      padding: 0.25rem 0.5rem;;
+      font-size: 1.75rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    button.complete {
+      background-color: rgba(51, 255, 0, 0.5);
+      &:hover {
+        background-color:  rgba(51, 255, 0, 1);
+      }
+    }
+    button.delete {
+      background-color: rgba(255, 0, 0, 0.5);
+      &:hover {
+        background-color:  rgba(255, 0, 0, 1);
+      }
+    }
+    
+  }
+
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;  
+}
+
+@keyframes scaleUp{
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown{
+  to {
+    transform: scale(0);
+  }
+}

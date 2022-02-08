@@ -100,7 +100,7 @@ main section.right img {
   height: 30vw;
   border-radius: 50%;
   position: absolute;
-  top: 14vh;
+  top: 10vh;
 }
 
 main section.table {
@@ -342,6 +342,24 @@ footer a img {
   footer a img {
     width: 15vw;
     height: 15vw;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  header nav ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header nav ul li a {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
