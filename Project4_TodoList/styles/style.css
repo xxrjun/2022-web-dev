@@ -69,12 +69,15 @@ form input[type=number] {
 }
 
 form button {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   cursor: pointer;
-  background-color: #000000c4;
+  background-color: rgba(48, 117, 131, 0.7);
   color: rgba(255, 255, 255, 0.767);
 }
 
 form button:hover {
+  background-color: #307583;
   color: white;
 }
 
@@ -140,6 +143,35 @@ section div.todo button.delete {
 
 section div.todo button.delete:hover {
   background-color: red;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+div.sort button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background-color: rgba(48, 117, 131, 0.7);
+  color: rgba(255, 255, 255, 0.767);
+}
+
+div.sort button:hover {
+  background-color: #307583;
+  color: white;
 }
 
 .done {

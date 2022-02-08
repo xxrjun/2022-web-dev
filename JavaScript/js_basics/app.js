@@ -1,7 +1,64 @@
-let friends = ['John', 'Evelyn', 'Mike']
-localStorage.setItem("friends", friends);
-let val = JSON.parse(localStorage.getItem("friends"))
-console.log(val);
+let person = {
+  name: "rjun",
+  age: 19,
+  height: 178
+}
+
+for (let i in person) {
+  console.log(i)  // name age height
+  console.log(person[i])  // rjun 19 178
+}
+
+// let arr = ['a', 'b', 'c']
+
+// arr.forEach(c => {
+//   console.log(c)
+// })
+
+
+// for (let c of arr) {
+//   console.log(c)
+// }
+
+
+// let arr = ["Apple", "Lemon", "Watermelon", "Orange"]
+// console.log(arr.sort((a, b) => {
+//   return a.length - b.length
+// }))  // [ 'Apple', 'Lemon', 'Orange', 'Watermelon' ]
+
+
+// console.log(arr.sort((a, b) => {
+//   return a - b;
+// }))  // [ 12, 25, 41, 51, 120, 125 ]
+
+// console.log(arr.sort((a, b) => {
+//   return b - a;
+// }))  // [ 125, 120, 51, 41, 25, 12 ]
+
+// arr = ['a', 'b', 'c']
+// console.log(Array.isArray(arr))  // true
+
+// let res = 0 / 0;
+// console.log(isNaN(res))  // true
+
+
+// console.log(Infinity / Infinity)  // NaN
+// console.log(0 * Infinity)  // NaN
+// console.log(0 / 0)  // Nan
+
+// let arr1 = ['a', 'b', 'c']
+// let arr2 = ['d', 'e', 'f']
+
+// let res = [...arr1, ...arr2]
+// console.log(res)
+
+
+// console.log(4 * "hi");
+
+// let friends = ['John', 'Evelyn', 'Mike']
+// localStorage.setItem("friends", friends);
+// let val = JSON.parse(localStorage.getItem("friends"))
+// console.log(val);
 // let a = document.querySelector("div.a");
 // let b = document.querySelector("div.b");
 
