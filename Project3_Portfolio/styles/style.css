@@ -39,7 +39,7 @@ header nav {
 
 header nav ul {
   padding: 2rem;
-  width: 70%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +50,7 @@ header nav ul {
 header nav ul li {
   padding: 0rem 0.5rem;
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 header nav ul li a {
@@ -351,9 +351,9 @@ footer a img {
   }
 }
 
-@media screen and (max-width: 1178px) {
+@media screen and (max-width: 1323px) {
   header nav ul li a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
