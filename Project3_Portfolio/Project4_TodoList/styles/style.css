@@ -36,6 +36,8 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -105,6 +107,9 @@ section div.todo {
   margin: 0.2rem 0rem;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section div.todo p {
@@ -213,6 +218,45 @@ div.sort button:hover {
   to {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  section div.todo {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  form {
+    width: 95%;
+  }
+  form input, form button {
+    font-size: 1.5rem;
+  }
+  form input[type="text"] {
+    width: 100%;
+  }
+  section div.todo {
+    width: 95%;
+  }
+  section div.todo p {
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+  }
+  section div.todo p.todo-text {
+    width: 50%;
+  }
+  section div.todo p.todo-time {
+    width: 20%;
+    text-align: center;
+  }
+  section div.todo button {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
