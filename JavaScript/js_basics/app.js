@@ -1,13 +1,94 @@
-let person = {
-  name: "rjun",
-  age: 19,
+let rjun = {
+  myName: "rjun",
+  myAge: 19,
   height: 178
 }
 
-for (let i in person) {
-  console.log(i)  // name age height
-  console.log(person[i])  // rjun 19 178
-}
+let { myName, myAge } = rjun
+console.log("rjun's name is " + myName + " and the age is " + myAge)
+
+
+// (function (name) {
+//   console.log("Hello! " + name)
+// })("rjun")
+
+// let myName = "rjun"
+// console.log(`Hi, my name is ${myName}`)  //Hi, my name is rjun
+
+
+// function mutiply(a, b) {
+//   return a * b;
+// }
+
+// console.log(mutiply())
+
+// let arr1 = ['a', 'b', 'c']
+// let arr2 = arr1  // swallow copy : 只有複製記憶體，兩種還是同個物件
+
+// let arr3 = [...arr3]  // deep copy : 複製出一個新物件
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name,
+//     this.age = age
+//   }
+
+//   sayHi() {
+//     console.log(this.name + " says hi.")
+//   }
+
+//   intro() {
+//     console.log("Hi, I'm " + this.name)
+//   }
+// }
+
+// let Mike = new Person("Mike", 23)
+// let John = new Person("John", 19)
+// console.log(Mike.sayHi === John.sayHi)
+
+
+// class Student extends Person {
+//   constructor(name, age, major) {
+//     super(name, age)
+//     this.major = major
+//   }
+//   sayHi() {
+//     console.log("Student " + this.name + "says Hi")
+//   }
+//   study() {
+//     console.log("I'm study " + this.major)
+//   }
+// }
+
+// let Jack = new Student("Jack", 23, "CS")
+// Jack.sayHi()
+// Jack.study()
+// console.log(Mike.sayHi === Jack.sayHi)
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.sayHi = function() {
+//     console.log(this.name + " says hi.")
+//   }
+// }
+
+
+
+// console.log(Mike.sayHi === John.sayHi)
+
+
+
+// let person = {
+//   name: "rjun",
+//   age: 19,
+//   height: 178
+// }
+
+// for (let i in person) {
+//   console.log(i)  // name age height
+//   console.log(person[i])  // rjun 19 178
+// }
 
 // let arr = ['a', 'b', 'c']
 
