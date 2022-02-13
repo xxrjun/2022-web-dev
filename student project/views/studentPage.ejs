@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="rjun" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="rating" content="General" />
+    <meta name="description" content="" />
+    <base target="_self" />
+    <title><%= data.name %>'s Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Student ID:</td>
+        <td><%= data.id %></td>
+      </tr>
+      <tr>
+        <td>Student Name:</td>
+        <td><%= data.name %></td>
+      </tr>
+      <tr>
+        <td>Student Age:</td>
+        <td><%= data.age %></td>
+      </tr>
+      <tr>
+        <td>Student Merit Scholarship:</td>
+        <td><%= data.scholarship.merit %></td>
+      </tr>
+      <tr>
+        <td>Student Other Scholarship:</td>
+        <td><%= data.scholarship.other %></td>
+      </tr>
+    </table>
+    <a href="/students">Go back to student.</a>
+  </body>
+</html>

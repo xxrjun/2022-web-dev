@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="rjun" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="rating" content="General" />
+    <meta name="description" content="" />
+    <base target="_self" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <form action="/students/edit/<%= data.id %>?_method=PUT" method="POST">
+      <label for="id">ID: </label>
+      <input type="number" name="id" id="id" value="<%= data.id %>" />
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" value="<%= data.name %>" />
+      <label for="age">Age: </label>
+      <input type="Number" name="age" id="age" value="<%= data.age %>" />
+      <label for="merit">Merit: </label>
+      <input
+        type="Number"
+        name="merit"
+        id="merit"
+        value="<%= data.scholarship.merit %>"
+      />
+      <label for="other">Other:</label>
+      <input
+        type="Number"
+        name="other"
+        id="other"
+        value="<%= data.scholarship.other %>"
+      />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
