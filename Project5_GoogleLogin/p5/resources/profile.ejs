@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/header") %>
+    <title>Login</title>
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <h1>welcome to <%= user.name %>'s page</h1>
+    <img src="<%= user.thumbnail %>" alt="" />
+
+    <br />
+    <br />
+    <br />
+    <% if (posts.length > 0) { %> <% for (let i = 0; i < posts.length; i++) { %>
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title"><%= posts[i].title %></h5>
+        <p class="card-text"><%= posts[i].content %></p>
+        <a href="#" class="btn btn-primary"><%= posts[i].date %> </a>
+      </div>
+    </div>
+    <% } %> <% } %>
+  </body>
+</html>
