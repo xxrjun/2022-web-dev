@@ -1,0 +1,23 @@
+實作 repository 列表
+route 必須要是 /users/{username}/repos
+
+串接 GET /users/{username}/repos 回傳的資料
+
+第一次只能載入 10 個 repository
+
+列表在滾到頁面底部時要再自動發送 API 請求,載入額外 10 個 repository,直到沒有更多 repository
+
+上方需有 Header 顯示 username
+下方列表內的項目至少需顯示:repository.name、repository.stargazers_count
+
+每個 repository 可以被點擊,並切換 route 至單一 repository 頁面
+
+實作單一 repository 頁面
+
+route 必須要是 /users/{username}/repos/{repo}
+
+串接 GET /repos/{owner}/{repo} 回傳的資料
+
+頁面至少需顯示:repository.full_name、repository.description、repository.stargazers_count
+
+有超連結可開新分頁至該 repository 在 GitHub 上的頁面
