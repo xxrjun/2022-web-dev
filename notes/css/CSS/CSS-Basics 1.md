@@ -1,35 +1,20 @@
 # CSS-Basics 1
-
 # 1. CSS (Cascading Style Sheets)
-
----
-
 - 沒必要認識全部的 CSS 屬性，認識常用以及實用的屬性即可
-- CSS Syntax
-    
+- CSS Syntax  
     ```css
     h1 {
     	color:green;
     }
     ```
-    
-
 # 2. CSS 程式碼放置位置
-
----
-
-## 2.1  Inline Styling
-
+### 2.1  Inline Styling
 在 `tag` 中更改
-
 ```html
 <h1 style="color:green">近年發展</h1>
 ```
-
-## 2.2  Internal Styling
-
+### 2.2  Internal Styling
 放在 `head` 裡
-
 ```html
 <style>
         h1 {
@@ -37,35 +22,23 @@
         }
 </style>
 ```
-
-## 2.3  External Styling
-
+### 2.3  External Styling
 最常見，當網頁很多時就不用一直複製貼上！
-
 create a `style.css` and write CSS code
-
 ```css
 h1 {
     color: green;
 }
 ```
-
 在 `index.html` 的 `head` 內導入 `style.css`
-
 ```html
 <link rel="stylesheet" href="./style.css" />
 ```
-
 # 3. Optional：電腦儲存顏色的方式
-
----
-
 電腦儲存資料是以 `Binary Digit` ( bit = 0, 1)
 1 byte = 8 bits
-
 R = 1 byte ; G = 1 byte ; B = 1 byte
 每個都 = 8 bits， 也就有 2^8^3 = 256^3 種顏色
-
 - reserved color
     - 140 種
 - rgb
@@ -77,42 +50,26 @@ R = 1 byte ; G = 1 byte ; B = 1 byte
 - hex
     - 十六進制： 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
 - hsl
-
 Colors : [https://coloors86.netlify.app/](https://coloors86.netlify.app/)
-
 HTML Color Names :  [https://www.w3schools.com/tags/ref_colornames.asp](https://www.w3schools.com/tags/ref_colornames.asp)
-
 # 4. CSS Selectors
-
----
-
 MND - CSS selectors :  [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
-
-## Review : HTML Tag’s Attributes
+### Review : HTML Tag’s Attributes
 
 1. `id` : 一個 tag 只能有一個 id， 且獨一無二
 2. `class` : 類別，一個 tag 可以多個 class
-
-## 4.1  Basic Selectors
-
-### Universal selector
-
+### 4.1  Basic Selectors
+#### Universal selector
 Select all elements
-
 - **Syntax :**  `*`
-- **Example** :
-    
+- **Example** :   
     ```css
     * {
       color:green
     }
     ```
-    
-
-### Type selector
-
+#### Type selector
 Selects all elements that have the given node name
-
 - **Syntax** :  `elementname`
 - **Example** :
     
@@ -121,67 +78,45 @@ Selects all elements that have the given node name
         color: red;
     }
     ```
-    
-
-### ID selector
-
+#### ID selector
 Selects an element based on the value of its `id` attribute. There should be only one element with a given ID in a document
-
 - **Syntax** : `#idname`
 - **Example :**
-    1. In Html
-    
+    1. In Html    
     ```html
     <h1 id="redH1">近年發展</h1>
     ```
-    
-    1. In CSS
-    
+    2. In CSS   
     ```css
     #redH1{
       color: red;
     }
     ```
-    
-
-### Class selector
-
+#### Class selector
 Selects all elements that have the given `class` attribute
-
 - **Syntax** :  `.classname`
 - **Example** :
-    1. In Html
-    
+    1. In Html  
     ```html
     <h1 class="greenText">Some links</h1>
     ```
-    
-    1. In CSS
-    
+    2. In CSS   
     ```css
     .greenText{
       color:chartreuse
     }
     ```
-    
-
-### Attribute selector
-
+#### Attribute selector
 Selects all elements that have the given attribute
-
 - **Syntax** :  `.classname`
-- **Example :** 更改 `input` 中所有 `type=”text”` 的 `color`
-    
+- **Example :** 更改 `input` 中所有 `type=”text”` 的 `color`  
     ```css
     /* Attribute selector */
     input[type="text"]{
       color:green;
     }
     ```
-    
-
-## 4.2  Grouping selectors
-
+### 4.2  Grouping selectors
 ```css
 h1,
 h2,
@@ -190,13 +125,9 @@ p{
   color: green;
 }
 ```
-
-## 4.3  Combinators
-
-### Descendant combinator
-
-1. In Html
-    
+### 4.3  Combinators
+#### Descendant combinator
+1. In Html   
     ```html
     <div class="link1">
             <a href="https://www.foodpanda.com.tw/">Foodpanda</a>
@@ -205,34 +136,24 @@ p{
     <div class="link2">
         <a href="./myForm.html">熊貓問卷調查</a>
     </div>
-    ```
-    
-2. In CSS
-    
+    ```  
+2. In CSS  
     ```css
     /* descendants selector */
     div.link1 a{
       color:red;
     }
-    ```
-    
-
+    ```   
 這樣只改到 `div.link1` 裡的 `<a>` 標籤
-
-## 4.4  Pseudo
-
-### Pseudo class
-
-1. **Syntax:**
-    
+### 4.4  Pseudo
+#### Pseudo class
+1. **Syntax:**   
     ```css
     selector:pseudo-class {
       property: value;
     }
-    ```
-    
-2. **Example :  `hover` 、 `active`**
-    
+    ```   
+2. **Example :  `hover` 、 `active`**    
     ```css
     /* 滑鼠移到時變綠色 */
     button:hover{
@@ -244,22 +165,16 @@ p{
       color:red;
     }
     
-    ```
-    
+    ```  
 3. **More pseudo classes** →[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index)
-
-### Pseudo element
-
-1. **Syntax**
-    
+#### Pseudo element
+1. **Syntax**   
     ```css
     selector::pseudo-element {
       property: value;
     }
-    ```
-    
-2. **Example : `before` 、 `selection` 、 `after`**
-    
+    ```  
+2. **Example : `before` 、 `selection` 、 `after`**   
     ```css
     p::before{
       content:">>";
@@ -274,41 +189,23 @@ p{
       content:"↓";
       color:red;
     }
-    ```
-    
+    ```   
 3. **More pseudo-elements** →[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)
-
 # 5. CSS Styling Rules
-
----
-
-## Rule 1 : Cascade
-
+### Rule 1 : Cascade
 下覆蓋上
-
-## Rule 2 : Specificity 特定度
-
+### Rule 2 : Specificity 特定度
 數字越大越前面特定度越高，高覆蓋低
-
 1. `id` - specificity(1, 0, 0)
 2. `class` - specificity(0, 1, 0)
 3. `tag` - specificity(0, 0, 1)
-
-## Rule 3 : Inheritance
-
+### Rule 3 : Inheritance
 CSS 屬性分成
-
 1. Inherited form parent
 2. Non-inherited (by default)
-
-## Summary - 牢記！
-
+### Summary - 牢記！
 `inline styling` > `id` > `class` > `element selector` > `inheritance`
-
 # 6. Text Styling
-
----
-
 - `font-size:` (units in CSS)
     - 瀏覽器預設 `16px`
     - relative : `rem` ← 現在多用這個，會因應瀏覽器字體大小做調整
@@ -327,23 +224,17 @@ CSS 屬性分成
 - `font-weight:`
     - 預設 `400px`
 - `text-indent:`
-
 # 7. Background
-
----
-
 - `background:` 為以下兩個的簡寫
     - `background-color:`
     - `background-image:`
         
         ```css
         background-image: url(./src/pand_backgroud.jpg);
-        ```
-        
+        ```      
 - `background-size:` : `cover` 、 `contain` ...
 - `background-position:` ： `center` 、 `top` 、 `bottom` ...
 - **Example : In CSS**
-    
     ```css
     body{
       background-image: url(./src/pand_backgroud.jpg);
