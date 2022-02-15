@@ -11,16 +11,16 @@
 ### Relative Links
 **Web Course**  
 [https://www.udemy.com/course/html5-css3-z/](https://www.udemy.com/course/html5-css3-z/)  
-**Free Photos — Upslash**
+**Free Photos — Upslash**  
 [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)  
-**Image Compression — TinyPNG**
+**Image Compression — TinyPNG**  
 [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)  
-**Deployment — Netlify**
+**Deployment — Netlify**  
 記得前往設定 `domain` 跟 `Asset optimization` 
 [Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)  
-**Free icons —** **Icons8**
+**Free icons —** **Icons8**  
 [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
-**CSS Tricks**
+**CSS Tricks**  
 [https://css-tricks.com/](https://css-tricks.com/)  
 ### 做 Project 的步驟
 1. Figma 繪圖
