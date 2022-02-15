@@ -5,22 +5,24 @@ Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)
 
 # Notes
 ### HTML
-[**網路基本原理**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/%E7%B6%B2%E8%B7%AF%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)  
+[網路基本原理](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/%E7%B6%B2%E8%B7%AF%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)  
 [HTML-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%201.md)  
 [HTML-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%202.md)
+### CSS
+### JavaScript
 
 # Projects
-### Project 1 台灣經濟歷史發展 
+### [Project 1 台灣經濟歷史發展](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project1_%E5%8F%B0%E7%81%A3%E7%B6%93%E6%BF%9F%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95)
 basic html/css
-### Project 2 Hawaii旅遊租借服務
+### [Project 2 Hawaii旅遊租借服務](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project2_Hawaii%E6%97%85%E9%81%8A%E7%A7%9F%E5%80%9F%E6%9C%8D%E5%8B%99)
 basic html/css/javascript/RWD/EventListener
-### Project 3 Portfolio
+### [Project 3 Portfolio](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project3_Portfolio)
 basic html/css/javascript/RWD  
 include project1, project2 and project3   
 online website: https://rjun.netlify.app/
-### Project 4 TodoList
+### [Project 4 TodoList](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project4_TodoList)
 html/css/javascript/RWD
-### Project 5 Google Login
+### [Project 5 Google Login](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project5_GoogleLogin)
 javascript  
 npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-session/passport/passport-google-oauth20/passport-local
 
