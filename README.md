@@ -10,7 +10,7 @@ basic html/css
 basic html/css/javascript/RWD/EventListener
 ### Project 3 Portfolio
 basic html/css/javascript/RWD  
-include project1, project2 and project3 
+include project1, project2 and project3   
 online website: https://rjun.netlify.app/
 ### Project 4 TodoList
 html/css/javascript/RWD
