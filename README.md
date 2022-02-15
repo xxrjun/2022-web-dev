@@ -34,25 +34,13 @@ javascript
 npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-session/passport/passport-google-oauth20/passport-local
 
 # Relative Links
-### Relative Links
-**Web Course**  
-[https://www.udemy.com/course/html5-css3-z/](https://www.udemy.com/course/html5-css3-z/)  
-**npm**  
-[npm](https://www.npmjs.com/)  
-**React**  
-[React](https://reactjs.org/)  
-**MongoDB Atlas**
-[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)  
-**Free Photos — Upslash**  
-[Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)  
-**Image Compression — TinyPNG**  
-[TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)  
-**Deployment — Netlify**  
-記得前往設定 `domain` 跟 `Asset optimization` 
-[Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)  
-**Free icons —** **Icons8**  
-[Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
-**CSS Tricks**  
-[css-tricks](https://css-tricks.com/)  
+### [npm](https://www.npmjs.com/)    
+### [React](https://reactjs.org/)    
+### [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)    
+### [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)  
+### [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)    
+### [Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)  
+### [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
+### [css-tricks](https://css-tricks.com/)  
 
 
