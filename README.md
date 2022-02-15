@@ -8,7 +8,7 @@ Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)
 [網路基本原理](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/%E7%B6%B2%E8%B7%AF%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)  
 [HTML-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%201.md)  
 [HTML-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%202.md)
-### CSS
+### CSS [待整]
 [CSS-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%201.md)  
 [CSS-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202.md)  
 [CSS-Basics 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%203.md)  
@@ -16,7 +16,7 @@ Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)
 [HTML / CSS - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%202.md)  
 [HTML / CSS - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%203.md)  
 [RWD (Responsive Web Design)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/RWD%20(Responsive%20Web%20Design).md)  
-### JavaScript
+### JavaScript [待整]
 
 # Projects
 ### [Project 1 台灣經濟歷史發展](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project1_%E5%8F%B0%E7%81%A3%E7%B6%93%E6%BF%9F%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95)
@@ -37,6 +37,12 @@ npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-se
 ### Relative Links
 **Web Course**  
 [https://www.udemy.com/course/html5-css3-z/](https://www.udemy.com/course/html5-css3-z/)  
+**npm**  
+[npm](https://www.npmjs.com/)  
+**React**  
+[React](https://reactjs.org/)  
+**MongoDB Atlas**
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)  
 **Free Photos — Upslash**  
 [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)  
 **Image Compression — TinyPNG**  
@@ -47,4 +53,6 @@ npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-se
 **Free icons —** **Icons8**  
 [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
 **CSS Tricks**  
-[https://css-tricks.com/](https://css-tricks.com/)  
+[css-tricks](https://css-tricks.com/)  
+
+
