@@ -1,15 +1,15 @@
 # HTML-Basics 2
 # 1. Form 表單
-## 1.1  表單**會與後端 database 做連結**
+### 1.1  表單**會與後端 database 做連結**
 - action: 資料要傳到的目的地
 - method - GET and POST
-## 1.2  `form` tags
+### 1.2  `form` tags
 | input | 有設定 name=””  才有辦法交出去 |
 | --- | --- |
 | label | label 的 for 對應 input 的 id="" |
 | select |  |
 | button |  |
-## 1.3  Simple Example
+### 1.3  Simple Example
 預設的 `method` 是 `GET` 
 ```html
 <form action="" method="GET">
@@ -26,7 +26,7 @@
 myForm.html?InputName=Panda&InputTele=0000
 ```
 # 2. `input` tag
-## 2.1  Types
+### 2.1  Types
 - `**checkbox**`
     - value 可預設值，會傳送
         
@@ -112,7 +112,7 @@ myForm.html?InputName=Panda&InputTele=0000
 	       name=""
 	       value="">100
 ```
-## 2.2  Attributes
+### 2.2  Attributes
 | checked | 預設勾選 |
 | --- | --- |
 | max & min | 數字上下限 |
@@ -134,7 +134,7 @@ myForm.html?InputName=Panda&InputTele=0000
 </select>
 ```
 # 4. `datalist` and `textarea`
-## 4.1 `datalist`
+### 4.1 `datalist`
 `input` 中的 `list` 屬性對應 `datalist` 的 `id`
 ```html
 <label for="area">地區：</label>
@@ -148,7 +148,7 @@ myForm.html?InputName=Panda&InputTele=0000
        <option value="高雄市">高雄</option>
 </datalist>
 ```
-## 4.2  `textarea`
+### 4.2  `textarea`
  可以用 `rows` and `cols` 設定長寬
 ```html
 <label for="suggestion">給網站提供建議:</label>
