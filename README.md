@@ -10,13 +10,13 @@ basic html/css
 ### Project 2 Hawaii旅遊租借服務
 basic html/css/javascript/RWD/EventListener
 ### Project 3 Portfolio
-basic html/css/javascript/RWD
+basic html/css/javascript/RWD  
 include project1, project2 and project3 
 online website: https://rjun.netlify.app/
 ### Project 4 TodoList
 html/css/javascript/RWD
 ### Project 5 GoogleLogin
-javascript
+javascript  
 npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-session/passport/passport-google-oauth20/passport-local
 
 
