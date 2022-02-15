@@ -5,6 +5,7 @@ Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)
 
 # Projects
 ### Project 1 台灣經濟歷史發展
+https://github.com/xxrjun/2022-Web-Develop/tree/main/Project1_%E5%8F%B0%E7%81%A3%E7%B6%93%E6%BF%9F%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95
 簡單介紹台灣經濟歷史發展的網站
 basic html/css
 ### Project 2 Hawaii旅遊租借服務
