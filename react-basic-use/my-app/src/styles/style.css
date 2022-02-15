@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  background-color: gray;
+  color: White;
+}
+
+.msg {
+  margin: 0.5rem;
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
