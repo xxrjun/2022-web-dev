@@ -1,26 +1,16 @@
 # HTML-Basics 2
-
 # 1. Form 表單
-
----
-
 ## 1.1  表單**會與後端 database 做連結**
-
 - action: 資料要傳到的目的地
 - method - GET and POST
-
 ## 1.2  `form` tags
-
 | input | 有設定 name=””  才有辦法交出去 |
 | --- | --- |
 | label | label 的 for 對應 input 的 id="" |
 | select |  |
 | button |  |
-
 ## 1.3  Simple Example
-
 預設的 `method` 是 `GET` 
-
 ```html
 <form action="" method="GET">
     <label for="myname">姓名</label>
@@ -31,26 +21,18 @@
     <button type="submit">提交表單</button>
 </form>
 ```
-
 當按下 `button` 後可以看到輸入的 `InputName` and `InputTele`  
-
 ```html
 myForm.html?InputName=Panda&InputTele=0000
 ```
-
 # 2. `input` tag
-
----
-
 ## 2.1  Types
-
 - `**checkbox**`
     - value 可預設值，會傳送
         
         `name=value`
         
     - 若要預設已勾選可以加入 `checked`
-
 ```html
 <input id="subscription" 
 	type="checkbox" 
@@ -59,7 +41,6 @@ myForm.html?InputName=Panda&InputTele=0000
 	checked>
 <label for="subscription">訂閱電子報</label>`
 ```
-
 - `**email**`
     - `required` 代表一定要填
     - `placeholder` 提示作用
@@ -72,11 +53,9 @@ myForm.html?InputName=Panda&InputTele=0000
 			 placeholder="請輸入真實姓名"
        required />
 ```
-
 - `**number**`
     - `min`, `max` 設定允許範圍
     - `step` 設定一次增減量
-
 ```html
 <label for="age">年齡</label>
 <input id="age"
@@ -88,11 +67,9 @@ myForm.html?InputName=Panda&InputTele=0000
 			 step="1"
        required />
 ```
-
 - `**password**`
     - 不想顯示密碼在網址上，因此 `name=””` 跟 `value=""`
     - `minlength` 跟 `maxlength` 設定長度範圍
-
 ```html
 <label for="password">密碼</label>
 <input id="password"
@@ -103,10 +80,8 @@ myForm.html?InputName=Panda&InputTele=0000
 	     maxlength="20"
 	     required />
 ```
-
 - `**radio**`
     - 只能選擇選項中的其中一個
-
 ```html
 <input id="male"
        type="radio"
@@ -127,10 +102,8 @@ myForm.html?InputName=Panda&InputTele=0000
        value="others" />
 <label for="others">其他</label>
 ```
-
 - `**range**`
     - 拉桿
-
 ```html
 0<input type="range"
 	       step="10"
@@ -139,9 +112,7 @@ myForm.html?InputName=Panda&InputTele=0000
 	       name=""
 	       value="">100
 ```
-
 ## 2.2  Attributes
-
 | checked | 預設勾選 |
 | --- | --- |
 | max & min | 數字上下限 |
@@ -150,14 +121,9 @@ myForm.html?InputName=Panda&InputTele=0000
 | required | 必填 |
 | value | 一定要: radio 、 range...
 不一定要： text... |
-
 # 3. `select` tag
-
----
-
 - `select` 中有 `option`
 - 第一行加入 `<option></option>` 避免預設
-
 ```html
 <label for="gender">Gender</label>
 <select name="gender" id="gender" required>
@@ -167,17 +133,9 @@ myForm.html?InputName=Panda&InputTele=0000
     <option value="others">其他</option>
 </select>
 ```
-
- 
-
 # 4. `datalist` and `textarea`
-
----
-
 ## 4.1 `datalist`
-
 `input` 中的 `list` 屬性對應 `datalist` 的 `id`
-
 ```html
 <label for="area">地區：</label>
 <input type="text" 
@@ -190,11 +148,8 @@ myForm.html?InputName=Panda&InputTele=0000
        <option value="高雄市">高雄</option>
 </datalist>
 ```
-
 ## 4.2  `textarea`
-
  可以用 `rows` and `cols` 設定長寬
-
 ```html
 <label for="suggestion">給網站提供建議:</label>
 <br />
@@ -205,11 +160,7 @@ myForm.html?InputName=Panda&InputTele=0000
 					placeholder="謝謝您提供建議！">
 </textarea>
 ```
-
 # 5. Other HTML Ideas
-
----
-
 - **comment**
     - 在 html 中的註解 `<!-- -->`
 - **block、inline**
@@ -232,16 +183,11 @@ myForm.html?InputName=Panda&InputTele=0000
     ```html
     <link rel="shortcut icon" href="/src/pandaIcon.png"/>
     <link rel="bookmark" href="/src/pandaIcon.png"/>
-    ```
-    
+    ```   
 - **Self-Closing Tags**
     - Self-closing tags represent **void elements.**
     Void elements like `br` or `img` cannot contain any contents.
-
 # 熊貓問卷調查 Code
-
----
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
