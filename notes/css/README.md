@@ -1,13 +1,13 @@
 # CSS
 
 ### Notes
-[CSS-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%201%207ac21c4cc7c143b989612e979686b0ef.md)
-[CSS-Basics 2]()
-[CSS-Basics 3]()
-[HTML / CSS - Advance 1 - Flexbox]()
-[RWD (Responsive Web Design)]()
-[HTML / CSS - Advance 2]()
-[HTML / CSS - Advance 3]()
+[CSS-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%201.md)  
+[CSS-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202.md)  
+[CSS-Basics 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%203.md)  
+[HTML / CSS - Advance 1 - Flexbox](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%201%20-%20Flexbox.md)  
+[HTML / CSS - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%202.md)  
+[HTML / CSS - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%203.md)  
+[RWD (Responsive Web Design)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/RWD%20(Responsive%20Web%20Design).md)  
 ### Relative Links
 **Web Course**  
 [https://www.udemy.com/course/html5-css3-z/](https://www.udemy.com/course/html5-css3-z/)
