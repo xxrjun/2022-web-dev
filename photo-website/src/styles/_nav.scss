@@ -1,0 +1,18 @@
+nav {
+  background-color: rgb(206, 161, 49);
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    li {
+      padding: 0.5rem 1rem;
+      a {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.515);
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
