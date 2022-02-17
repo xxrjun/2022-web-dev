@@ -1,4 +1,4 @@
-# CSS-Basics 1
+**CSS-Basics 1**
 # 1. CSS (Cascading Style Sheets)
 - 沒必要認識全部的 CSS 屬性，認識常用以及實用的屬性即可
 - CSS Syntax  
@@ -55,7 +55,6 @@ HTML Color Names :  [https://www.w3schools.com/tags/ref_colornames.asp](https://
 # 4. CSS Selectors
 MND - CSS selectors :  [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 ### Review : HTML Tag’s Attributes
-
 1. `id` : 一個 tag 只能有一個 id， 且獨一無二
 2. `class` : 類別，一個 tag 可以多個 class
 ### 4.1  Basic Selectors

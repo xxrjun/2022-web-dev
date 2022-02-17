@@ -1,4 +1,4 @@
-# HTML-Basics 2
+**HTML-Basics 2**
 # 1. Form 表單
 ### 1.1  表單**會與後端 database 做連結**
 - action: 資料要傳到的目的地
