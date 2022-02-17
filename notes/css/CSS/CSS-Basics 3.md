@@ -73,43 +73,43 @@ transition: margin-right 4s, color 1s;
 transition: all 0.5s ease-out;
 ```
 ### 3.3  2D Transform
-- `translate()`
+translate()
 ```css
 transform: translate(-50%, -50%);
 ```
-- `rotate()`
+rotate()
 ```css
 transform: rotate(30deg);
 ```
-- `scale()`
+scale()
 ```css
 transform: scale(3);
 ```
 ### 3.4  3D Transform
-- `rotateX()`
+rotateX()
 ```css
 transform: rotateX(30deg);
 ```
-- `rotateY()`
+rotateY()
 ```css
 transform: rotateY(30deg);
 ```
-- `rotateZ()`
+rotateZ()
 ```css
 transform: rotateZ(30deg); 
 ```
 # 4. Animation
 [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 ### 4.1  Animation Attributes
-- `**@keyframes`**
-- `**animation-name**`
-- `**animation-duration**`
-- `**animation-fill-mode**`
+- @keyframes
+- animation-name
+- animation-duration
+- animation-fill-mode
     - sets how a CSS animation applies styles to its target before and after its execution.
-- `**animation-delay**`
-- `**animation-iteration-count**`
-- `**animation-direction**`  :  `normal` 、 `reverse` 、 `alternate`
-- `**animation-timing-function**`
+- animation-delay
+- animation-iteration-count
+- animation-direction  :  `normal` 、 `reverse` 、 `alternate`
+- animation-timing-function
 **簡化** 
  `animation: name duration timing-function delay iteration-count direction fill-mode` 
 ### 4.2  自製動畫 Example
