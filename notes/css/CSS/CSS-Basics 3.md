@@ -45,7 +45,6 @@ cursor: grab;
 cursor: zoom-out;
 ```
 # 3. Transition
----
 **CSS [transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition#constituent_properties)** provide a way to control animation speed when changing CSS properties.
 ### 3.1  Transition Constituent Properties
 - `transition-property`
