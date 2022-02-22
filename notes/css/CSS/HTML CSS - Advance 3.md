@@ -2,11 +2,9 @@
 
 # 1. Accessibility
 
----
-
 `f12` → `accessibility` 
 
-## 1.1  Contrast
+### 1.1  Contrast
 
 [Color contrast - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) 
 
@@ -18,23 +16,21 @@
 | Large-scale text (120-150% larger than body text) | 3 : 1 | 4.5 : 1 |
 | Active user interface components and graphical objects such as icons and graphs | 3 : 1 | Not defined |
 
-## 1.2  Keyboard
+### 1.2  Keyboard
 
 如果沒有滑鼠也能操作
 
-## 1.3  Text Label
+### 1.3  Text Label
 
 舉例： `img` 標籤沒有加上 `alt`
 
-## Optional : title attribute
+#### Optional : title attribute
 
 不是放在 `head` 裡的 `title` 標籤，而是 tag 中的屬性
 
 將滑鼠移到物件上就會顯示 `title=` 的內容
 
 # 2. Sticky Header
-
----
 
 可以到 [**CSS Tricks](https://css-tricks.com/)**  找到很多酷技巧
 
@@ -53,8 +49,6 @@ header {
 ```
 
 # 3. Scrollbar
-
----
 
 客製化 scrollbar →  [https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
 
@@ -86,8 +80,6 @@ header {
 
 # 4. Height with percentage
 
----
-
 **Problem**
 
 [Why doesn't height: 100% work to expand divs to the screen height?](https://stackoverflow.com/questions/7049875/why-doesnt-height-100-work-to-expand-divs-to-the-screen-height)
@@ -107,8 +99,6 @@ html {
 ⇒ 要先設定祖先的高度才可以用 `%` 的方式成功表示
 
 # 5. Scale Image Effect
-
----
 
 先把 `img` 放入一個 container
 
