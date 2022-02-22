@@ -1,6 +1,8 @@
 # 2022-Web-Develop
 2022/2/1 開始學習的筆記以及程式碼內容  
+
 Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)  
+
 課程網址：https://www.udemy.com/course/html5-css3-z/
 
 # Notes
@@ -40,7 +42,7 @@ html/css/javascript/RWD
 ### [Project 5 Google Login](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project5_GoogleLogin)
 javascript  
 npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-session/passport/passport-google-oauth20/passport-local
-### [Project 6 Photo Website](https://github.com/xxrjun/react-photo-website/tree/master)
+### [Project 6 Photo Website](https://github.com/xxrjun/react-photo-website-infinite-scroll)
 
 # Relative Links
 - [React](https://reactjs.org/)      
