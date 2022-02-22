@@ -60,7 +60,8 @@ Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React
 ### [**Passport**](https://www.passportjs.org/docs/)	 
 
 # Other Relative Links
-### Modules
+
+### Npm Modules
 - [npm](https://www.npmjs.com/)	  
 - [express](https://www.npmjs.com/package/express)	   		
 - [express-session](https://www.npmjs.com/package/express-session)	  	
@@ -74,10 +75,18 @@ Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React
 - [passport](https://www.npmjs.com/package/passport)  	  			
 - [passport-local](https://www.npmjs.com/package/passport-local)  	  			
 - [passport-jwt](https://www.npmjs.com/package/passport-jwt)  	  		
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  						
-### 其他
-- [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)	 
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  			
+
+### Free Image
+- [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)    
+- [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)   	 
 - [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)	 
+- 
+### Deployment
 - [Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)	  
-- [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
+
+### Template
+- [html5up](https://html5up.net/)
+
+### Others
 - [css-tricks](https://css-tricks.com/)	  
