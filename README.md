@@ -52,12 +52,12 @@ Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React
 
 # Important Official Docs
 
-[**React**](https://reactjs.org/)  
-[**React Router**](https://reactrouter.com/docs/en/v6)  
-[**MDN**](https://developer.mozilla.org/zh-TW/)  
-[**MongoDB Atlas**](https://www.mongodb.com/cloud/atlas/register)   
-[**Axios**](https://axios-http.com/docs/intro)
-[**Passport**](https://www.passportjs.org/docs/)	 
+- [**React**](https://reactjs.org/)  
+- [**React Router**](https://reactrouter.com/docs/en/v6)  
+- [**MDN**](https://developer.mozilla.org/zh-TW/)  
+- [**MongoDB Atlas**](https://www.mongodb.com/cloud/atlas/register)   
+- [**Axios**](https://axios-http.com/docs/intro)  
+- [**Passport**](https://www.passportjs.org/docs/)	 
 
 # Other Relative Links
 ### Modules
