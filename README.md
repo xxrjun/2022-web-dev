@@ -1,9 +1,10 @@
 # 2022-Web-Develop
-2022/2/1 開始學習的筆記以及程式碼內容  
+2022/2/1-2022/2/23 學習**2022網頁開發全攻略**的筆記以及程式碼內容  
+筆記部分只更新到 JavaScript 因為後續須多工具及功能都更新的很快，比起第二手筆記，官方文件較為準確及新穎。
 
-Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)  
+Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)**](https://www.udemy.com/course/html5-css3-z/)
 
-課程網址：https://www.udemy.com/course/html5-css3-z/
+非常感謝 Wilson Ren 老師的教學!
 
 # Notes
 ### HTML
@@ -26,28 +27,40 @@ Udemy - 2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)
 [JavaScript - Advance 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%201.md)    
 [JavaScript - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202.md)     
 [JavaScript - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%203.md)    
-[JavaScript - Advance 4 (Ajax and APIs)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs).md)  
-# Projects
-### [Project 1 台灣經濟歷史發展](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project1_%E5%8F%B0%E7%81%A3%E7%B6%93%E6%BF%9F%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95)
-basic html/css
-### [Project 2 Hawaii旅遊租借服務](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project2_Hawaii%E6%97%85%E9%81%8A%E7%A7%9F%E5%80%9F%E6%9C%8D%E5%8B%99)
-basic html/css/javascript/RWD/EventListener
-### [Project 3 Portfolio](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project3_Portfolio)
-basic html/css/javascript/RWD  
-include project1, project2 and project3   
-online website: https://rjun.netlify.app/
-### [Project 4 TodoList](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project4_TodoList)
-html/css/javascript/RWD
-### [Project 5 Google Login](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project5_GoogleLogin)
-javascript  
-npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-session/passport/passport-google-oauth20/passport-local
-### [Project 6 Photo Website](https://github.com/xxrjun/react-photo-website-infinite-scroll)
+[JavaScript - Advance 4 (Ajax and APIs)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs).md) 
 
-# Relative Links
-- [React](https://reactjs.org/)      
-- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)   
-- [Passport](https://www.passportjs.org/docs/)	  
-### 套件
+# Projects
+[**Project 1 台灣經濟歷史發展**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project1_%E5%8F%B0%E7%81%A3%E7%B6%93%E6%BF%9F%E6%AD%B7%E5%8F%B2%E7%99%BC%E5%B1%95)    
+- Basic HTML / CSS
+
+[**Project 2 Hawaii旅遊租借服務**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project2_Hawaii%E6%97%85%E9%81%8A%E7%A7%9F%E5%80%9F%E6%9C%8D%E5%8B%99)  
+- Basic HTML / CSS / Javascript / RWD / EventListener
+
+[**Project 3 Portfolio**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project3_Portfolio)  
+- Basic HTML / CSS / Javascript / RWD  
+- Include project1, project2 and project3   
+- Online website: https://rjun.netlify.app/
+
+[**Project 4 TodoList**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project4_TodoList)  
+- HTML / CSS / Javascript / RWD
+
+[**Project 5 Google Login**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project5_GoogleLogin)  
+- Javascript / npm modules / OAuth  
+
+[**Project 6 Photo Website**](https://github.com/xxrjun/react-photo-website-infinite-scroll)
+- React / API
+
+# Important Official Docs
+
+[**React**](https://reactjs.org/)  
+[**React Router**](https://reactrouter.com/docs/en/v6)  
+[**MDN**](https://developer.mozilla.org/zh-TW/)  
+[**MongoDB Atlas**](https://www.mongodb.com/cloud/atlas/register)   
+[**Axios**](https://axios-http.com/docs/intro)
+[**Passport**](https://www.passportjs.org/docs/)	 
+
+# Other Relative Links
+### Modules
 - [npm](https://www.npmjs.com/)	  
 - [express](https://www.npmjs.com/package/express)	   		
 - [express-session](https://www.npmjs.com/package/express-session)	  	
@@ -61,10 +74,10 @@ npm modules: nodemon/bcrypt/connect-flash/dotenv/ejs/mongoose/express/express-se
 - [passport](https://www.npmjs.com/package/passport)  	  			
 - [passport-local](https://www.npmjs.com/package/passport-local)  	  			
 - [passport-jwt](https://www.npmjs.com/package/passport-jwt)  	  		
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  	  						
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  						
 ### 其他
-- [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)	  
-- [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)	    
+- [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)	 
+- [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)	 
 - [Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)	  
 - [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)  
 - [css-tricks](https://css-tricks.com/)	  
