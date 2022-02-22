@@ -25,7 +25,7 @@
 
 `=` : assignment
 
-![variables.png](JavaScript%20-%20Basics%201%201586a4ae44744e9abfb0eb66b14217c9/variables.png)
+![variables.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201/variables.png)
 
 # 3. Numbers Operators
 
