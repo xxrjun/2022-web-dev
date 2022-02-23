@@ -1,10 +1,11 @@
 # 2022-Web-Develop
-2022/2/1-2022/2/23 學習**2022網頁開發全攻略**的筆記以及程式碼內容  
+2022/2/1-2022/2/23 學習**2022網頁開發全攻略**的筆記以及程式碼內容。  
+
 筆記部分只更新到 JavaScript 因為後續須多工具及功能都更新的很快，比起第二手筆記，官方文件較為準確及新穎。
 
 Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React, SQL, Node, more)**](https://www.udemy.com/course/html5-css3-z/)
 
-非常感謝 Wilson Ren 老師的教學!
+Thanks Wilson Ren for this amazing course on Udemy!
 
 # Notes
 ### HTML
@@ -38,7 +39,7 @@ Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React
 
 ### [**Project 3 Portfolio**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project3_Portfolio)  
 - Basic HTML / CSS / Javascript / RWD  
-- Include project1, project2 and project3   
+- Include project1, project2,project3 and project4     
 - Online website: https://rjun.netlify.app/
 
 ### [**Project 4 TodoList**](https://github.com/xxrjun/2022-Web-Develop/tree/main/Project4_TodoList)  
@@ -49,6 +50,10 @@ Course Link on Udemy : [**2022網頁開發全攻略(HTML, CSS, JavaScript, React
 
 ### [**Project 6 Photo Website**](https://github.com/xxrjun/react-photo-website-infinite-scroll)
 - React / API
+
+### [**MERN Project Course System**](https://github.com/xxrjun/MERN-Project-Course-System)
+- Frontend : React
+- Backend : Mongodb + Expressjs + Nodejs
 
 # Important Official Docs
 
