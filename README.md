@@ -86,7 +86,7 @@ Thanks Wilson Ren for this amazing course on Udemy!
 - [Free Icons, Clipart Illustrations, Photos, and Music](https://icons8.com/)    
 - [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)   	 
 - [TinyPNG - Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)	 
-- 
+
 ### Deployment
 - [Netlify: Develop & deploy the best web experiences in record time](https://www.netlify.com/)	  
 
