@@ -1,4 +1,4 @@
-# JavaScript - Practice
+**JavaScript - Practice**
 
 # 下載 Code Runner and Node.js
 
@@ -9,7 +9,7 @@ and choose the LTS version so that the code runner can run JavaScript code.
 
 # Practice
 
-## 31 題
+### 31 題
 
 [https://yuhsien.notion.site/JS-Practice-a692c4dc450c476a8a7d9f8fe997deda#a5cc55bd734345ff84d8b2c3d8fc914b](https://www.notion.so/JS-Practice-a692c4dc450c476a8a7d9f8fe997deda)
 
