@@ -20,11 +20,12 @@ Thanks Wilson Ren for this amazing course on Udemy!
 [HTML / CSS - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%202.md)   
 [HTML / CSS - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%203.md)   
 [RWD (Responsive Web Design)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/RWD%20(Responsive%20Web%20Design).md)  
-### JavaScript [待整]
+### JavaScript 
 [JavaScript - Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201.md)      
 [JavaScript - Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%202.md)        
 [JavaScript - Practice](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Practice.md)        
-[DOM (Document Object Model)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md)  
+[DOM (Document Object Model)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md)   
+[以下待整]  
 [JavaScript - Advance 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%201.md)    
 [JavaScript - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202.md)     
 [JavaScript - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%203.md)    
