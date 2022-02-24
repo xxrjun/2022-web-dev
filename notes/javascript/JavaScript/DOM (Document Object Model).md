@@ -1,15 +1,13 @@
-# DOM (Document Object Model)
+**DOM (Document Object Model)**
 
 # Intro
 
----
-
-## Why do we learn DOM ?
+### Why do we learn DOM ?
 
 - It allow us to manipulate HTML elements.
 - 製作動態網頁
 
-## How to use JS in HTML ?
+### How to use JS in HTML ?
 
 - 把 `<script>` tag 放在 `<body>` tag下面
     
@@ -23,11 +21,9 @@
 
 # 1. Window Object
 
----
-
 **The Window Object - w3school** → [https://www.w3schools.com/jsref/obj_window.asp](https://www.w3schools.com/jsref/obj_window.asp)
 
-## 1.1  Window Object Methods
+### 1.1  Window Object Methods
 
 | alert() | 彈出 alert 視窗 |
 | --- | --- |
@@ -36,11 +32,11 @@
 | clearInteval() | 清除 setInterval() |
 | addEventListener() | 加入事件監聽 |
 
-## 1.2  Window Object Properties
+### 1.2  Window Object Properties
 
-### “OOP Concept : An object can be a property of another object.”
+#### “OOP Concept : An object can be a property of another object.”
 
-### Window Object Properties
+#### Window Object Properties
 
 | Console |
 | --- |
@@ -50,19 +46,17 @@
 
 上面這四個剛好都是 object，先討論前面兩個，後面兩個請看
 
-### Console Object
+#### Console Object
 
 - is a property of window object.
 - methods:
     - `log()` 、 `warn()` 、 `error()`
 
-### Document Object
+#### Document Object
 
 - 進入本章重點
 
 # 2. What exactly is DOM ?
-
----
 
 - **Document is an Object.** (Also a property of window object.)
 - **Document means the HTML document**.
@@ -70,11 +64,11 @@
 
 - Big picture in DOM
 
-![DOM.png](DOM%20(Document%20Object%20Model)%20f27fd8dbcccf48c4a0f5fe6eec160e5f/DOM.png)
+![DOM.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model)/DOM.png)
 
-## 2.1  Document Object Properties (不常用到不討論)
+### 2.1  Document Object Properties (不常用到不討論)
 
-## 2.2  Document Object Methods
+### 2.2  Document Object Methods
 
 - `getElementsById()` 、 `getElementsByClass()` 這兩個不好用，現代少用，因此不多討論。
 - 現在多用 `querySelector()` 、 `querySelectorAll()`
@@ -90,12 +84,10 @@
 
 # 3. Arrow Function Expression
 
----
-
 - Js 中,  function declaration  不一定要在使用的 code 上面 ([hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting))
 但 arrow function expression 有順序之分
 
-## 3.1 Function Declaration
+### 3.1 Function Declaration
 
 ```jsx
 // function declaration
@@ -106,7 +98,7 @@ function sayHi(name) {
 }
 ```
 
-## 3.2  Arrow Function Expression
+### 3.2  Arrow Function Expression
 
 ```jsx
 // arrow function expression
@@ -117,7 +109,7 @@ let sayHi = (name) => {
 sayHi("rjun");
 ```
 
-## 3.3 this Keyword
+### 3.3 this Keyword
 
 - 在 arrow function expression 裡面的 `this` 指的是 `Window` Object.
 - 因此通常通常在 Object 內不會使用 arrow function expression
@@ -149,13 +141,11 @@ sayHi("rjun");
 
 # 4. forEach Function
 
----
-
-## 4.1  What is **CallBack function ?**
+### 4.1  What is **CallBack function ?**
 
 function to execute on each element (array item).
 
-## 4.2  forEach function
+### 4.2  forEach function
 
 - **forEach function takes one parameter - function**
 - **Example**
@@ -193,8 +183,6 @@ function to execute on each element (array item).
 
 # 5. Array, HTMLCollection and NodeList
 
----
-
 - **Array**, **HTMLCollection** and **NodeList** are similar ( `index` and `length` properties)
 - **Arra**y and **NodeList** can use `forEach` method, but **HTMLCollection** cannot.
 這也是為什麼現在大家多用 NodeList 而非 HTMLCollection.
@@ -217,8 +205,6 @@ function to execute on each element (array item).
 
 # 6. Element Object
 
----
-
 - Different HTML element might have its own methods and property.
 - **All HTML element must have properties and methods from this list**
     
@@ -237,13 +223,13 @@ function to execute on each element (array item).
     | remove() |
     | style |
 
-## 6.1  Children and ChildNode
+### 6.1  Children and ChildNode
 
 - `children` returns HTML elements
 - `childNode` returns NodeList. (`document.querySelectorAll()` also returns NodeList)
 - `parentElement`
 
-## 6.2  InnerHTML and InnerText
+### 6.2  InnerHTML and InnerText
 
 - `innerHTML` 跟 `innerText` 後面都接 string，基本功能一樣
 - 不同的是 `innerHTML` 可以放入 html tag，而 `innerText` 被當作純文字
@@ -256,7 +242,7 @@ function to execute on each element (array item).
     ```
     
 
-## 6.3  Style Object
+### 6.3  Style Object
 
 - is a property of element object.
 - is an object that is controlling the CSS styling of an element.
@@ -278,16 +264,12 @@ function to execute on each element (array item).
 
 # 7. Inheritance in DOM
 
----
-
 - All HTML elements inherit properties and methods from “element object.
 - But some of them have its own methods.
 
 # 8. Events
 
----
-
-## 8.1  JS Events Introduction
+### 8.1  JS Events Introduction
 
 - JS event are occurred when things happen in browser. (For example, resize the screen, click on a button, press a key on keyboard.)
 - 事件發生時，需要偵探
@@ -295,13 +277,13 @@ function to execute on each element (array item).
 - `addEventListener(event type, callback)`
 - JS Events 都是 Object
 
-## 8.2  Events Inheritance
+### 8.2  Events Inheritance
 
-![JS+Event+Inheritance.png](DOM%20(Document%20Object%20Model)%20f27fd8dbcccf48c4a0f5fe6eec160e5f/JSEventInheritance.png)
+![JS+Event+Inheritance.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model)/JSEventInheritance.png)
 
 [DOM Events - W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
-## 8.3  Event Object
+### 8.3  Event Object
 
 | target | 事件的目標，an Object |
 | --- | --- |
@@ -309,8 +291,6 @@ function to execute on each element (array item).
 | stopPropagation() | 停止 bubble |
 
 # 9. Event Bubbling
-
----
 
 若內外層都有 add 一樣 的 event listener ，內層啟動 event 會使外層也啟動 event，會像 bubble 一樣擴散到最外層。不過外層不會影響內層
 
@@ -339,8 +319,6 @@ b.addEventListener("click", e => {
 ```
 
 # 10. Dynamic Header
-
----
 
 學會一點 event 後就可以來製作 dynamic header 了。要用到的有
 
@@ -371,9 +349,7 @@ window.addEventListener("scroll", () => {
 
 # 11. Local Storage and Session Storage
 
----
-
-## 11.1  What is Web Storage
+### 11.1  What is Web Storage
 
 - Storage is a place to store data **in browser** (This is not database)
 - `key-value` pair (Both have to be **string**. If the value is not a string, it would be typecast to a string.)
@@ -386,7 +362,7 @@ window.addEventListener("scroll", () => {
 
 Briefly，Cookies are smaller and send server information back with every HTTP request, while LocalStorage is larger and can hold information on the client side.
 
-## 11.2  Methods for both local and session storage
+### 11.2  Methods for both local and session storage
 
 | setItem(key, value) | 新增 key-value pair |
 | --- | --- |
@@ -394,13 +370,13 @@ Briefly，Cookies are smaller and send server information back with every HTTP r
 | removeItem(key) | 透過 key 移除 key-value |
 | clear() | 清空 storage |
 
-## 11.3  Difference between Local Storage and Session Storage
+### 11.3  Difference between Local Storage and Session Storage
 
 生命週期不同, local > session.
 
 Session storage is “destroyed” once the user closes the browser whereas, Local storage stores data with no expiration data.
 
-## 11.4  How to store other types of data
+### 11.4  How to store other types of data
 
 - **JSON** means JavaScript Object Notation
 - `JSON.stringify()` : 變字串
