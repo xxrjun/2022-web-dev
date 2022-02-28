@@ -1,10 +1,6 @@
-# JavaScript - Advance 4 (Ajax and APIs)
-
----
+**JavaScript - Advance 4 (Ajax and APIs)**
 
 # 1. Sync and Async
-
----
 
 sync code 同步
 
@@ -39,30 +35,30 @@ Here's time out!
 
 # 2. Callback Hell
 
----
-
 **我們希望事件可以依照我們要求的順序執行**，這種時候就會發生 **Callback Hell**
 
-![callbackhell.gif](JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs)%2086b530ef23874211ae6049d93c49e29b/callbackhell.gif)
+![callbackhell.gif](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs)/callbackhell.gif)
 
-# 3. Promises[pass]
+為了解決這種狀況，有四種解決方法
 
----
+- Write comments
+- Split functions into smaller functions
+- Using Promises
+- Using Async/await
 
-## Mongoose Promises and Queries
+# 3. Promises
 
-## Promises Refactor
+[MDN Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+![Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png)
+
 
 # 4. What is API ?
-
----
 
 - API stands for Application Programming Interface.
 - APIs are tools for programmers to build websites.
 
 # 5. Endpoint, Path and Query
-
----
 
 - 範例 jokeAPI→ [https://sv443.net/jokeapi/v2/](https://sv443.net/jokeapi/v2/)
 - **example**
@@ -86,7 +82,7 @@ Here's time out!
     ```
     
 
-## Endpoints
+### Endpoints
 
 An endpoint is an access point to send the HTTP requests to and get your response.
 
@@ -94,15 +90,11 @@ JokeAPI offers these following endpoints:
 
 # 6. Postman
 
----
-
 link →  [https://www.postman.com/](https://www.postman.com/)
 
 Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
 
 # 7. API with Authorization Key
-
----
 
 - 範例 openWeather API →[https://openweathermap.org/api](https://openweathermap.org/api)
 - 拿到 key 才能使用 API
@@ -124,8 +116,6 @@ getWeather();
 ```
 
 # 8. HTTP Request made by Node to API
-
----
 
 trouble → see next
 
