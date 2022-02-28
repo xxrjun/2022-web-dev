@@ -1,8 +1,8 @@
 # Databases
 
-* [**MySQL - Basics**](Database%20f1323/MySQL%20-%20Ba%2065e99.md)
-* [**MongoDB**](Database%20f1323/MongoDB%20f863d.md)
-* [**Mongoose**](Database%20f1323/Mongoose%204da55.md)
+* [**MySQL**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MySQL.md)
+* [**MongoDB**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MongoDB.md)
+* [**Mongoose**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/Mongoose.md)
 
 # What is DBMS ?
 
