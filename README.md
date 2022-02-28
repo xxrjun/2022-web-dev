@@ -12,6 +12,7 @@ Thanks Wilson Ren for this amazing course on Udemy!
 [網路基本原理](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/%E7%B6%B2%E8%B7%AF%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)  
 [HTML-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%201.md)  
 [HTML-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%202.md)
+
 ### CSS
 [CSS-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%201.md)  
 [CSS-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202.md)  
@@ -20,12 +21,12 @@ Thanks Wilson Ren for this amazing course on Udemy!
 [HTML / CSS - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%202.md)   
 [HTML / CSS - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%203.md)   
 [RWD (Responsive Web Design)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/RWD%20(Responsive%20Web%20Design).md)  
+
 ### JavaScript 
 [JavaScript - Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201.md)      
 [JavaScript - Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%202.md)        
 [JavaScript - Practice](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Practice.md)        
-[DOM (Document Object Model)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md)   
-[以下待整]  
+[DOM (Document Object Model)](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md)    
 [JavaScript - Advance 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%201.md)    
 [JavaScript - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202.md)     
 [JavaScript - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%203.md)    
@@ -58,12 +59,12 @@ Thanks Wilson Ren for this amazing course on Udemy!
 
 # Important Official Docs
 
-### [**React**](https://reactjs.org/)  
-### [**React Router**](https://reactrouter.com/docs/en/v6)  
-### [**MDN**](https://developer.mozilla.org/zh-TW/)  
-### [**MongoDB**](https://docs.mongodb.com/)   
-### [**Axios**](https://axios-http.com/docs/intro)  
-### [**Passport**](https://www.passportjs.org/docs/)	 
+- [**React**](https://reactjs.org/)  
+- [**React Router**](https://reactrouter.com/docs/en/v6)  
+- [**MDN**](https://developer.mozilla.org/zh-TW/)  
+- [**MongoDB**](https://docs.mongodb.com/)   
+- [**Axios**](https://axios-http.com/docs/intro)  
+- [**Passport**](https://www.passportjs.org/docs/)	 
 
 # Other Relative Links
 
