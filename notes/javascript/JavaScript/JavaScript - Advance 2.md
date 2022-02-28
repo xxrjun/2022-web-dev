@@ -1,32 +1,26 @@
-# JavaScript - Advance 2
+**JavaScript - Advance 2**
 
 # 1. Global Execution Context
 
----
-
-## 1.1  Creation Phase
+### 1.1  Creation Phase
 
 - Window object gets **instantiated**
 - scope chain gets created, follow the principle of closure
 - `this` keyword gets generate (points to the window object)
 - **memories get allocated** to all the functions declaration variable and `var` variables ad function declaration, except for the `let` and `const` and function expression. (**Hoisting**)
 
-## 1.2  Execution Phase
+### 1.2  Execution Phase
 
 - Run the code line by lone followed the principle of **callstack**
 
 # 2. Hoisting
-
----
 
 - **memories get allocated** to all the functions declaration variable and `var` variables ad function declaration, except for the `let` and `const` and function expression.
 - [MDN - Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 # 3. Scope
 
----
-
-## 3.1  What is Scope ?
+### 3.1  What is Scope ?
 
 - Scope determines the accessibility (visibility) of these variables
 - There are three types of scope in JS
@@ -34,9 +28,9 @@
     2. Function Scope (`var` 、 `let` 、 `const`)
     3. Block Scope (`let` 、 `const`)
 
-![variables.png](JavaScript%20-%20Advance%202%2041939d9e9eb64ba890701ae7fd3182fa/variables.png)
+![variables.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202/variables.png)
 
-## 3.2  Closure (Scope Chaining)
+### 3.2  Closure (Scope Chaining)
 
 - In function execution context, if they find a variable that was not declared inside the function, JavaScript will **go to the global variables and find**.
 - Global means
@@ -47,14 +41,10 @@
 
 # 4. CallStack
 
----
-
 - stack is a type of data structure (LIFO).
 - CallStack means that since JS is a **single-thread** programming language, so it **only does one thing at one time**, therefore, it needs a way to keep track of the execution context, and that is the callstack.
 
 # 5. Constructor Function
-
----
 
 - Naming convention: starts with Uppercase letter
 - Used with `new` keyword
@@ -89,7 +79,7 @@ Mike says hi.
 John says hi.
 ```
 
-P**roblem**
+**Problem**
 
 使用  `new` 出來的物件擁有各自的記憶體，連 funtion 也變成各自都有
 這樣 `new` 100 個 objects，就會有 100 個 `sayHi` 。將造成不必要的記憶體浪費
@@ -103,15 +93,11 @@ console.log(Mike.sayHi === John.sayHi)  // false
 
 # 6. Prototype
 
----
-
 - Prototype is **a simple reference to another object**; this object contains common properties and methods across all instances
 
 **偏難用，特別牽涉到 inheritance 時，因此 ES6 推出 class** 
 
 # 7. Function Methods
-
----
 
 - Functions are **objects** in JS.
 - functions
@@ -124,9 +110,7 @@ console.log(Mike.sayHi === John.sayHi)  // false
 
 # 8. Class
 
----
-
-## 8.1  What is Class ?
+### 8.1  What is Class ?
 
 - JavaScript classes, introduced in ES6, are primarily syntactical sugar over JavaScript’s existing prototype-based inheritance.
 - The class syntax does not introduce a new object-oriented inheritance model to JavaScript (只是換語法，因此跟 Java 不同)
@@ -154,7 +138,7 @@ let John = new Person("John", 19)
 console.log(Mike.sayHi === John.sayHi)  // true
 ```
 
-## 8.2  Class Inheritance
+### 8.2  Class Inheritance
 
 使用 `extends` 去做繼承
 可以做 `override` ，記憶體也會指向不同地方
@@ -179,6 +163,6 @@ let Jack = new Student("Jack", 23, "CS")
 console.log(Mike.sayHi === Jack.sayHi)  // false
 ```
 
-## 8.3  Static Properties and Methods
+### 8.3  Static Properties and Methods
 
 當一個 class 中的 property 或是 method 設為 static 時，該 property 或 method 屬於 class，而不屬於新增的物件
