@@ -1,31 +1,21 @@
-# Database
-
 # Databases
 
----
+[MySQL - Basics](Database%20f1323/MySQL%20-%20Ba%2065e99.md)
 
-[MySQL - Basics](https://www.notion.so/MySQL-Basics-65e998fcb78f49fcab825401896fc2fe)
+[MongoDB](Database%20f1323/MongoDB%20f863d.md)
 
-[MongoDB](https://www.notion.so/MongoDB-f863d02a57ce4af2ac5a7032bc2e04c5)
-
-[Mongoose](https://www.notion.so/Mongoose-4da55cfdc1dc4a3eb095a99084a5dac0)
+[Mongoose](Database%20f1323/Mongoose%204da55.md)
 
 # What is DBMS ?
-
----
 
 - Stands for Database Management System.
 - It helps us manage our database.
 
 # C.R.U.D
 
----
-
 Create, Read, Update, Delete
 
 # Databases in the world
-
----
 
 - There are many different popular databases in the world.
 - Which one is the best? It depends.
@@ -52,11 +42,9 @@ based on data common to each.
     - 搜尋法: Hash Function (Time Complexity: O(1))
 - Sheet
 
-![sql_vs_nosql.png](Database%202de2b/sql_vs_nosql.png)
+![sql_vs_nosql.png](Database%20f1323/sql_vs_nosql.png)
 
 # Keys
-
----
 
 | Primary Key | 每個表格一定要有一個 primary key，定義了表格的獨特性 |
 | --- | --- |

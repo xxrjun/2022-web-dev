@@ -1,20 +1,16 @@
-# Middlewares and Error Handling
+**Middlewares and Error Handling**
 
-# Middleware
-
----
+## Middleware
 
 - Middlewares are just **functions.**
 - The function inside middleware **gets called every time the server handles a request**. (No matter what kind of request it is.)
 - Middleware function are functions that have access to the request objet (**req**), the response object (**res**), and the **next** middleware function in the application’s request-response cycle. (From Express Documentation)
 
-# Error Handling
-
----
+## Error Handling
 
 Express docs - error handling → [https://devdocs.io/express/guide/error-handling](https://devdocs.io/express/guide/error-handling)
 
-## **Example1 - 一般**
+### **Example1 - 一般**
 
 上面 send 打錯下面就會接到 err
 
@@ -30,7 +26,7 @@ app.use((err, req, res, next) => {
 });
 ```
 
-## Example2 - async function
+### Example2 - async function
 
 然而如果遇到 `async` function，就得用 try catch 並用 next() 將 error 傳下去
 
@@ -48,7 +44,7 @@ app.get('/', function (req, res, next) {
 }
 ```
 
-## Example3 - Validator and findOneAndUpdate Error
+### Example3 - Validator and findOneAndUpdate Error
 
 ```jsx
 app.get('/', async (req, res, next) => {
@@ -65,18 +61,16 @@ app.get('/', async (req, res, next) => {
 });
 ```
 
-# Cookies and Sessions
+## Cookies and Sessions
 
----
-
-## What is cookie ?
+### What is cookie ?
 
 - Cookies are some information we can store in user’s browser (just like local and session storage).
 - Cookies are mainly for reading server-side inly, whereas local and session storage can only be read on the client side.
 - **When we are sending HTTP requests, cookies are part of the request, whereas storage is not.**
 - Cookies are stored in **key-value** pair.
 
-## Cookies in Server
+### Cookies in Server
 
 `res.cookie()`
 
@@ -106,11 +100,11 @@ app.get('/', (req, res) => {
 });
 ```
 
-## Signing a Cookie
+### Signing a Cookie
 
 對 cookie 做簽名(非加密)，若 cookie 被更改過，要求時便會出現 undefined
 
-## Session
+### Session
 
 - There are problems with cookies:
     1. Cookies can only store a small amount of data (approximately 4KB).
@@ -120,7 +114,7 @@ Therefore, we come up with another tool, called sessions.
 
 ## Environment Variable
 
- npm 套件 [dotenv](https://www.npmjs.com/package/dotenv)
+npm 套件 [dotenv](https://www.npmjs.com/package/dotenv)
 
 避免敏感資訊外漏，將敏感資訊如密碼、token 等等資訊存在  `.env`  檔案中並加到 `.gitignore` 中
 
