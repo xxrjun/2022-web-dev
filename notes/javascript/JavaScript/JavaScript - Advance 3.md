@@ -1,10 +1,8 @@
-# JavaScript - Advance 3
+**JavaScript - Advance 3**
 
 本章為零散但必須認識的小章節
 
 ## 1. How to make a copy of an array
-
----
 
 ```jsx
 let arr1 = ['a', 'b', 'c']
@@ -16,13 +14,9 @@ let arr3 = [...arr3]  // deep copy : 複製出一個新物件
 
 ## 2. Higher Order Function
 
----
-
 - Higher Order function means a function that takes a function as a parameter.
 
 ## 3. Default Parameter
-
----
 
 設置 default parameter 預防 `undefined`
 
@@ -48,8 +42,6 @@ console.log(mutiply())  // NaN
 
 ## 4. Back-tick
 
----
-
 using ```` 避免輸出字串時放入一堆 `+`
 裡面的變數要用 `${}` 包起來
 
@@ -62,8 +54,6 @@ console.log(`Hi, my name is ${myName}`)  //Hi, my name is rjun
 
 ## 5. Strong and Weak Typing
 
----
-
 這裡的 typing 是指 **data type.**
 
 - **Strongly Typed** **宣告時就要決定 data type**
@@ -73,14 +63,10 @@ console.log(`Hi, my name is ${myName}`)  //Hi, my name is rjun
 
 ## 6. Floating point
 
----
-
 - 電腦是二進制，沒辦法把小數點表示得非常精確
 - 因此要比較兩小數時可以透過 `toFix()` 決定位數以達到較為準確的比較
 
 ## 7. IIFE
-
----
 
 IIFE means **Immediately Invoked Function Expression**
 
@@ -97,8 +83,6 @@ IIFE means **Immediately Invoked Function Expression**
 ```
 
 ## 8. Destructing an Object
-
----
 
 提取物件中的資料，使用 `let{} =` 可以一次提取多個
 
@@ -117,8 +101,6 @@ console.log("rjun's name is " + myName + " and the age is " + myAge)
 ```
 
 ## 9. Switch expression
-
----
 
 **Syntax**
 
