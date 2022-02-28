@@ -40,7 +40,7 @@ based on data common to each.
     - 搜尋法: Hash Function (Time Complexity: O(1))
 - Sheet
 
-![sql_vs_nosql.png](Database%20f1323/sql_vs_nosql.png)
+![sql_vs_nosql.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/sql_vs_nosql.png)
 
 # Keys
 
