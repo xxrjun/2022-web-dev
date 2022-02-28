@@ -62,7 +62,7 @@
 arr = ['a', 'b', 'c']
 ```
 
-## Spread Operators and Rest Parameters
+### 1.3  Spread Operators and Rest Parameters
 
 - `...` is a spread operator
 - The rest parameter syntax allow us to represent an indefinite number of arguments as an array.
@@ -102,7 +102,7 @@ console.log(isNaN(res))  // true
 - Primitive Data Types means that they are not objects, and they don’t have its own properties and methods
 - Also, these primitive data types container variables do own the value, not just a reference to the memory.
 
-#### Why do primitive still own properties and methods ?
+Why do primitive still own properties and methods ?
 
 - We stated that primitive don’t have properties and methods, but apparently, we still access properties and use methods. Why is that possible ? (ex. A string can use .length to get the property and toLowerCase() function)
 - JavaScript has a property called **coercion**, when it comes to primitives; it silently **converts the primitive to an object** and then accesses the prototype method of the newly constructed object.
