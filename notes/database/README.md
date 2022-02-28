@@ -1,10 +1,8 @@
 # Databases
 
-[MySQL - Basics](Database%20f1323/MySQL%20-%20Ba%2065e99.md)
-
-[MongoDB](Database%20f1323/MongoDB%20f863d.md)
-
-[Mongoose](Database%20f1323/Mongoose%204da55.md)
+* [**MySQL - Basics**](Database%20f1323/MySQL%20-%20Ba%2065e99.md)
+* [**MongoDB**](Database%20f1323/MongoDB%20f863d.md)
+* [**Mongoose**](Database%20f1323/Mongoose%204da55.md)
 
 # What is DBMS ?
 
