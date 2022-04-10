@@ -2,9 +2,13 @@
 # 1. In HTML, All Tags are Objects
 ### Objects = Attributes + Methods
 # 2. 好用套件
-1. **Live Server** : 不用每次都要f5
-2. **DeskPin** : 釘選網頁在上方
-3. **Auto Rename Tag**
+1. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) : 存檔自動重整網頁，不用每次都要 f5
+2. [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) : Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.
+3. [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) : 程式碼自動對齊排版
+4. [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) : 讓程式碼分層較明顯
+5. [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets) : 新增快捷語
+6. [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) : sass 檔案存檔會自動重整網頁
+
 # 3. HTML Skeleton
 ### head tag : 網頁背後設定與編碼
 ### body tag : 網頁呈現內容
