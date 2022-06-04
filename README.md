@@ -60,7 +60,7 @@ Thanks Wilson Ren for this amazing course on Udemy!
 ### [**Project 3 Portfolio**](https://github.com/xxrjun/2022-web-development/tree/main/project3-portfolio)  
 - Basic HTML / CSS / Javascript / RWD  
 - Include project1, project2,project3 and project4     
-- Online website: https://rjun.netlify.app/
+- Online website: [https://rjun.netlify.app/](https://rjun-portfolio.netlify.app/)
 
 ### [**Project 4 TodoList**](https://github.com/xxrjun/2022-web-development/tree/main/project4-todoList)  
 - HTML / CSS / Javascript / RWD
