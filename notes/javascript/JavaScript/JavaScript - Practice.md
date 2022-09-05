@@ -1,13 +1,13 @@
-**JavaScript - Practice**
+# JavaScript - Practice
 
-# 下載 Code Runner and Node.js
+## 下載 Code Runner and Node.js
 
 Download the `Code Runner` extension from VS Code. This extension allows you to run JavaScript code with only one click.
 
 Also, download `Node.js` from [https://nodejs.org/en/](https://nodejs.org/en/)
 and choose the LTS version so that the code runner can run JavaScript code.
 
-# Practice
+## Practice
 
 ### 31 題
 

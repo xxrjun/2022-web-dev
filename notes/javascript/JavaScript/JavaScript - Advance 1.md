@@ -1,13 +1,13 @@
-**JavaScript - Advance 1**
+# JavaScript - Advance 1
 
-# What is JavaScript
+## What is JavaScript
 
 - JavaScript 並不是由任何語言並不是由任何語言所寫成。
   它只是一個由 ECMA 制定的標準。
 - 最有名的更新在 2015，ES6 (ECMA Script 6)
 - 每個瀏覽器都有各自的 JS 引擎。引擎專門理解與處理 JavaScript 的程式碼
 
-# 1. 串接陣列
+## 1. 串接陣列
 
 ### 1.1 在 Js 如何串接陣列
 
@@ -59,7 +59,7 @@ arr = ["a", "b", "c"];
 - `...` is a spread operator
 - The rest parameter syntax allow us to represent an indefinite number of arguments as an array.
 
-# 2. NaN and Infinity
+## 2. NaN and Infinity
 
 - `NaN` is a number (data type)
 - `Infinity` is a number (data type)
@@ -87,7 +87,7 @@ let res = 0 / 0;
 console.log(isNaN(res)); // true
 ```
 
-# 3. Primitive and Reference
+## 3. Primitive and Reference
 
 ### 3.1 Primitive Data Type
 
@@ -105,7 +105,7 @@ Why do primitive still own properties and methods ?
 - Objects and Array are reference data type.
 - Variable that are assigned a non-primitive value are given a reference to that value. That reference points to the object’s location in memory. The variables don’t actually contain the value.
 
-# 4. Advanced Array Functions
+## 4. Advanced Array Functions
 
 `map()`
 
@@ -151,7 +151,7 @@ Why do primitive still own properties and methods ?
   ); // [ 125, 120, 51, 41, 25, 12 ]
   ```
 
-# 5. More For Loop
+## 5. More For Loop
 
 - 前面學了 for loop 以及 forEach ，現在就來學第三種以及第四種
 

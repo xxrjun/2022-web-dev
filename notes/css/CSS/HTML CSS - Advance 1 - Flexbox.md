@@ -1,13 +1,14 @@
-**HTML / CSS - Advance 1 - Flexbox**
+# HTML / CSS - Advance 1 - Flexbox
+
 **[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)**
 
-# 1. Flex Direction
+## 1. Flex Direction
 
 - `display: flex;`
 - `flex-direction:`
   - `row` (default)、 `column` 、 `row-reverse` 、 `column-reverse`
 
-# 2. Flex 設定重點整理
+## 2. Flex 設定重點整理
 
 ### Flex container
 
@@ -28,6 +29,7 @@
 - `flex-shrink` 設定縮小倍率
 - `flex-basis` 設定 min width
 - 上面三兄弟簡化
+
   ```css
   /* grow shrink basis */
   flex: 1 1 200px;
@@ -38,7 +40,7 @@
   flex-basis: 1;
   ```
 
-# 3. Positions in Flex
+## 3. Positions in Flex
 
 ### justify-content
 
@@ -75,7 +77,7 @@ align-items: flex-start; /* Pack flex items from the start */
 align-items: flex-end; /* Pack flex items from the end */
 ```
 
-# 4. Flex grow 計算
+## 4. Flex grow 計算
 
 - 假設今天有一個 `width=1000px` 的 container  
    裡面有兩個 boxes

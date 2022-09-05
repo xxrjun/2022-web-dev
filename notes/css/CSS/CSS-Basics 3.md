@@ -1,6 +1,6 @@
-**CSS-Basics 3**
+# CSS-Basics 3
 
-# 1. Styling
+## 1. Styling
 
 ### 1.1 CSS Default Styling
 
@@ -38,7 +38,7 @@
 - `width`
 - `height`
 
-# 2. Opacity and Cursor Pointer
+## 2. Opacity and Cursor Pointer
 
 ### 2.1 Opacity
 
@@ -61,7 +61,7 @@ cursor: grab;
 cursor: zoom-out;
 ```
 
-# 3. Transition
+## 3. Transition
 
 **CSS [transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition#constituent_properties)** provide a way to control animation speed when changing CSS properties.
 
@@ -135,7 +135,7 @@ rotateZ()
 transform: rotateZ(30deg);
 ```
 
-# 4. Animation
+## 4. Animation
 
 [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
@@ -178,7 +178,7 @@ transform: rotateZ(30deg);
 animation: cross 1s ease-in infinite alternate;
 ```
 
-# 5. Other Topics in CSS
+## 5. Other Topics in CSS
 
 ### 5.1 border-radius
 
@@ -187,6 +187,7 @@ animation: cross 1s ease-in infinite alternate;
 - 跟 margin、padding 一樣有多種寫法，有分上下左右
 - `border-radius:50%` 就可以變圓形
 - **Example**
+
   ```css
   border-radius: 1em / 5em;
 

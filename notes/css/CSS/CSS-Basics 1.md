@@ -1,6 +1,6 @@
-**CSS-Basics 1**
+# CSS-Basics 1
 
-# 1. CSS (Cascading Style Sheets)
+## 1. CSS (Cascading Style Sheets)
 
 - 沒必要認識全部的 CSS 屬性，認識常用以及實用的屬性即可
 - CSS Syntax
@@ -10,7 +10,7 @@
   }
   ```
 
-# 2. CSS 程式碼放置位置
+## 2. CSS 程式碼放置位置
 
 ### 2.1 Inline Styling
 
@@ -49,7 +49,7 @@ h1 {
 <link rel="stylesheet" href="./style.css" />
 ```
 
-# 3. Optional：電腦儲存顏色的方式
+## 3. Optional：電腦儲存顏色的方式
 
 電腦儲存資料是以 `Binary Digit` ( bit = 0, 1)
 1 byte = 8 bits
@@ -70,7 +70,7 @@ R = 1 byte ; G = 1 byte ; B = 1 byte
   Colors : [https://coloors86.netlify.app/](https://coloors86.netlify.app/)
   HTML Color Names : [https://www.w3schools.com/tags/ref_colornames.asp](https://www.w3schools.com/tags/ref_colornames.asp)
 
-# 4. CSS Selectors
+## 4. CSS Selectors
 
 MND - CSS selectors : [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
 
@@ -235,7 +235,7 @@ p {
 
 3. **More pseudo-elements** →[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)
 
-# 5. CSS Styling Rules
+## 5. CSS Styling Rules
 
 ### Rule 1 : Cascade
 
@@ -260,7 +260,7 @@ CSS 屬性分成
 
 `inline styling` > `id` > `class` > `element selector` > `inheritance`
 
-# 6. Text Styling
+## 6. Text Styling
 
 - `font-size:` (units in CSS)
   - 瀏覽器預設 `16px`
@@ -281,7 +281,7 @@ CSS 屬性分成
   - 預設 `400px`
 - `text-indent:`
 
-# 7. Background
+## 7. Background
 
 - `background:` 為以下兩個的簡寫
   - `background-color:`

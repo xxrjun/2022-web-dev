@@ -1,4 +1,4 @@
-**JavaScript - Advance 3**
+# JavaScript - Advance 3
 
 本章為零散但必須認識的小章節
 

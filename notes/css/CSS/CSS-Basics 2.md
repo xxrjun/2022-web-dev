@@ -1,6 +1,6 @@
-**CSS-Basics 2**
+# CSS-Basics 2
 
-# 1. CSS Box Model
+## 1. CSS Box Model
 
 [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)
 
@@ -90,7 +90,7 @@ height: auto;
 | vw  | viewport width (相對於視窗大小的 width)                   |
 | vh  | viewport height (相對於視窗大小 height)                   |
 
-# 2. Elements Attributes
+## 2. Elements Attributes
 
 ### 2.1 Display Types
 
@@ -108,7 +108,7 @@ height: auto;
 
 ![block+and+inline.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202/blockandinline.png)
 
-# 3. CSS [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+## 3. CSS [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
 ### 3.1 Syntax
 

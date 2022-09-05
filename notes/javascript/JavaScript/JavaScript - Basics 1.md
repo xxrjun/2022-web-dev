@@ -1,6 +1,6 @@
-**JavaScript - Basics 1**
+# JavaScript - Basics 1
 
-# 如何在 html 檔案中使用 JavaScript ?
+## 如何在 html 檔案中使用 JavaScript ?
 
 創建一個 `.js` 檔案，範例為 `test.js`
 
@@ -12,7 +12,7 @@
 
 即可完成 html 檔案與 js 檔案的串接
 
-# 1. 常見 Js 函數
+## 1. 常見 Js 函數
 
 `console.log()`
 
@@ -20,13 +20,13 @@
 
 `prompt()` ：可以讓使用者輸入
 
-# 2. Variables in Js
+## 2. Variables in Js
 
 `=` : assignment
 
 ![variables.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201/variables.png)
 
-# 3. Numbers Operators
+## 3. Numbers Operators
 
 | +, -, \*, /     |
 | --------------- |
@@ -35,7 +35,7 @@
 | ++, --          |
 | +=, -=, \*+, /= |
 
-# 4. Strings
+## 4. Strings
 
 ### 文字 string
 
@@ -50,7 +50,7 @@ string concatenation ： `+` ; 沒辦法像 python 一樣使用 `*` ，也不能
 1. number ⇒ string
 2. - ⇒ string
 
-# 5. Comments
+## 5. Comments
 
 1. `//` : one line comments
 2. `/* */` : multiple lines comments
@@ -58,7 +58,7 @@ string concatenation ： `+` ; 沒辦法像 python 一樣使用 `*` ，也不能
 
 小功能：將要設為 comments 的行全部選取按 `ctrl + /` 就可以全部 comment
 
-# 6. Primitive Data Types
+## 6. Primitive Data Types
 
 Primitive data types with common functions or other easy things
 

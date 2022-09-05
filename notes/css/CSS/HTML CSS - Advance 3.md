@@ -1,6 +1,6 @@
-**HTML / CSS - Advance 3**
+# HTML / CSS - Advance 3
 
-# 1. Accessibility
+## 1. Accessibility
 
 `f12` → `accessibility`
 
@@ -30,7 +30,7 @@
 
 將滑鼠移到物件上就會顯示 `title=` 的內容
 
-# 2. Sticky Header
+## 2. Sticky Header
 
 可以到 [\*\*CSS Tricks](https://css-tricks.com/)\*\* 找到很多酷技巧
 
@@ -48,7 +48,7 @@ header {
 }
 ```
 
-# 3. Scrollbar
+## 3. Scrollbar
 
 客製化 scrollbar → [https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
 
@@ -78,7 +78,7 @@ header {
 }
 ```
 
-# 4. Height with percentage
+## 4. Height with percentage
 
 **Problem**
 
@@ -98,7 +98,7 @@ html {
 
 ⇒ 要先設定祖先的高度才可以用 `%` 的方式成功表示
 
-# 5. Scale Image Effect
+## 5. Scale Image Effect
 
 先把 `img` 放入一個 container
 

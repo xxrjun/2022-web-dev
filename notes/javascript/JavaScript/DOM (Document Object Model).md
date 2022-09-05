@@ -1,6 +1,6 @@
-**DOM (Document Object Model)**
+# DOM (Document Object Model)
 
-# Intro
+## Intro
 
 ### Why do we learn DOM ?
 
@@ -17,7 +17,7 @@
   - **It takes long time to render JS code. (We want to show something to user first)**
   - **Browser has to read all HTML and CSS before using DOM.**
 
-# 1. Window Object
+## 1. Window Object
 
 **The Window Object - w3school** → [https://www.w3schools.com/jsref/obj_window.asp](https://www.w3schools.com/jsref/obj_window.asp)
 
@@ -54,7 +54,7 @@
 
 - 進入本章重點
 
-# 2. What exactly is DOM ?
+## 2. What exactly is DOM ?
 
 - **Document is an Object.** (Also a property of window object.)
 - **Document means the HTML document**.
@@ -80,7 +80,7 @@
   - 只會 return 第一個滿足 css selector 條件的 html elements
   - return a NodeList, not an Array
 
-# 3. Arrow Function Expression
+## 3. Arrow Function Expression
 
 - Js 中, function declaration 不一定要在使用的 code 上面 ([hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting))
   但 arrow function expression 有順序之分
@@ -112,6 +112,7 @@ sayHi("rjun");
 - 在 arrow function expression 裡面的 `this` 指的是 `Window` Object.
 - 因此通常通常在 Object 內不會使用 arrow function expression
 - **Example**
+
   ```jsx
   // this keyword
   let person = {
@@ -127,13 +128,15 @@ sayHi("rjun");
   person.func();
   person.arrowFunc();
   ```
+
   console
+
   ```jsx
   Object { name: "rjun", func: func(), arrowFunc: arrowFunc()}
   Window http://127.0.0.1:5500/index.html
   ```
 
-# 4. forEach Function
+## 4. forEach Function
 
 ### 4.1 What is **CallBack function ?**
 
@@ -143,14 +146,17 @@ function to execute on each element (array item).
 
 - **forEach function takes one parameter - function**
 - **Example**
+
   ```jsx
   let nums = [215, 12, 512, 24, 56, 1, 7, 91];
   nums.forEach(function checkedNum(n) {
     if (n > 20) console.log(n);
   });
   ```
+
   forEach 內的 function 會自動執行，因此我們不需要設定 function 的名稱 (anonymous function)
   也因此可以搭配 arrow function expression
+
   ```jsx
   // 搭配 arrow function expression
   let nums = [215, 12, 512, 24, 56, 1, 7, 91];
@@ -158,7 +164,9 @@ function to execute on each element (array item).
     if (n > 20) console.log(n);
   });
   ```
+
   也可以先在外面定義好 function 直接丟到 `forEach()` 裡
+
   ```jsx
   // forEach
   let nums = [215, 12, 512, 24, 56, 1, 7, 91];
@@ -169,12 +177,12 @@ function to execute on each element (array item).
   }
   ```
 
-# 5. Array, HTMLCollection and NodeList
+## 5. Array, HTMLCollection and NodeList
 
 - **Array**, **HTMLCollection** and **NodeList** are similar ( `index` and `length` properties)
 - **Arra**y and **NodeList** can use `forEach` method, but **HTMLCollection** cannot.
   這也是為什麼現在大家多用 NodeList 而非 HTMLCollection. - 例如：取得所有 class 為 second 的 object
-          使用 `getElementsByClassName()` ，現少用
+  使用 `getElementsByClassName()` ，現少用
 
           ```jsx
           // HTMLCollection
@@ -188,24 +196,23 @@ function to execute on each element (array item).
           let secondElement = document.querySelectorAll("second")
           ```
 
-
-# 6. Element Object
+## 6. Element Object
 
 - Different HTML element might have its own methods and property.
 - **All HTML element must have properties and methods from this list**
-  | addEventListener()                                |
+  | addEventListener() |
   | ------------------------------------------------- |
-  | appendChild()                                     |
-  | children                                          |
-  | childNode                                         |
+  | appendChild() |
+  | children |
+  | childNode |
   | classList (add(), remove(), toggle(), contains()) |
-  | getAttribute()                                    |
-  | innerHTML, innerText                              |
-  | parentElement                                     |
-  | querySelector()                                   |
-  | querySelectorAll()                                |
-  | remove()                                          |
-  | style                                             |
+  | getAttribute() |
+  | innerHTML, innerText |
+  | parentElement |
+  | querySelector() |
+  | querySelectorAll() |
+  | remove() |
+  | style |
 
 ### 6.1 Children and ChildNode
 
@@ -241,12 +248,12 @@ function to execute on each element (array item).
   button.style.color = "white";
   ```
 
-# 7. Inheritance in DOM
+## 7. Inheritance in DOM
 
 - All HTML elements inherit properties and methods from “element object.
 - But some of them have its own methods.
 
-# 8. Events
+## 8. Events
 
 ### 8.1 JS Events Introduction
 
@@ -269,7 +276,7 @@ function to execute on each element (array item).
 | preventDefault()  | 如果事件可以被取消，就取消事件的預設行為。但不會影響事件的傳遞，事件仍會繼續傳遞 |
 | stopPropagation() | 停止 bubble                                                                      |
 
-# 9. Event Bubbling
+## 9. Event Bubbling
 
 若內外層都有 add 一樣 的 event listener ，內層啟動 event 會使外層也啟動 event，會像 bubble 一樣擴散到最外層。不過外層不會影響內層
 
@@ -297,7 +304,7 @@ b.addEventListener("click", (e) => {
 });
 ```
 
-# 10. Dynamic Header
+## 10. Dynamic Header
 
 學會一點 event 後就可以來製作 dynamic header 了。要用到的有
 
@@ -325,7 +332,7 @@ window.addEventListener("scroll", () => {
 });
 ```
 
-# 11. Local Storage and Session Storage
+## 11. Local Storage and Session Storage
 
 ### 11.1 What is Web Storage
 

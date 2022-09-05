@@ -1,6 +1,6 @@
-**JavaScript - Basics 2**
+# JavaScript - Basics 2
 
-# 1. Logical Operators
+## 1. Logical Operators
 
 Returns a Boolean value
 
@@ -9,7 +9,7 @@ Returns a Boolean value
 | == 、!=    | 只比較 value       |
 | && 、      |                    |     |     |
 
-# 2. If statement and condition
+## 2. If statement and condition
 
 **補充**
 
@@ -30,7 +30,7 @@ if (a > 10) {
 }
 ```
 
-# 3. Truthy and Falsy Values
+## 3. Truthy and Falsy Values
 
 ### Falsy Value is considered to be `false` when encountered in Boolean context.
 
@@ -43,7 +43,7 @@ if (a > 10) {
 
 除此 6 個外都是 truthy value
 
-# 4. Variable Naming Convention and Restriction
+## 4. Variable Naming Convention and Restriction
 
 ### 4.1 Naming convention
 
@@ -60,7 +60,7 @@ if (a > 10) {
   - hyphen `-` 是留給減法用的所以不能用在 variable naming
 - cannot using reserved words in Js
 
-# 5. Array
+## 5. Array
 
 1. is a special type of object, not a primitive type.
 2. comes in handy when you need to store data together.
@@ -75,7 +75,7 @@ if (a > 10) {
 | shift()   | 減少最前一個     |
 | unshift() | 增加一個在最前面 |
 
-# 6. Function
+## 6. Function
 
 - A function in JavaScript is similar to a procedure - a set of statements that perform a task or calculate a value
 - There are JS built-in functions, and you can create your own functions too.
@@ -92,7 +92,7 @@ num = plusTen(5);
 console.log(num);
 ```
 
-# 7. Object
+## 7. Object
 
 ### 7.1 Object Property and Method
 
@@ -132,7 +132,7 @@ otherwise, it refers to the window object.
 console.log(typeof person); // object
 ```
 
-# 8. Loops
+## 8. Loops
 
 ### 8.1 Loops
 

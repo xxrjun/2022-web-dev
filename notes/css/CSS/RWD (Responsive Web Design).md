@@ -1,10 +1,10 @@
-**RWD (Responsive Web Design)**
+# RWD (Responsive Web Design)
 
-# 網頁範本
+## 網頁範本
 
 [https://html5up.net/](https://html5up.net/)
 
-# RWD 原則
+## RWD 原則
 
 - 能用 flexbox 就用 flexbox 處理
 - 不能用 flexbox 就用 `media query` 處理
@@ -17,6 +17,6 @@
   }
   ```
 
-# Bootstrap
+## Bootstrap
 
 [https://getbootstrap.com/](https://getbootstrap.com/)

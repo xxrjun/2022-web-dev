@@ -1,6 +1,6 @@
-**HTML-Basics 2**
+# HTML-Basics 2
 
-# 1. Form 表單
+## 1. Form 表單
 
 ### 1.1 表單**會與後端 database 做連結**
 
@@ -36,7 +36,7 @@
 myForm.html?InputName=Panda&InputTele=0000
 ```
 
-# 2. `input` tag
+## 2. `input` tag
 
 ### 2.1 Types
 
@@ -107,7 +107,7 @@ myForm.html?InputName=Panda&InputTele=0000
 | value                 | 一定要: radio 、 range... |
 | 不一定要： text...    |
 
-# 3. `select` tag
+## 3. `select` tag
 
 - `select` 中有 `option`
 - 第一行加入 `<option></option>` 避免預設
@@ -122,7 +122,7 @@ myForm.html?InputName=Panda&InputTele=0000
 </select>
 ```
 
-# 4. `datalist` and `textarea`
+## 4. `datalist` and `textarea`
 
 ### 4.1 `datalist`
 
@@ -148,7 +148,7 @@ myForm.html?InputName=Panda&InputTele=0000
 <textarea id="suggestion" name="suggestion" rows="10" cols="30" placeholder="謝謝您提供建議！"></textarea>
 ```
 
-# 5. Other HTML Ideas
+## 5. Other HTML Ideas
 
 - **comment**
   - 在 html 中的註解 `<!-- -->`
@@ -175,7 +175,7 @@ myForm.html?InputName=Panda&InputTele=0000
   - Self-closing tags represent **void elements.**
     Void elements like `br` or `img` cannot contain any contents.
 
-# 熊貓問卷調查 Code
+## 熊貓問卷調查 Code
 
 ```html
 <!DOCTYPE html>
