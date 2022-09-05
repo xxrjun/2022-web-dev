@@ -37,7 +37,7 @@ Here's time out!
 
 **我們希望事件可以依照我們要求的順序執行**，這種時候就會發生 **Callback Hell**
 
-![callbackhell.gif](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs)/callbackhell.gif)
+![callbackhell.gif](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs)/callbackhell.gif>)
 
 為了解決這種狀況，有四種解決方法
 
@@ -52,7 +52,6 @@ Here's time out!
 
 ![Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png)
 
-
 # 4. What is API ?
 
 - API stands for Application Programming Interface.
@@ -62,25 +61,20 @@ Here's time out!
 
 - 範例 jokeAPI→ [https://sv443.net/jokeapi/v2/](https://sv443.net/jokeapi/v2/)
 - **example**
-    
-    Red: endpoint; Blue: path; Orange: query
-    
-    ```
-    https://v2.jokeapi.dev/joke/Programming?type=single
-    ```
-    
+  Red: endpoint; Blue: path; Orange: query
+  ```
+  https://v2.jokeapi.dev/joke/Programming?type=single
+  ```
 - **example - get Joke**
-    
-    ```jsx
-    async function getJoke() {
-      let joke = await fetch('https://v2.jokeapi.dev/joke/Programming?type=single');
-      let parseData = await joke.json();
-      console.log(parseData.joke);
-    }
-    
-    getJoke();
-    ```
-    
+  ```jsx
+  async function getJoke() {
+    let joke = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
+    let parseData = await joke.json();
+    console.log(parseData.joke);
+  }
+
+  getJoke();
+  ```
 
 ### Endpoints
 
@@ -90,7 +84,7 @@ JokeAPI offers these following endpoints:
 
 # 6. Postman
 
-link →  [https://www.postman.com/](https://www.postman.com/)
+link → [https://www.postman.com/](https://www.postman.com/)
 
 Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
 
@@ -124,12 +118,12 @@ trouble → see next
 OpenWeather API
 
 ```jsx
-const express = require('express');
+const express = require("express");
 const app = express();
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
 // api key
-let myKey = '1e7b802bb9013ce9246c047bfd098383';
+let myKey = "1e7b802bb9013ce9246c047bfd098383";
 
 // k to cel
 function KtoC(k) {
@@ -137,15 +131,15 @@ function KtoC(k) {
 }
 
 // midlleware
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
+app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 // routing
-app.get('/', (req, res) => {
-  res.render('index.ejs');
+app.get("/", (req, res) => {
+  res.render("index.ejs");
 });
 
-app.get('/:city', async (req, res) => {
+app.get("/:city", async (req, res) => {
   let { city } = req.params;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myKey}`;
 
@@ -154,10 +148,10 @@ app.get('/:city', async (req, res) => {
   console.log(djs);
   let { temp } = djs.main;
   let newTemp = KtoC(temp);
-  res.render('weather.ejs', { djs, newTemp });
+  res.render("weather.ejs", { djs, newTemp });
 });
 
 app.listen(3000, () => {
-  console.log('Server is running on port 3000.');
+  console.log("Server is running on port 3000.");
 });
 ```

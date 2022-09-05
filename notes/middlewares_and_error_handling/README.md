@@ -15,14 +15,14 @@
 上面 send 打錯下面就會接到 err
 
 ```jsx
-app.get('/', (req, res) => {
-  res.sends('This is homepage.');
+app.get("/", (req, res) => {
+  res.sends("This is homepage.");
 });
 
 //error handling
 app.use((err, req, res, next) => {
   console.log(err);
-  res.status(500).send('Something is broken. We will fix it soon.');
+  res.status(500).send("Something is broken. We will fix it soon.");
 });
 ```
 
@@ -47,14 +47,10 @@ app.get('/', function (req, res, next) {
 ### Example3 - Validator and findOneAndUpdate Error
 
 ```jsx
-app.get('/', async (req, res, next) => {
+app.get("/", async (req, res, next) => {
   try {
-    await Fruit.findOneAndUpdate(
-      { type: 'apple' },
-      { type: 'watermelon' },
-      { new: true, runValidators: true },
-    );
-    res.send('Data has been update.');
+    await Fruit.findOneAndUpdate({ type: "apple" }, { type: "watermelon" }, { new: true, runValidators: true });
+    res.send("Data has been update.");
   } catch (e) {
     next(e);
   }
@@ -75,28 +71,28 @@ app.get('/', async (req, res, next) => {
 `res.cookie()`
 
 ```jsx
-app.get('/', (req, res) => {
-  res.cookie('name', 'rjun');
-  res.send('Welcome to Home Page.');
+app.get("/", (req, res) => {
+  res.cookie("name", "rjun");
+  res.send("Welcome to Home Page.");
 });
 ```
 
 `req.cookies()` ，需要 `cookie-parser`
 
 ```jsx
-var cookieParser = require('cookie-parser');
+var cookieParser = require("cookie-parser");
 
 app.use(cookieParser());
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   // Cookies that have not been signed
-  console.log('Cookies: ', req.cookies);
+  console.log("Cookies: ", req.cookies);
 
   // Cookies that have been signed
-  console.log('Signed Cookies: ', req.signedCookies);
+  console.log("Signed Cookies: ", req.signedCookies);
 
   let { name } = req.cookies;
-  res.send(name + ', welcome to homepage.');
+  res.send(name + ", welcome to homepage.");
 });
 ```
 
@@ -107,8 +103,8 @@ app.get('/', (req, res) => {
 ### Session
 
 - There are problems with cookies:
-    1. Cookies can only store a small amount of data (approximately 4KB).
-    2. We cannot store important data, since it might be hacked on the way of transition.
+  1. Cookies can only store a small amount of data (approximately 4KB).
+  2. We cannot store important data, since it might be hacked on the way of transition.
 
 Therefore, we come up with another tool, called sessions.
 
@@ -116,9 +112,9 @@ Therefore, we come up with another tool, called sessions.
 
 npm 套件 [dotenv](https://www.npmjs.com/package/dotenv)
 
-避免敏感資訊外漏，將敏感資訊如密碼、token 等等資訊存在  `.env`  檔案中並加到 `.gitignore` 中
+避免敏感資訊外漏，將敏感資訊如密碼、token 等等資訊存在 `.env` 檔案中並加到 `.gitignore` 中
 
-使用方法 `proccess.env.YOUR_DATA` 
+使用方法 `proccess.env.YOUR_DATA`
 
 ## Flash
 

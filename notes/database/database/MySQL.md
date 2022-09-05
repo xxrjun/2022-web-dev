@@ -2,39 +2,31 @@
 
 # 1. Download MySQL and PopSQL
 
----
-
 - MySQL Community Server → [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
 - 用 PopSQL 控制 database → [https://popsql.com/](https://popsql.com/)
 - macOS 登入 → [https://www.itread01.com/p/1194830.html](https://www.itread01.com/p/1194830.html)
 
 # 2. MySQL Data Types
 
----
-
 - Common Data types
-    
-    ```sql
-    -- common SQL data types
-    INT
-    DECIMAL(p, s) -- p: total digits, s: digits after the dot
-    VARCHAR(size) -- characters
-    DATE -- 'YYYY-MM-DD'
-    ```
-    
+  ```sql
+  -- common SQL data types
+  INT
+  DECIMAL(p, s) -- p: total digits, s: digits after the dot
+  VARCHAR(size) -- characters
+  DATE -- 'YYYY-MM-DD'
+  ```
 - Other MySQL Data Types → [https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
 
 # 3. Tables
 
----
+### 3.1 Create and Drop a Table
 
-### 3.1  Create and Drop a Table
-
-| create table |
-| --- |
-| DROP |
-| DESCRIBE |
-| DEFAULT |
+| create table   |
+| -------------- |
+| DROP           |
+| DESCRIBE       |
+| DEFAULT        |
 | AUTO_INCREMENT |
 
 ```sql
@@ -51,11 +43,11 @@ create table employees(
 DESCRIBE employees;
 ```
 
-### 3.2  Insertion
+### 3.2 Insertion
 
 | INSERT INTO |
-| --- |
-| VALUES |
+| ----------- |
+| VALUES      |
 
 兩種 insert 方式
 
@@ -72,12 +64,12 @@ INSERT INTO employees(employeeName, age, salary) VALUES ("Mike", 40, 4000);
 SELECT * FROM employees;
 ```
 
-### 3.3  Update
+### 3.3 Update
 
 | UPDATE |
-| --- |
-| SET |
-| WHERE |
+| ------ |
+| SET    |
+| WHERE  |
 
 兩種 update 的方式
 
@@ -88,7 +80,7 @@ UPDATE employees  SET employeeID = 107 WHERE employeeName = "Oliver Perez"
 UPDATE employees SET salary = 2000 WHERE salary = 1500
 ```
 
-### 3.4  Delete
+### 3.4 Delete
 
 刪除特定資料
 
@@ -102,15 +94,15 @@ DELETE FROM employeses WHERE employID = 107;
 DELETE FROM employees;
 ```
 
-### 3.5  Query
+### 3.5 Query
 
-| SELECT |
-| --- |
-| FROM |
-| WHERE |
-| LIMIT |
+| SELECT   |
+| -------- |
+| FROM     |
+| WHERE    |
+| LIMIT    |
 | ORDER BY |
-| DESC |
+| DESC     |
 
 **Example**
 

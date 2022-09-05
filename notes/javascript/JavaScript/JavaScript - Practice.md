@@ -18,9 +18,9 @@ and choose the LTS version so that the code runner can run JavaScript code.
 ### JS swap
 
 ```jsx
-const a = ['a', 'b', 'c', 'e', 'd'];
+const a = ["a", "b", "c", "e", "d"];
 
-[a[3], a[4]] = [a[4], a[3]]
+[a[3], a[4]] = [a[4], a[3]];
 ```
 
 ### flatten
@@ -45,19 +45,20 @@ function flatten(arr) {
 
 ```jsx
 function quickSort(arr, low, high) {
-  if (low >= high)
-    return;
+  if (low >= high) return;
   else {
     let l_cur = low;
     let r_cur = high;
     let pivot = arr[l_cur];
     while (l_cur != r_cur) {
       // 先從 r_cur 動。把小的丟左邊，大的丟右邊
-      while (l_cur < r_cur && arr[r_cur] > pivot) // 遇小停
+      while (l_cur < r_cur && arr[r_cur] > pivot)
+        // 遇小停
         r_cur--;
-      while (l_cur < r_cur && arr[l_cur] <= pivot) // 遇大停
+      while (l_cur < r_cur && arr[l_cur] <= pivot)
+        // 遇大停
         l_cur++;
-      
+
       if (l_cur < r_cur) {
         [arr[l_cur], arr[r_cur]] = [arr[r_cur], arr[l_cur]];
       }

@@ -2,15 +2,11 @@
 
 # What is EJS ?
 
----
-
 - EJS stands for Embedded JavaScript.
 - EJS is a **simple templating language** that lets you generate HTML markup with plain JavaScript.
 - It’s a module in npm.
 
 # Related Links
-
----
 
 - [npm - ejs](https://www.npmjs.com/package/ejs)
 - [EJS Docs](https://ejs.co/#docs)
@@ -18,15 +14,11 @@
 
 # I**nstallation**
 
----
-
 ```bash
 $ npm install ejs
 ```
 
 # **Features**
-
----
 
 - Control flow with `<% %>`
 - Escaped output with `<%= %>` (escape function configurable)
@@ -42,19 +34,15 @@ $ npm install ejs
 
 # **Example**
 
----
-
 ```html
 <% if (user) { %>
-  <h2><%= user.name %></h2>
+<h2><%= user.name %></h2>
 <% } %>
 ```
 
 Try EJS online at: [https://ionicabizau.github.io/ejs-playground/](https://ionicabizau.github.io/ejs-playground/).
 
 # **Basic usage**
-
----
 
 要 render 的 ejs 文件要放在 **views** folder 並取名為 **index.ejs**
 
@@ -66,8 +54,8 @@ template(data);
 ejs.render(str, data, options);
 // => Rendered HTML string
 
-ejs.renderFile(filename, data, options, function(err, str){
-    // str => Rendered HTML string
+ejs.renderFile(filename, data, options, function (err, str) {
+  // str => Rendered HTML string
 });
 ```
 
