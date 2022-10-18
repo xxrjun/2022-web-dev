@@ -1,19 +1,35 @@
 # HTML-Basics 2
 
+- [HTML-Basics 2](#html-basics-2)
+  - [1. Form 表單](#1-form-表單)
+    - [1.1 表單會與後端 database 做連結](#11-表單會與後端-database-做連結)
+    - [1.2 `form` tags](#12-form-tags)
+    - [1.3 Simple Example](#13-simple-example)
+  - [2. `input` tag](#2-input-tag)
+    - [2.1 Several Input types](#21-several-input-types)
+    - [2.2 Input Attributes](#22-input-attributes)
+  - [3. `select` tag](#3-select-tag)
+  - [4. `datalist` and `textarea`](#4-datalist-and-textarea)
+    - [4.1 `datalist`](#41-datalist)
+    - [4.2 `textarea`](#42-textarea)
+  - [5. Other HTML Ideas](#5-other-html-ideas)
+  - [熊貓問卷調查 Code](#熊貓問卷調查-code)
+
 ## 1. Form 表單
 
-### 1.1 表單**會與後端 database 做連結**
+### 1.1 表單會與後端 database 做連結
 
-- action: 資料要傳到的目的地
-- method - GET and POST
+- `action`: 資料要傳到的目的地
+- `method`: `GET` 、`POST`...
 
 ### 1.2 `form` tags
 
-| input  | 有設定 name=”” 才有辦法交出去    |
-| ------ | -------------------------------- |
-| label  | label 的 for 對應 input 的 id="" |
-| select |                                  |
-| button |                                  |
+| tag syntax | description                         |
+| ---------- | ----------------------------------- |
+| `input `   | 有設定 `name=` 才有辦法交出去       |
+| `label`    | label 的 `for=` 對應 input 的 `id=` |
+| `select`   | 選單                                |
+| `button`   | 表單按鈕，可以設定按鈕行為 `type`   |
 
 ### 1.3 Simple Example
 
@@ -30,87 +46,97 @@
 </form>
 ```
 
-當按下 `button` 後可以看到輸入的 `InputName` and `InputTele`
+當按下提交表單的 button 後可以從網頁上方的網址欄看到輸入的 `InputName` and `InputTele`
 
-```html
+```plaintext
 myForm.html?InputName=Panda&InputTele=0000
 ```
 
 ## 2. `input` tag
 
-### 2.1 Types
+### 2.1 Several Input types
 
-- `**checkbox**`
-  - value 可預設值，會傳送
-    `name=value`
+- `checkbox`
+
+  - value 可預設值，會傳送 `name=value`
   - 若要預設已勾選可以加入 `checked`
+  - Example
+    ```html
+    <input id="subscription" type="checkbox" name="Subscription" value="subscribed" checked />
+    <label for="subscription">訂閱電子報</label>`
+    ```
 
-```html
-<input id="subscription" type="checkbox" name="Subscription" value="subscribed" checked />
-<label for="subscription">訂閱電子報</label>`
-```
+- `email`
 
-- `**email**`
   - `required` 代表一定要填
   - `placeholder` 提示作用
+  - Example
+    ```html
+    <label for="email">信箱</label>
+    <input id="email" type="email" name="Email" placeholder="請輸入真實姓名" required />
+    ```
 
-```html
-<label for="email">信箱</label> <input id="email" type="email" name="Email" placeholder="請輸入真實姓名" required />
-```
+- `number`
 
-- `**number**`
   - `min`, `max` 設定允許範圍
   - `step` 設定一次增減量
+  - Example
+    ```html
+    <label for="age">年齡</label>
+    <input id="age" type="number" name="Age" value="18" min="1" max="150" step="1" required />
+    ```
 
-```html
-<label for="age">年齡</label> <input id="age" type="number" name="Age" value="18" min="1" max="150" step="1" required />
-```
+- `password`
 
-- `**password**`
-  - 不想顯示密碼在網址上，因此 `name=””` 跟 `value=""`
-  - `minlength` 跟 `maxlength` 設定長度範圍
+  - 不想顯示密碼在網址上，因此設定 `name` 以及 `value` 皆為空字串。
+  - 透過 `minlength` 跟 `maxlength` 設定長度範圍\
+  - Example
+    ```html
+    <label for="password">密碼</label>
+    <input id="password" type="password" name="" value="" minlength="8" maxlength="20" required />
+    ```
 
-```html
-<label for="password">密碼</label>
-<input id="password" type="password" name="" value="" minlength="8" maxlength="20" required />
-```
+- `radio`
 
-- `**radio**`
   - 只能選擇選項中的其中一個
+  - Example
 
-```html
-<input id="male" type="radio" name="gender" value="male" required />
-<label for="male">男性</label>
+    ```html
+    <input id="male" type="radio" name="gender" value="male" required />
+    <label for="male">男性</label>
 
-<input id="female" type="radio" name="gender" value="female" />
-<label for="female">女性</label>
+    <input id="female" type="radio" name="gender" value="female" />
+    <label for="female">女性</label>
 
-<input id="others" type="radio" name="gender" value="others" />
-<label for="others">其他</label>
-```
+    <input id="others" type="radio" name="gender" value="others" />
+    <label for="others">其他</label>
+    ```
 
-- `**range**`
+- `range`
+
   - 拉桿
+  - Example
+    ```html
+    0<input type="range" step="10" min="0" max="100" name="" value="" />100
+    ```
 
-```html
-0<input type="range" step="10" min="0" max="100" name="" value="" />100
-```
+### 2.2 Input Attributes
 
-### 2.2 Attributes
+| Attributes syntax         | Description               |
+| ------------------------- | ------------------------- |
+| `checked`                 | 預設勾選                  |
+| `max` & `min`             | 數字上下限                |
+| `maxlength` & `minlength` | 字串長度上下限            |
+| `placeholder`             | 提醒                      |
+| `required`                | 必填                      |
+| `value`                   | 一定要: radio 、 range... |
 
-| checked               | 預設勾選                  |
-| --------------------- | ------------------------- |
-| max & min             | 數字上下限                |
-| maxlength & minlength | 字串長度上下限            |
-| placeholder           | 提醒                      |
-| required              | 必填                      |
-| value                 | 一定要: radio 、 range... |
-| 不一定要： text...    |
+其他還有如 `text`...
 
 ## 3. `select` tag
 
 - `select` 中有 `option`
-- 第一行加入 `<option></option>` 避免預設
+- 第一行加入 `<option></option>` 避免可以選則預設空選項
 
 ```html
 <label for="gender">Gender</label>
@@ -145,35 +171,51 @@ myForm.html?InputName=Panda&InputTele=0000
 ```html
 <label for="suggestion">給網站提供建議:</label>
 <br />
-<textarea id="suggestion" name="suggestion" rows="10" cols="30" placeholder="謝謝您提供建議！"></textarea>
+<textarea
+  id="suggestion"
+  name="suggestion"
+  rows="10"
+  cols="30"
+  placeholder="謝謝您提供建議！"
+></textarea>
 ```
 
 ## 5. Other HTML Ideas
 
-- **comment**
+- `comment`
   - 在 html 中的註解 `<!-- -->`
-- **block、inline**
-  - **block** : `width:100%` ，寬度等於 Device width (裝置寬度)
-  - **inline** : 寬度視內容寬度而定
-- **br、hr**
+- `block、inline`
+  - `block` : 依照 Device width (裝置寬度)而定。如 `width:100%` 代表寬度等於裝置寬度。
+  - `inline` : 寬度視內容寬度而定
+- `br、hr`
   - `br` : 斷行
   - `hr` : 水平線
-- **div、 span**
+- `div、 span`
   - `div` : Generic block-level container
   - `span` : Generic inline container
-- **Entity codes**
+- Entity codes
   - HTML Symbols → [https://www.htmlsymbols.xyz/](https://www.htmlsymbols.xyz/)
-- **index.html**
-  - 一個網頁中最重要的檔案
-- **Icon**
+- `index.html`
+  - 一個網頁中最重要的檔案，通常作為一個網站的**首頁**
+- `Icon`
+
   - 網頁書籤圖
   - 要放在 `head` 裡
+
   ```html
-  <link rel="shortcut icon" href="/src/pandaIcon.png" /> <link rel="bookmark" href="/src/pandaIcon.png" />
+  <link rel="shortcut icon" href="/src/pandaIcon.png" />
+  <link rel="bookmark" href="/src/pandaIcon.png" />
   ```
-- **Self-Closing Tags**
-  - Self-closing tags represent **void elements.**
+
+- Self-Closing Tags
+
+  - Self-closing tags represent **void elements**.
     Void elements like `br` or `img` cannot contain any contents.
+  - 舉例來說不可以這樣寫
+
+  ```html
+    <img>this is wrong!!!</img>
+  ```
 
 ## 熊貓問卷調查 Code
 
@@ -239,7 +281,14 @@ myForm.html?InputName=Panda&InputTele=0000
       <!-- 建議 : textarea-->
       <label for="suggestion">給網站提供建議:</label>
       <br />
-      <textarea id="suggestion" name="suggestion" rows="10" cols="30" placeholder="謝謝您提供建議！"> </textarea>
+      <textarea
+        id="suggestion"
+        name="suggestion"
+        rows="10"
+        cols="30"
+        placeholder="謝謝您提供建議！"
+      >
+      </textarea>
       <br />
 
       <!-- 訂閱 : input checked box -->
