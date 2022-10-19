@@ -1,9 +1,39 @@
 # CSS-Basics 1
 
+- [CSS-Basics 1](#css-basics-1)
+  - [1. CSS (Cascading Style Sheets)](#1-css-cascading-style-sheets)
+  - [2. CSS 程式碼放置位置](#2-css-程式碼放置位置)
+    - [2.1 Inline Styling](#21-inline-styling)
+    - [2.2 Internal Styling](#22-internal-styling)
+    - [2.3 External Styling](#23-external-styling)
+  - [3. Optional：電腦儲存顏色的方式](#3-optional電腦儲存顏色的方式)
+  - [4. CSS Selectors](#4-css-selectors)
+    - [Review : HTML Tag’s Attributes](#review--html-tags-attributes)
+    - [4.1 Basic Selectors](#41-basic-selectors)
+      - [Universal selector](#universal-selector)
+      - [Type selector](#type-selector)
+      - [ID selector](#id-selector)
+      - [Class selector](#class-selector)
+      - [Attribute selector](#attribute-selector)
+    - [4.2 Grouping selectors](#42-grouping-selectors)
+    - [4.3 Combinators](#43-combinators)
+      - [Descendant combinator](#descendant-combinator)
+    - [4.4 Pseudo](#44-pseudo)
+      - [Pseudo class](#pseudo-class)
+      - [Pseudo element](#pseudo-element)
+  - [5. CSS Styling Rules](#5-css-styling-rules)
+    - [Rule 1 : Cascade 下覆蓋上](#rule-1--cascade-下覆蓋上)
+    - [Rule 2 : Specificity 特定度](#rule-2--specificity-特定度)
+    - [Rule 3 : Inheritance](#rule-3--inheritance)
+    - [Summary - 牢記！](#summary---牢記)
+  - [6. Text Styling](#6-text-styling)
+  - [7. Background](#7-background)
+
 ## 1. CSS (Cascading Style Sheets)
 
-- 沒必要認識全部的 CSS 屬性，認識常用以及實用的屬性即可
-- CSS Syntax
+- 沒必要認識全部的 CSS 屬性，實在太多了，認識常用以及實用的屬性就好，其餘的可以等有需要時在搜尋。
+
+- CSS Syntax 如下
   ```css
   h1 {
     color: green;
@@ -34,7 +64,8 @@
 
 ### 2.3 External Styling
 
-最常見，當網頁很多時就不用一直複製貼上！
+最常見，當網頁很多時就不用一直複製貼上！可以使用同一個 `style.css` 檔案讓許多網頁都用有同樣的 CSS style。
+
 create a `style.css` and write CSS code
 
 ```css
@@ -43,7 +74,7 @@ h1 {
 }
 ```
 
-在 `index.html` 的 `head` 內導入 `style.css`
+在 `index.html` 的 `head` 內導入 `style.css` 才會有作用
 
 ```html
 <link rel="stylesheet" href="./style.css" />
@@ -51,10 +82,10 @@ h1 {
 
 ## 3. Optional：電腦儲存顏色的方式
 
-電腦儲存資料是以 `Binary Digit` ( bit = 0, 1)
-1 byte = 8 bits
-R = 1 byte ; G = 1 byte ; B = 1 byte
-每個都 = 8 bits， 也就有 2^8^3 = 256^3 種顏色
+電腦儲存資料是以 **Binary Digit** ( bit = 0, 1)  
+1 byte = 8 bits  
+**R** = 1 byte ; **G** = 1 byte ; **B** = 1 byte  
+每個都 = 8 bits， 也就有 2^8^3 = **256^3** 種顏色
 
 - reserved color
   - 140 種
@@ -62,12 +93,12 @@ R = 1 byte ; G = 1 byte ; B = 1 byte
   - 256^3 = 1677216 種
   - `(255, 255, 255)`
 - rgba
-  - 可以調透明度 (0 - 1) 的 rgb
+  - 最後一格可以調透明度的 rgb，範圍 [0, 1]
   - `(255, 255, 255, 0.8)`
 - hex
   - 十六進制： 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
 - hsl
-  Colors : [https://coloors86.netlify.app/](https://coloors86.netlify.app/)
+  Colors : [https://coloors86.netlify.app/](https://coloors86.netlify.app/)  
   HTML Color Names : [https://www.w3schools.com/tags/ref_colornames.asp](https://www.w3schools.com/tags/ref_colornames.asp)
 
 ## 4. CSS Selectors
@@ -154,6 +185,8 @@ Selects all elements that have the given attribute
 
 ### 4.2 Grouping selectors
 
+一次選取多個 Group 設定 CSS style
+
 ```css
 h1,
 h2,
@@ -177,21 +210,28 @@ p {
      <a href="./myForm.html">熊貓問卷調查</a>
    </div>
    ```
-2. In CSS  
-    `css /* descendants selector */ div.link1 a{ color:red; } `  
-   這樣只改到 `div.link1` 裡的 `<a>` 標籤
+2. In CSS
+   ```css
+   /* descendants selector */
+   div.link1 a {
+     color: red;
+   }
+   ```
+   這樣只改到 `div.link1` 裡的 `<a>` 標籤，不會改到 `div.link2` 裡面的 anchor tag.
 
 ### 4.4 Pseudo
 
 #### Pseudo class
 
-1. **Syntax:**
+1. Syntax:
+
    ```css
    selector:pseudo-class {
      property: value;
    }
    ```
-2. **Example : `hover` 、 `active`**
+
+2. Example : `hover` 、 `active`
 
    ```css
    /* 滑鼠移到時變綠色 */
@@ -205,17 +245,17 @@ p {
    }
    ```
 
-3. **More pseudo classes** →[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index)
+3. **More pseudo classes** →[MDN Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#alphabetical_index)
 
 #### Pseudo element
 
-1. **Syntax**
+1. Syntax
    ```css
    selector::pseudo-element {
      property: value;
    }
    ```
-2. **Example : `before` 、 `selection` 、 `after`**
+2. Example : `before` 、 `selection` 、 `after`
 
    ```css
    p::before {
@@ -233,13 +273,13 @@ p {
    }
    ```
 
-3. **More pseudo-elements** →[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)
+3. **More pseudo-elements** →[MDN Pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#index)
 
 ## 5. CSS Styling Rules
 
-### Rule 1 : Cascade
+### Rule 1 : Cascade 下覆蓋上
 
-下覆蓋上
+因為程式讀取是由上往下，因此越新讀取到的程式碼會覆蓋前面讀取到的程式碼。
 
 ### Rule 2 : Specificity 特定度
 
@@ -271,9 +311,9 @@ CSS 屬性分成
 - `font-decoration:`
   - `underline` 、 `line-through` 、 `none`
 - `line-height:`
-  - [https://developer.mozilla.org/en-US/docs/Web/CSS/line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+  - [MDN line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
 - `letter-spacing:`
-  - [https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+  - [MDN letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
 - `font-family:`
   - CSS font stack：[https://www.cssfontstack.com/](https://www.cssfontstack.com/)
   - Google fonts : [https://fonts.google.com/](https://fonts.google.com/)
@@ -284,14 +324,18 @@ CSS 屬性分成
 ## 7. Background
 
 - `background:` 為以下兩個的簡寫
+
   - `background-color:`
   - `background-image:`
+
     ```css
     background-image: url(./src/pand_backgroud.jpg);
     ```
+
 - `background-size:` : `cover` 、 `contain` ...
 - `background-position:` ： `center` 、 `top` 、 `bottom` ...
-- **Example : In CSS**
+- Example : In CSS
+
   ```css
   body {
     background-image: url(./src/pand_backgroud.jpg);
