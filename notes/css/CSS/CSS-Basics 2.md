@@ -1,5 +1,24 @@
 # CSS-Basics 2
 
+- [CSS-Basics 2](#css-basics-2)
+  - [1. CSS Box Model](#1-css-box-model)
+    - [1.1 重點觀念：All html elements are boxes](#11-重點觀念all-html-elements-are-boxes)
+    - [1.2 Padding and Margin 設定](#12-padding-and-margin-設定)
+    - [1.3 Border 設定](#13-border-設定)
+    - [1.4 Width and Height](#14-width-and-height)
+    - [1.5 Relative Units](#15-relative-units)
+  - [2. Elements Attributes](#2-elements-attributes)
+    - [2.1 Display Types](#21-display-types)
+    - [2.2 統整圖表](#22-統整圖表)
+  - [3. CSS Position](#3-css-position)
+    - [3.1 Syntax](#31-syntax)
+    - [3.2 Values](#32-values)
+      - [static](#static)
+      - [relative](#relative)
+      - [absolute](#absolute)
+      - [fixed](#fixed)
+      - [sticky](#sticky)
+
 ## 1. CSS Box Model
 
 [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)
@@ -7,11 +26,14 @@
 ### 1.1 重點觀念：All html elements are boxes
 
 with `width`, `height`, `padding`, `content`, `border`, `margin`
-![css-box-model.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202/css-box-model.png)
+
+![css-box-model.png](./css-basics-src/css-box-model.png)
 
 ### 1.2 Padding and Margin 設定
 
-**Syntax :** 四**種設定方式**
+Syntax
+
+有四種設定方式
 
 1. (上右下左) : `0.5rem`
 2. (上右 下左) : `0.5rem 0.75rem`
@@ -85,30 +107,31 @@ height: auto;
 
 ### 1.5 Relative Units
 
-| %   | width, height (相對於 parent element 的 width and height) |
-| --- | --------------------------------------------------------- |
-| vw  | viewport width (相對於視窗大小的 width)                   |
-| vh  | viewport height (相對於視窗大小 height)                   |
+| syntax | description                                               |
+| ------ | --------------------------------------------------------- |
+| `%`    | width, height (相對於 parent element 的 width and height) |
+| `vw`   | viewport width (相對於視窗大小的 width)                   |
+| `vh`   | viewport height (相對於視窗大小 height)                   |
 
 ## 2. Elements Attributes
 
 ### 2.1 Display Types
 
-1. **inline** : width by default is decided by content. 不能設定 width, height.
-2. **block :** width by default is 100%
-3. **inline-block** (背)
+1. inline : width by default is decided by content. 不能設定 width, height.
+2. block : width by default is 100%
+3. inline-block (背)
    1. 在網頁排版設定上 ⇒ inline element
    2. 在 width, height 設定上 ⇒ block element
       五個 Inline-block element
       `select` 、 `input`、 `img` 、 `input`、 `textarea`
 
-\*註: [https://www.w3.org/TR/CSS2/box.html#margin-properties](https://www.w3.org/TR/CSS2/box.html#margin-properties) 中提到 These properties apply to all elements, but vertical margins will not have any effect on non-replaced inline elements
+\*註: [W3C Margin Properties](https://www.w3.org/TR/CSS2/box.html#margin-properties) 中提到 These properties apply to all elements, but vertical margins will not have any effect on non-replaced inline elements
 
 ### 2.2 統整圖表
 
-![block+and+inline.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202/blockandinline.png)
+![block+and+inline.png](./css-basics-src/blockandinline.png)
 
-## 3. CSS [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+## 3. [CSS Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
 ### 3.1 Syntax
 
