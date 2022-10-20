@@ -33,19 +33,19 @@ Thanks Wilson Ren for this amazing course on Udemy!
 
 ### HTML
 
-- [網路基本原理](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/%E7%B6%B2%E8%B7%AF%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
-- [HTML-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%201.md)
-- [HTML-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/html/HTML/HTML-Basics%202.md)
+- [網路基本原理](./HTML/Network-Basics.md)
+- [HTML Basics 1](./HTML/HTML-Basics1.md)
+- [HTML Basics 2](./HTML/HTML-Basics2.md)
 
 ### CSS
 
-- [CSS-Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%201.md)
-- [CSS-Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%202.md)
-- [CSS-Basics 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/CSS-Basics%203.md)
-- [HTML / CSS - Advance 1 - Flexbox](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%201%20-%20Flexbox.md)
-- [HTML / CSS - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%202.md)
-- [HTML / CSS - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/HTML%20CSS%20-%20Advance%203.md)
-- [RWD (Responsive Web Design)](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/css/CSS/RWD%20(Responsive%20Web%20Design).md>)
+- [CSS Basics 1](./CSS/CSS-Basics1.md)
+- [CSS Basics 2](./CSS/CSS-Basics2.md)
+- [CSS Basics 3](./CSS/CSS-Basics3.md)
+- [HTML/CSS Advance 1 Flexbox](./CSS/HTML_CSS-Advance1-Flexbox.md)
+- [HTML/CSS Advance 2 (偏經驗談)](./CSS/HTML_CSS-Advance2.md)
+- [HTML/CSS Advance 3](./CSS/HTML_CSS-Advance3.md)
+- [RWD (Responsive Web Design)](./CSS/RWD.md)
 
 ### JavaScript
 
