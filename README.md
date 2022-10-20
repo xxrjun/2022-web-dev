@@ -67,8 +67,6 @@ Thanks Wilson Ren for this amazing course on Udemy!
 | [**Project 6 Photo Website**](https://github.com/xxrjun/react-photo-website-infinite-scroll)                                                                                 | React / API </br> Online website: [react photo website](https://xxrjun.github.io/react-photo-website/)          |
 | [**MERN Project Course System**](https://github.com/xxrjun/MERN-Project-Course-System)                                                                                       | Frontend : React </br> Backend : Mongodb + Expressjs + Nodejs                                                   |
 
--
-
 # Important Official Docs
 
 - [**React**](https://reactjs.org/)
