@@ -2,12 +2,12 @@
 
 ### Notes
 
-- [CSS-Basics 1](./CSS/CSS-Basics1.md)
-- [CSS-Basics 2](./CSS/CSS-Basics2.md)
-- [CSS-Basics 3](./CSS/CSS-Basics3.md)
-- [HTML/CSS Advance 1 Flexbox](./CSS/HTML_CSS-Advance1-Flexbox.md)
+- [CSS Basics 1](./CSS/CSS-Basics1.md)
+- [CSS Basics 2](./CSS/CSS-Basics2.md)
+- [CSS Basics 3](./CSS/CSS-Basics3.md)
+- [HTML CSS Advance 1 Flexbox](./CSS/HTML_CSS-Advance1-Flexbox.md)
 - [HTML/CSS Advance 2 (偏經驗談)](./CSS/HTML_CSS-Advance2.md)
-- [HTML / CSS - Advance 3](./CSS/HTML_CSS-Advance3.md)
+- [HTML/CSS Advance 3](./CSS/HTML_CSS-Advance3.md)
 - [RWD (Responsive Web Design)](./CSS/RWD.md)
 
 ### Relative Links
