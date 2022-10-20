@@ -21,7 +21,7 @@
 
 ## 1. CSS Box Model
 
-[CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)
+[MDN - CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)
 
 ### 1.1 重點觀念：All html elements are boxes
 
