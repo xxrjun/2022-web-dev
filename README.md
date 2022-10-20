@@ -33,19 +33,19 @@ Thanks Wilson Ren for this amazing course on Udemy!
 
 ### HTML
 
-- [網路基本原理](./HTML/Network-Basics.md)
-- [HTML Basics 1](./HTML/HTML-Basics1.md)
-- [HTML Basics 2](./HTML/HTML-Basics2.md)
+- [網路基本原理](./notes/html/html-docs/Network-Basics.md)
+- [HTML Basics 1](./notes/html/html-docs/HTML-Basics1.md)
+- [HTML Basics 2](./notes/html/html-docs/HTML-Basics2.md)
 
 ### CSS
 
-- [CSS Basics 1](./CSS/CSS-Basics1.md)
-- [CSS Basics 2](./CSS/CSS-Basics2.md)
-- [CSS Basics 3](./CSS/CSS-Basics3.md)
-- [HTML/CSS Advance 1 Flexbox](./CSS/HTML_CSS-Advance1-Flexbox.md)
-- [HTML/CSS Advance 2 (偏經驗談)](./CSS/HTML_CSS-Advance2.md)
-- [HTML/CSS Advance 3](./CSS/HTML_CSS-Advance3.md)
-- [RWD (Responsive Web Design)](./CSS/RWD.md)
+- [CSS Basics 1](./notes/css/css-docs/CSS-Basics1.md)
+- [CSS Basics 2](./notes/css/css-docs/CSS-Basics2.md)
+- [CSS Basics 3](./notes/css/css-docs/CSS-Basics3.md)
+- [HTML/CSS Advance 1 Flexbox](./notes/css/css-docs/HTML_CSS-Advance1-Flexbox.md)
+- [HTML/CSS Advance 2 (偏經驗談)](./notes/css/css-docs/HTML_CSS-Advance2.md)
+- [HTML/CSS Advance 3](./notes/css/css-docs/HTML_CSS-Advance3.md)
+- [RWD (Responsive Web Design)](./notes/css/css-docs/RWD.md)
 
 ### JavaScript
 
