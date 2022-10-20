@@ -12,13 +12,13 @@
 
 ### Relative Links
 
-- [**Web Course**](https://www.udemy.com/course/html5-css3-z/)
-- [**Free Photos — Upslash**](https://unsplash.com/)
-- [**Image Compression — TinyPNG** ](https://tinypng.com/)
-- [**Deployment — Netlify**](https://www.netlify.com/)  
-  記得前往設定 `domain` 跟 `Asset optimization`
-- [**Free icons - Icons8** ](https://icons8.com/)
-- [**CSS Tricks** ](https://css-tricks.com/)
+- [Web Course](https://www.udemy.com/course/html5-css3-z/)
+- [Free Photos — Upslash](https://unsplash.com/)
+- [Image Compression — TinyPNG](https://tinypng.com/)
+- [Deployment — Netlify](https://www.netlify.com/)
+  - 記得前往設定 `domain` 跟 `Asset optimization`
+- [Free icons - Icons8](https://icons8.com/)
+- [CSS Tricks](https://css-tricks.com/)
 
 ### 做 Project 的步驟
 
