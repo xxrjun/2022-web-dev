@@ -49,21 +49,21 @@ Thanks Wilson Ren for this amazing course on Udemy!
 
 ### JavaScript
 
-- [JavaScript - Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201.md)
-- [JavaScript - Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%202.md)
-- [JavaScript - Practice](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Practice.md)
-- [DOM (Document Object Model)](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md>)
-- [JavaScript - Advance 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%201.md)
-- [JavaScript - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202.md)
-- [JavaScript - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%203.md)
-- [JavaScript - Advance 4 (Ajax and APIs)](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs).md>)
+- [JavaScript - Basics 1](./notes/javascript/javascript-docs/JavaScript-Basics1.md)
+- [JavaScript - Basics 2](./notes/javascript/javascript-docs/JavaScript-Basics2.md)
+- [JavaScript - Practice](./notes/javascript/javascript-docs/JavaScript-Practice.md)
+- [DOM (Document Object Model)](./notes/javascript/javascript-docs/DOM.md)
+- [JavaScript - Advance 1](./notes/javascript/javascript-docs/JavaScript-Advance1.md)
+- [JavaScript - Advance 2](./notes/javascript/javascript-docs/JavaScript-Advance2.md)
+- [JavaScript - Advance 3](./notes/javascript/javascript-docs/JavaScript-Advance3.md)
+- [JavaScript - Advance 4 (Ajax and APIs)](./notes/javascript/javascript-docs/JavaScript-Advance4_Ajax_and_APIs.md)
 
 ### Database
 
-- [Database Introduction](https://github.com/xxrjun/2022-Web-Develop/tree/main/notes/database)
-- [MySQL](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MySQL.md)
-- [MongoDB](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MongoDB.md)
-- [Mongoose](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/Mongoose.md)
+- [Database Introduction](./notes/database/README.md)
+- [MySQL](./notes/database/database-docs/MySQL.md)
+- [MongoDB](./notes/database/database-docs/MongoDB.md)
+- [Mongoose](./notes/database/database-docs/MongoDB.md)
 
 ### Nodejs + Expressjs + EJS
 
