@@ -1,8 +1,8 @@
-# Databases
+# Databases Notes
 
-- [**MySQL**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MySQL.md)
-- [**MongoDB**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/MongoDB.md)
-- [**Mongoose**](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/Mongoose.md)
+- [MySQL](./database-docs/MySQL.md)
+- [MongoDB](./database-docs/MongoDB.md)
+- [Mongoose](./database-docs/MongoDB.md)
 
 # What is DBMS ?
 
@@ -16,13 +16,13 @@ Create, Read, Update, Delete
 # Databases in the world
 
 - There are many different popular databases in the world.
-- Which one is the best? It depends.
+- Which one is the best? It depends on situations.
 
 ### What is Relational Databases ?
 
-- A relational database organizes data into tables which can be **linked**—**or \*related**—\*
+- A relational database organizes data into tables which can be **linked** or **related**
   based on data common to each.
-- More → [https://www.ibm.com/cloud/learn/relational-databases](https://www.ibm.com/cloud/learn/relational-databases)
+- [Clike me to Learn More About Relational Database](https://www.ibm.com/cloud/learn/relational-databases)
 
 ### SQL and NoSQL
 
@@ -40,7 +40,7 @@ Create, Read, Update, Delete
   - 搜尋法: Hash Function (Time Complexity: O(1))
 - Sheet
 
-![sql_vs_nosql.png](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/database/database/sql_vs_nosql.png)
+![sql_vs_nosql.png](./database-docs/src/sql_vs_nosql.png)
 
 # Keys
 

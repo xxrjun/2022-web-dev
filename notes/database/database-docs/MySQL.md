@@ -1,12 +1,22 @@
 # MySQL - Basics
 
-# 1. Download MySQL and PopSQL
+- [MySQL - Basics](#mysql---basics)
+  - [1. Download MySQL and PopSQL](#1-download-mysql-and-popsql)
+  - [2. MySQL Data Types](#2-mysql-data-types)
+  - [3. Tables](#3-tables)
+    - [3.1 Create and Drop a Table](#31-create-and-drop-a-table)
+    - [3.2 Insertion](#32-insertion)
+    - [3.3 Update](#33-update)
+    - [3.4 Delete](#34-delete)
+    - [3.5 Query](#35-query)
 
-- MySQL Community Server → [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
-- 用 PopSQL 控制 database → [https://popsql.com/](https://popsql.com/)
-- macOS 登入 → [https://www.itread01.com/p/1194830.html](https://www.itread01.com/p/1194830.html)
+## 1. Download MySQL and PopSQL
 
-# 2. MySQL Data Types
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+- 用 PopSQL 控制 database → [PopSQL](https://popsql.com/)
+- macOS 登入 → [【DB.MySQL】在 Mac 如何啟動 MySQL](https://www.itread01.com/p/1194830.html)
+
+## 2. MySQL Data Types
 
 - Common Data types
   ```sql
@@ -16,18 +26,25 @@
   VARCHAR(size) -- characters
   DATE -- 'YYYY-MM-DD'
   ```
-- Other MySQL Data Types → [https://www.w3schools.com/sql/sql_datatypes.asp](https://www.w3schools.com/sql/sql_datatypes.asp)
+- Other MySQL Data Types → [W3C SQL Datatypes](https://www.w3schools.com/sql/sql_datatypes.asp)
 
-# 3. Tables
+## 3. Tables
 
 ### 3.1 Create and Drop a Table
 
-| create table   |
-| -------------- |
-| DROP           |
-| DESCRIBE       |
-| DEFAULT        |
-| AUTO_INCREMENT |
+新增與刪除 table
+
+**Syntax**
+
+| name             |
+| ---------------- |
+| `create table`   |
+| `DROP`           |
+| `DESCRIBE`       |
+| `DEFAULT`        |
+| `AUTO_INCREMENT` |
+
+**Example**
 
 ```sql
 create table employees(
@@ -45,9 +62,16 @@ DESCRIBE employees;
 
 ### 3.2 Insertion
 
-| INSERT INTO |
-| ----------- |
-| VALUES      |
+將資料插入原有 table
+
+**Syntax**
+
+| name          |
+| ------------- |
+| `INSERT INTO` |
+| `VALUES`      |
+
+**Example**
 
 兩種 insert 方式
 
@@ -66,10 +90,17 @@ SELECT * FROM employees;
 
 ### 3.3 Update
 
-| UPDATE |
-| ------ |
-| SET    |
-| WHERE  |
+更新 table 中的資料
+
+**Syntax**
+
+| name     |
+| -------- |
+| `UPDATE` |
+| `SET`    |
+| `WHERE`  |
+
+**Example**
 
 兩種 update 的方式
 
@@ -96,8 +127,13 @@ DELETE FROM employees;
 
 ### 3.5 Query
 
-| SELECT   |
+查詢特定資料
+
+**Syntax**
+
+| name     |
 | -------- |
+| SELECT   |
 | FROM     |
 | WHERE    |
 | LIMIT    |

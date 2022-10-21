@@ -1,11 +1,37 @@
 # Mongoose
 
+# Table of Contents
+
+- [Mongoose](#mongoose)
+- [Table of Contents](#table-of-contents)
+- [1. Intro to Mongoose](#1-intro-to-mongoose)
+- [2. Model and Schema](#2-model-and-schema)
+- [3. 連接 MongoDB](#3-連接-mongodb)
+- [4. Defining your schema](#4-defining-your-schema)
+- [5. Creating a model](#5-creating-a-model)
+- [6. Create an object and Save to DB](#6-create-an-object-and-save-to-db)
+- [7. Mongoose C.R.U.D](#7-mongoose-crud)
+    - [7.1 Finding in Mongoose](#71-finding-in-mongoose)
+    - [7.2 Updating in Mongoose](#72-updating-in-mongoose)
+    - [7.3 Deleting in Mongoose](#73-deleting-in-mongoose)
+- [8. Schema Types Validators](#8-schema-types-validators)
+  - [8.1 All Schema Types Validators](#81-all-schema-types-validators)
+  - [8.2 String Validators](#82-string-validators)
+  - [8.3 Number Validators](#83-number-validators)
+  - [8.4 Example](#84-example)
+  - [8.5 Update with Validators](#85-update-with-validators)
+- [9. Instance Method](#9-instance-method)
+- [10. Static Method](#10-static-method)
+- [11. Middleware](#11-middleware)
+  - [11.1 Pre](#111-pre)
+  - [11.2 Post middleware](#112-post-middleware)
+
 # 1. Intro to Mongoose
 
 - Mongoose is a **ODM (Object Document Modeling)** that is used to **connect MongoDB to our web projects**.
 - SQL used ORM (Object Relational Modeling), NoSQL used ODM.
 - It’s a **module** in npmjs.
-- Mongoose → [https://mongoosejs.com/](https://mongoosejs.com/)
+- Mongoose Offical Website → [https://mongoosejs.com/](https://mongoosejs.com/)
 
 # 2. Model and Schema
 
@@ -89,8 +115,6 @@ Jon.save()
 
 # 8. Schema Types Validators
 
----
-
 ## 8.1 All Schema Types Validators
 
 - `required`
@@ -100,21 +124,23 @@ Jon.save()
 
 ## 8.2 String Validators
 
-| uppercase() |
-| ----------- |
-| lowercase() |
-| enum[]      |
-| minlength() |
-| maxlength() |
+| Name           |
+| -------------- |
+| `uppercase()`  |
+| `lowercase()`  |
+| `enum[]`       |
+| ` minlength()` |
+| `maxlength()`  |
 
 ## 8.3 Number Validators
 
-| max  |
-| ---- |
-| min  |
-| enum |
+| Name   |
+| ------ |
+| `max`  |
+| `min`  |
+| `enum` |
 
-## 8.4 E**xample**
+## 8.4 Example
 
 ```jsx
 // define a schema
@@ -198,7 +224,7 @@ schema.pre('save', function(next) {
 });
 ```
 
-In [mongoose 5.x](http://thecodebarbarian.com/introducing-mongoose-5.html#promises-and-async-await-with-middleware), instead of calling `next()` manually, you can use a function that returns a promise. In particular, you can use `[async/await](http://thecodebarbarian.com/common-async-await-design-patterns-in-node.js.html)` .
+In [mongoose 5.x](http://thecodebarbarian.com/introducing-mongoose-5.html#promises-and-async-await-with-middleware), instead of calling `next()` manually, you can use a function that returns a promise. In particular, you can use [async/await](http://thecodebarbarian.com/common-async-await-design-patterns-in-node.js.html) .
 
 ```jsx
 schema.pre("save", function () {
