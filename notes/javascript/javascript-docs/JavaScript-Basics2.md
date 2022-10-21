@@ -1,13 +1,35 @@
 # JavaScript - Basics 2
 
+## Table of Contents
+
+- [JavaScript - Basics 2](#javascript---basics-2)
+  - [Table of Contents](#table-of-contents)
+  - [1. Logical Operators](#1-logical-operators)
+  - [2. If statement and condition](#2-if-statement-and-condition)
+  - [3. Truthy and Falsy Values](#3-truthy-and-falsy-values)
+  - [4. Variable Naming Convention and Restriction](#4-variable-naming-convention-and-restriction)
+    - [4.1 Naming convention](#41-naming-convention)
+    - [4.2 Naming restriction](#42-naming-restriction)
+  - [5. Array](#5-array)
+  - [6. Function](#6-function)
+  - [7. Object](#7-object)
+    - [7.1 Object Property and Method](#71-object-property-and-method)
+    - [7.2 this](#72-this)
+    - [7.3 typeof](#73-typeof)
+  - [8. Loops](#8-loops)
+    - [8.1 Loops](#81-loops)
+    - [8.2 Keywords in loop](#82-keywords-in-loop)
+- [9. Math Objects](#9-math-objects)
+
 ## 1. Logical Operators
 
 Returns a Boolean value
 
-| === 、 !== | 比較 type 跟 value |
-| ---------- | ------------------ | --- | --- |
-| == 、!=    | 只比較 value       |
-| && 、      |                    |     |     |
+| Logical Operators Name | Description        |
+| ---------------------- | ------------------ |
+| `===` 、 `!==`         | 比較 type 跟 value |
+| `==` 、`!=`            | 只比較 value       |
+| `&&` 、 `\|\|`         | AND & OR           |
 
 ## 2. If statement and condition
 
@@ -32,7 +54,7 @@ if (a > 10) {
 
 ## 3. Truthy and Falsy Values
 
-### Falsy Value is considered to be `false` when encountered in Boolean context.
+**Falsy Value is considered to be `false` when encountered in Boolean context.**
 
 1. `false`
 2. `0`
@@ -41,17 +63,17 @@ if (a > 10) {
 5. `undefined`
 6. `NaN`
 
-除此 6 個外都是 truthy value
+除此 6 個外都是 _truthy value_。truthy 不代表 true，而是依照 value 為 `true` 或是 `false`。
 
 ## 4. Variable Naming Convention and Restriction
 
 ### 4.1 Naming convention
 
-|                      | Example  |                                                                        |
-| -------------------- | -------- | ---------------------------------------------------------------------- |
-| camelCase            | isPrime  |                                                                        |
-| underline            | is_prime |                                                                        |
-| const with uppercase | PI       | A variable declaration. That can be assigned a value one and only once |
+| Name                       | Example    | Description                                                              |
+| -------------------------- | ---------- | ------------------------------------------------------------------------ |
+| **camelCase**              | `isPrime`  |                                                                          |
+| **underline**              | `is_prime` |                                                                          |
+| **`const` with uppercase** | `PI`       | A variable declaration. That can be assigned a value one and _only once_ |
 
 ### 4.2 Naming restriction
 
@@ -62,22 +84,25 @@ if (a > 10) {
 
 ## 5. Array
 
-1. is a special type of object, not a primitive type.
+**Introduction to Array**
+
+1. is a special type of _object_, not a primitive type.
 2. comes in handy when you need to store data together.
 3. syntax : `[]`
 4. array’s property : `index` 、`length`
 
-#### Common Methods
+**Common Methods**
 
-| push()    | 增加一個在最後   |
-| --------- | ---------------- |
-| pop()     | 減少最後一個     |
-| shift()   | 減少最前一個     |
-| unshift() | 增加一個在最前面 |
+| Method Name | Description              |
+| ----------- | ------------------------ |
+| `push()`    | 增加一個元素在陣列最後   |
+| `pop()`     | 減少陣列最後一個元素     |
+| `shift()`   | 減少陣列最前一個元素     |
+| `unshift()` | 增加一個元素在陣列最前面 |
 
 ## 6. Function
 
-- A function in JavaScript is similar to a procedure - a set of statements that perform a task or calculate a value
+- A **_function_** in JavaScript is similar to a procedure - a set of statements that perform a task or calculate a value
 - There are JS built-in functions, and you can create your own functions too.
 - function 裡面還可以有 function
 
@@ -124,9 +149,11 @@ person.walk();
 
 `this` refers to the object that us calling the method.
 
-otherwise, it refers to the window object.
+otherwise, it refers to the `window` object.
 
 ### 7.3 typeof
+
+回傳輸入參數的型別
 
 ```jsx
 console.log(typeof person); // object
@@ -143,19 +170,21 @@ Loops offer a quick and easy way to do something repeatedly
 
 ### 8.2 Keywords in loop
 
-| continute | 跳到下一個迴圈 |
-| --------- | -------------- |
-| break     | 中斷整個迴圈   |
+| Syntax      | Descriptioon   |
+| ----------- | -------------- |
+| `continute` | 跳到下一個迴圈 |
+| `break`     | 中斷整個迴圈   |
 
 # 9. Math Objects
 
-| Math.PI        | pi            |
-| -------------- | ------------- |
-| Math.pow(a, b) | power         |
-| Math.random()  | return [0, 1) |
-| Math.sqrt()    | square root   |
-| Math.abs()     | absolue       |
-| Math.floor()   | 小樹取下      |
-| Math.ceiling() | 小樹取上      |
+| Math Properties and Functions | Description   |
+| ----------------------------- | ------------- |
+| `Math.PI`                     | pi            |
+| `Math.pow(a, b)`              | power         |
+| `Math.random()`               | return [0, 1) |
+| `Math.sqrt()`                 | square root   |
+| `Math.abs()`                  | absolue       |
+| `Math.floor()`                | 小數取下      |
+| `Math.ceiling()`              | 小數取上      |
 
-(For those who understand Java) Many methods and properties are static, therefore, we don’t have to instantiate Math Object first.
+(For those who understand Java) In JavaScript, many methods and properties are **_static_**, therefore, we don’t have to instantiate Math Object first.
