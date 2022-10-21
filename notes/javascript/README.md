@@ -1,13 +1,13 @@
 # JavaScript
 
-- [JavaScript - Basics 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%201.md)
-- [JavaScript - Basics 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Basics%202.md)
-- [JavaScript - Practice](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Practice.md)
-- [DOM (Document Object Model)](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model).md>)
-- [JavaScript - Advance 1](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%201.md)
-- [JavaScript - Advance 2](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%202.md)
-- [JavaScript - Advance 3](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%203.md)
-- [JavaScript - Advance 4 (Ajax and APIs)](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs).md>)
+- [JavaScript - Basics 1](./javascript-docs/JavaScript-Basics1.md)
+- [JavaScript - Basics 2](./javascript-docs/JavaScript-Basics2.md)
+- [JavaScript - Practice](./javascript-docs/JavaScript-Practice.md)
+- [DOM (Document Object Model)](./javascript-docs/DOM.md)
+- [JavaScript - Advance 1](./javascript-docs/JavaScript-Advance1.md)
+- [JavaScript - Advance 2](./javascript-docs/JavaScript-Advance2.md)
+- [JavaScript - Advance 3](./javascript-docs/JavaScript-Advance3.md)
+- [JavaScript - Advance 4 (Ajax and APIs)](./javascript-docs/JavaScript-Advance4_Ajax_and_APIs.md)
 
 # Relative Links
 

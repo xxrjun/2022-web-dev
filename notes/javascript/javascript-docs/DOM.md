@@ -1,6 +1,44 @@
 # DOM (Document Object Model)
 
-## Intro
+- [DOM (Document Object Model)](#dom-document-object-model)
+  - [Introduction](#introduction)
+    - [Why do we learn DOM ?](#why-do-we-learn-dom-)
+    - [How to use JS in HTML ?](#how-to-use-js-in-html-)
+  - [1. Window Object](#1-window-object)
+    - [1.1 Window Object Methods](#11-window-object-methods)
+    - [1.2 Window Object Properties](#12-window-object-properties)
+      - [Window Object Properties](#window-object-properties)
+      - [Console Object](#console-object)
+      - [Document Object](#document-object)
+  - [2. What exactly is DOM ?](#2-what-exactly-is-dom-)
+    - [2.1 Document Object Properties](#21-document-object-properties)
+    - [2.2 Document Object Methods](#22-document-object-methods)
+  - [3. Arrow Function Expression](#3-arrow-function-expression)
+    - [3.1 Function Declaration](#31-function-declaration)
+    - [3.2 Arrow Function Expression](#32-arrow-function-expression)
+    - [3.3 this Keyword](#33-this-keyword)
+  - [4. forEach Function](#4-foreach-function)
+    - [4.1 What is **CallBack function ?**](#41-what-is-callback-function-)
+    - [4.2 forEach function](#42-foreach-function)
+  - [5. Array, HTMLCollection and NodeList](#5-array-htmlcollection-and-nodelist)
+  - [6. Element Object](#6-element-object)
+    - [6.1 Children and ChildNode](#61-children-and-childnode)
+    - [6.2 InnerHTML and InnerText](#62-innerhtml-and-innertext)
+    - [6.3 Style Object](#63-style-object)
+  - [7. Inheritance in DOM](#7-inheritance-in-dom)
+  - [8. Events](#8-events)
+    - [8.1 JS Events Introduction](#81-js-events-introduction)
+    - [8.2 Events Inheritance](#82-events-inheritance)
+    - [8.3 Event Object](#83-event-object)
+  - [9. Event Bubbling](#9-event-bubbling)
+  - [10. Dynamic Header](#10-dynamic-header)
+  - [11. Local Storage and Session Storage](#11-local-storage-and-session-storage)
+    - [11.1 What is Web Storage](#111-what-is-web-storage)
+    - [11.2 Methods for both local and session storage](#112-methods-for-both-local-and-session-storage)
+    - [11.3 Difference between Local Storage and Session Storage](#113-difference-between-local-storage-and-session-storage)
+    - [11.4 How to store other types of data](#114-how-to-store-other-types-of-data)
+
+## Introduction
 
 ### Why do we learn DOM ?
 
@@ -14,33 +52,36 @@
   <script src="fileName.js"></script>
   ```
 - 為什麼要為什麼放在最下面？
+
   - **It takes long time to render JS code. (We want to show something to user first)**
   - **Browser has to read all HTML and CSS before using DOM.**
 
 ## 1. Window Object
 
-**The Window Object - w3school** → [https://www.w3schools.com/jsref/obj_window.asp](https://www.w3schools.com/jsref/obj_window.asp)
+可以參考 : [The Window Object - w3school](https://www.w3schools.com/jsref/obj_window.asp)
 
 ### 1.1 Window Object Methods
 
-| alert()            | 彈出 alert 視窗                                          |
-| ------------------ | -------------------------------------------------------- |
-| prompt()           | 彈出可以輸入的視窗                                       |
-| setInterval()      | 間隔固定的延遲重複地時間執行一個函式呼叫或一個程式碼片斷 |
-| clearInteval()     | 清除 setInterval()                                       |
-| addEventListener() | 加入事件監聽                                             |
+| Name                 | Description                                              |
+| -------------------- | -------------------------------------------------------- |
+| `alert()`            | 彈出警告視窗                                             |
+| `prompt()`           | 彈出可以輸入的視窗                                       |
+| `setInterval()`      | 間隔固定的延遲重複地時間執行一個函式呼叫或一個程式碼片斷 |
+| `clearInteval(`)     | 清除 setInterval()                                       |
+| `addEventListener()` | 加入事件監聽                                             |
 
 ### 1.2 Window Object Properties
 
-#### “OOP Concept : An object can be a property of another object.”
+**“OOP Concept : An object can be a property of another object.”**
 
 #### Window Object Properties
 
-| Console        |
+| Name           |
 | -------------- |
+| Console        |
 | Document       |
 | LocalStorage   |
-| SessionStorate |
+| SessionStorage |
 
 上面這四個剛好都是 object，先討論前面兩個，後面兩個請看
 
@@ -62,15 +103,17 @@
 
 - Big picture in DOM
 
-![DOM.png](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model)/DOM.png>)
+![DOM.png](./src/DOM.png)
 
-### 2.1 Document Object Properties (不常用到不討論)
+### 2.1 Document Object Properties
+
+不常用到不討論
 
 ### 2.2 Document Object Methods
 
 - `getElementsById()` 、 `getElementsByClass()` 這兩個不好用，現代少用，因此不多討論。
 - 現在多用 `querySelector()` 、 `querySelectorAll()`
-- `addEventListener()` 到 [8. Events](<DOM%20(Document%20Object%20Model)%20f27fd8dbcccf48c4a0f5fe6eec160e5f.md>) 再討論
+- `addEventListener()` 到 [8. Events](#8-events) 再討論
 - `createElement()` 裡面放入 tag name (string) 就可以創建 new object
 - `querySelector()`
   - 放入要查詢的 css seletor (string)
@@ -118,10 +161,10 @@ sayHi("rjun");
   let person = {
     name: "rjun",
     func() {
-      console.log(this);
+      console.log(this); // this is person Object here.
     },
     arrowFunc: () => {
-      console.log(this);
+      console.log(this); // this is Window Object here.
     },
   };
 
@@ -129,7 +172,7 @@ sayHi("rjun");
   person.arrowFunc();
   ```
 
-  console
+  **console**
 
   ```jsx
   Object { name: "rjun", func: func(), arrowFunc: arrowFunc()}
@@ -180,39 +223,41 @@ function to execute on each element (array item).
 ## 5. Array, HTMLCollection and NodeList
 
 - **Array**, **HTMLCollection** and **NodeList** are similar ( `index` and `length` properties)
-- **Arra**y and **NodeList** can use `forEach` method, but **HTMLCollection** cannot.
+- **Array** and **NodeList** can use `forEach` method, but **HTMLCollection** cannot.
   這也是為什麼現在大家多用 NodeList 而非 HTMLCollection. - 例如：取得所有 class 為 second 的 object
-  使用 `getElementsByClassName()` ，現少用
+  使用 `getElementsByClassName()` (現少用)
 
-          ```jsx
-          // HTMLCollection
-          let secondElement = document.getElementsByClassName("second");
-          ```
+  ```jsx
+  // HTMLCollection
+  let secondElement = document.getElementsByClassName("second");
+  ```
 
-          使用 `querySelectorAll()`
+  使用 `querySelectorAll()` 已取得 NodeList
 
-          ```jsx
-          // NodeList
-          let secondElement = document.querySelectorAll("second")
-          ```
+  ```jsx
+  // NodeList
+  let secondElement = document.querySelectorAll("second");
+  ```
 
 ## 6. Element Object
 
 - Different HTML element might have its own methods and property.
 - **All HTML element must have properties and methods from this list**
-  | addEventListener() |
-  | ------------------------------------------------- |
-  | appendChild() |
-  | children |
-  | childNode |
-  | classList (add(), remove(), toggle(), contains()) |
-  | getAttribute() |
-  | innerHTML, innerText |
-  | parentElement |
-  | querySelector() |
-  | querySelectorAll() |
-  | remove() |
-  | style |
+
+  | Properties and Methods Name                               |
+  | --------------------------------------------------------- |
+  | `addEventListener() `                                     |
+  | `appendChild()`                                           |
+  | `children`                                                |
+  | `childNode`                                               |
+  | classList (`add()`, `remove()`, `toggle()`, `contains()`) |
+  | `getAttribute()`                                          |
+  | `innerHTML`, `innerText`                                  |
+  | `parentElement`                                           |
+  | `querySelector()`                                         |
+  | `querySelectorAll()`                                      |
+  | `remove()`                                                |
+  | `style`                                                   |
 
 ### 6.1 Children and ChildNode
 
@@ -223,9 +268,10 @@ function to execute on each element (array item).
 ### 6.2 InnerHTML and InnerText
 
 - `innerHTML` 跟 `innerText` 後面都接 string，基本功能一樣
-- 不同的是 `innerHTML` 可以放入 html tag，而 `innerText` 被當作純文字
+- 不同的是 `innerHTML` 可以放入 **html tag**，而 `innerText` 被當作**純文字**
 - `.js` 中的程式碼可以覆蓋 `.html` 中的，因此可以透過此方式使網頁的 tag 或文字為動態的
 - **Example**
+
   ```jsx
   let h1 = document.querySelector("h1.myH1");
   h1.innerHTML = "<mark>This is rjun.</mark>";
@@ -235,13 +281,15 @@ function to execute on each element (array item).
 
 - is a property of element object.
 - is an object that is controlling the CSS styling of an element.
-- hyphen (`-`) in JS is not allowed, therefore, CSS properties are changed to "camelCase"
+- hyphen (`-`) in JS is not allowed, therefore, CSS properties are changed to **"camelCase"**
 - JS style object 是 inline-styling ( > id > class > ...)
 - **Example** 兩種寫法
+
   ```jsx
   let button = document.querySelector("button");
   button.style = "background-color: red; color: white";
   ```
+
   ```jsx
   let button = document.querySelector("button");
   button.style.backgroundColor = "red";
@@ -265,16 +313,17 @@ function to execute on each element (array item).
 
 ### 8.2 Events Inheritance
 
-![JS+Event+Inheritance.png](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/DOM%20(Document%20Object%20Model)/JSEventInheritance.png>)
+![JS+Event+Inheritance.png](./src/JSEventInheritance.png)
 
-[DOM Events - W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
+參考: [DOM Events - W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
 ### 8.3 Event Object
 
-| target            | 事件的目標，an Object                                                            |
-| ----------------- | -------------------------------------------------------------------------------- |
-| preventDefault()  | 如果事件可以被取消，就取消事件的預設行為。但不會影響事件的傳遞，事件仍會繼續傳遞 |
-| stopPropagation() | 停止 bubble                                                                      |
+| Propeties and Methods Name | Description                                                                      |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| `target`                   | 事件的目標，an Object                                                            |
+| `preventDefault()`         | 如果事件可以被取消，就取消事件的預設行為。但不會影響事件的傳遞，事件仍會繼續傳遞 |
+| `stopPropagation()`        | 停止 bubble                                                                      |
 
 ## 9. Event Bubbling
 
@@ -287,11 +336,11 @@ let a = document.querySelector("div.a");
 let b = document.querySelector("div.b");
 
 a.addEventListener("click", () => {
-  alert("a's evnetlistener's callback is running");
+  alert("a's eventlistener's callback is running");
 });
 
 b.addEventListener("click", () => {
-  alert("b's evnetlistener's callback is running");
+  alert("b's eventlistener's callback is running");
 });
 ```
 
@@ -300,7 +349,7 @@ b.addEventListener("click", () => {
 ```jsx
 b.addEventListener("click", (e) => {
   e.stopPropagation();
-  alert("b's evnetlistener's callback is running");
+  alert("b's eventlistener's callback is running");
 });
 ```
 
@@ -341,7 +390,8 @@ window.addEventListener("scroll", () => {
 
 **怎麼看到網頁 storage ?**
 
-**FireFox** → f12 → Storage、**Chrome** → f12 → Application
+- **FireFox**: f12 → Storage
+- **Chrome**: f12 → Application
 
 **小補充 Cookies :**
 
@@ -349,11 +399,12 @@ Briefly，Cookies are smaller and send server information back with every HTTP r
 
 ### 11.2 Methods for both local and session storage
 
-| setItem(key, value) | 新增 key-value pair     |
-| ------------------- | ----------------------- |
-| getItem(key)        | 透過 key 取得 value     |
-| removeItem(key)     | 透過 key 移除 key-value |
-| clear()             | 清空 storage            |
+| Methods               | Description             |
+| --------------------- | ----------------------- |
+| `setItem(key, value)` | 新增 key-value pair     |
+| `getItem(key)`        | 透過 key 取得 value     |
+| `removeItem(key)`     | 透過 key 移除 key-value |
+| `clear()`             | 清空 storage            |
 
 ### 11.3 Difference between Local Storage and Session Storage
 
@@ -364,12 +415,12 @@ Session storage is “destroyed” once the user closes the browser whereas, Loc
 ### 11.4 How to store other types of data
 
 - **JSON** means JavaScript Object Notation
-- `JSON.stringify()` : 變字串
-- `JSON.parse()` ：將 string 轉型
+- `JSON.stringify()` : 將 JSON 檔案變成字串
+- `JSON.parse()` ：將 string 轉型成 JSON 格式
 
 **Object, Array, Boolean .... 都可以用**
 
-**Example - 把 array 存進 local storage 拿出來還是 array**
+**Example:** 把 array 存進 local storage 拿出來還是 array
 
 ```jsx
 let friends = ["John", "Evelyn", "Mike"];
@@ -378,7 +429,7 @@ localStorage.setItem("friends", JSON.stringify(friends));
 let getFriends = JSON.parse(localStorage.getItem("friends"));
 ```
 
-**Steps :**
+**Steps:**
 
 **存進：array → `JSON.stringfy()` → string → `setItem()` → Local Storage**
 
