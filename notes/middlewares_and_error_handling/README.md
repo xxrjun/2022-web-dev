@@ -1,16 +1,30 @@
-**Middlewares and Error Handling**
+# Middlewares and Error Handling
+
+- [Middlewares and Error Handling](#middlewares-and-error-handling)
+  - [Middleware](#middleware)
+  - [Error Handling](#error-handling)
+    - [Example 1 - Normal situations](#example-1---normal-situations)
+    - [Example2 - async function](#example2---async-function)
+    - [Example3 - Validator and findOneAndUpdate Error](#example3---validator-and-findoneandupdate-error)
+  - [Cookies and Sessions](#cookies-and-sessions)
+    - [What is cookie ?](#what-is-cookie-)
+    - [Cookies in Server](#cookies-in-server)
+    - [Signing a Cookie](#signing-a-cookie)
+    - [Session](#session)
+  - [Environment Variable](#environment-variable)
+  - [Flash](#flash)
 
 ## Middleware
 
-- Middlewares are just **functions.**
-- The function inside middleware **gets called every time the server handles a request**. (No matter what kind of request it is.)
-- Middleware function are functions that have access to the request objet (**req**), the response object (**res**), and the **next** middleware function in the application’s request-response cycle. (From Express Documentation)
+- Middlewares are just **functions**.
+- The function inside middleware _gets called every time the server handles a request_. (No matter what kind of request it is.)
+- Middleware function are functions that have access to the request objet (`req`), the response object (`res`), and the `next` middleware function in the application’s **_request-response cycle_**. (From [Express Documentation](https://expressjs.com/en/guide/writing-middleware.html))
 
 ## Error Handling
 
 [Express docs - Error Handling](https://devdocs.io/express/guide/error-handling)
 
-### **Example1 - 一般**
+### Example 1 - Normal situations
 
 上面 send 打錯下面就會接到 err
 
@@ -28,9 +42,11 @@ app.use((err, req, res, next) => {
 
 ### Example2 - async function
 
-然而如果遇到 `async` function，就得用 try catch 並用 next() 將 error 傳下去
+然而如果遇到 `async` function，就得用 `try...catch` 並用 `next()` 將 `error` 傳下去
 
-You must catch errors that occur in asynchronous code invoked by route handlers or middleware and pass them to Express for processing. For example:
+You must catch errors that occur in asynchronous code invoked by route handlers or middleware and pass them to Express for processing.
+
+For example:
 
 ```jsx
 app.get('/', function (req, res, next) {
@@ -49,7 +65,11 @@ app.get('/', function (req, res, next) {
 ```jsx
 app.get("/", async (req, res, next) => {
   try {
-    await Fruit.findOneAndUpdate({ type: "apple" }, { type: "watermelon" }, { new: true, runValidators: true });
+    await Fruit.findOneAndUpdate(
+      { type: "apple" },
+      { type: "watermelon" },
+      { new: true, runValidators: true }
+    );
     res.send("Data has been update.");
   } catch (e) {
     next(e);
@@ -61,10 +81,10 @@ app.get("/", async (req, res, next) => {
 
 ### What is cookie ?
 
-- Cookies are some information we can store in user’s browser (just like local and session storage).
-- Cookies are mainly for reading server-side inly, whereas local and session storage can only be read on the client side.
+- Cookies are some information we can _store in user’s browser_ (just like local and session storage).
+- Cookies are mainly for reading server-side only, whereas local and session storage can only be read on the client side.
 - **When we are sending HTTP requests, cookies are part of the request, whereas storage is not.**
-- Cookies are stored in **key-value** pair.
+- Cookies are stored in `key-value` pair.
 
 ### Cookies in Server
 
@@ -98,15 +118,15 @@ app.get("/", (req, res) => {
 
 ### Signing a Cookie
 
-對 cookie 做簽名(非加密)，若 cookie 被更改過，要求時便會出現 undefined
+對 cookie 做簽名(非加密)，若 cookie 被更改過，要求時便會出現 `undefined`
 
 ### Session
 
 - There are problems with cookies:
-  1. Cookies can only store a small amount of data (approximately 4KB).
+  1. Cookies can only store a small amount of data (approximately _4KB_).
   2. We cannot store important data, since it might be hacked on the way of transition.
 
-Therefore, we come up with another tool, called sessions.
+Therefore, we come up with another tool, called **sessions**.
 
 ## Environment Variable
 
@@ -119,5 +139,5 @@ npm 套件 [dotenv](https://www.npmjs.com/package/dotenv)
 ## Flash
 
 - Flash is a place inside sessions, and we can store some flash message to the users. such as success message or failure message.
-- The npm module name is “connect-flash”.
+- The npm module name is [connect-flash](https://www.npmjs.com/package/connect-flash).
 - When using flash, we need to make sure we are using sessions first.
