@@ -2,13 +2,13 @@
 
 ## 1. Sync and Async
 
-sync code 同步
+Synchronous code 同步
 
 - JavaScript is a single-thread programming language.
 
-async code 非同步
+Asynchronous code 非同步
 
-- 因為 JS 是 single-thread，因此遇到 async code 時把 async code 丟到 Web API 然後繼續執行下面的 code，等到 Web API 執行完 async code 才會丟回 JS 執行
+- 因為 JS 是 single-thread，因此遇到 async code 時把 async code 丟到 Web API 然後繼續執行下面的程式碼，等到 Web API 執行完前面丟入的 async code 才會回到 JS 執行
 
 **Example**
 
@@ -35,16 +35,16 @@ Here's time out!
 
 ## 2. Callback Hell
 
-**我們希望事件可以依照我們要求的順序執行**，這種時候就會發生 **Callback Hell**
+**我們希望事件可以依照我們要求的順序執行**，當有很多事情要安排順序時就會發生 **Callback Hell**，可讀性非常差。
 
-![callbackhell.gif](<https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/javascript/JavaScript/JavaScript%20-%20Advance%204%20(Ajax%20and%20APIs)/callbackhell.gif>)
+![callbackhell.gif](./src/callbackhell.gif)
 
 為了解決這種狀況，有四種解決方法
 
 - Write comments
 - Split functions into smaller functions
-- Using Promises
-- Using Async/await
+- **Using Promises**
+- **Using Async/await**
 
 ## 3. Promises
 
@@ -54,18 +54,27 @@ Here's time out!
 
 ## 4. What is API ?
 
-- API stands for Application Programming Interface.
+- API stands for _Application Programming Interface_.
 - APIs are tools for programmers to build websites.
 
 ## 5. Endpoint, Path and Query
 
-- 範例 jokeAPI→ [https://sv443.net/jokeapi/v2/](https://sv443.net/jokeapi/v2/)
-- **example**
-  Red: endpoint; Blue: path; Orange: query
+一個 API 基本可以分層三段: _Endpoint, Path and Query_.
+
+- 範例 → [jokeAP V2](https://sv443.net/jokeapi/v2/)
+
   ```
   https://v2.jokeapi.dev/joke/Programming?type=single
   ```
-- **example - get Joke**
+
+  分析一下上面這段 API 的架構
+
+  - `https://v2.jokeapi.dev/joke/` 為 **Endpoint**
+  - `Programming` 為 **Path**
+  - `?type=single` 為 **Query**
+
+  透過 `async` 設為非同步 function，以免資料還沒取回來 function 就已經執行完畢了。  
+  搭配 `await` 將 API 放入 `fetch()` 將資料取回來並將其 assign 給 `joke` 這個變數。
 
   ```jsx
   async function getJoke() {
@@ -79,25 +88,26 @@ Here's time out!
 
 ### Endpoints
 
-An endpoint is an access point to send the HTTP requests to and get your response.
-
-JokeAPI offers these following endpoints:
+An endpoint is an _access point_ to send the HTTP requests to and get your response.
 
 ## 6. Postman
 
-link → [https://www.postman.com/](https://www.postman.com/)
+link → [Postman](https://www.postman.com/)
 
 Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
 
+現在也有越來越多人使用 [RapidAPI](https://rapidapi.com/hub)，RapidAPI 也有 VSCode 套件，其便利性深受許多人喜愛。
+
 ## 7. API with Authorization Key
 
-- 範例 openWeather API →[https://openweathermap.org/api](https://openweathermap.org/api)
-- 拿到 key 才能使用 API
+- 範例 API → [openWeather API](https://openweathermap.org/api)
+- 拿到 key 才能使用 API，也就是只有擁有 Token 使用者才有權使用該 API
+- 很多 API 供應者都會要求使用者必須擁有 token 才能使用 API，可能是為了避免濫用以及方便管控流量。
 
 **Example**
 
 ```jsx
-let myKey = "1e7b802bb9013ce9246c047bfd098383";
+let myKey = "1e7b802bb9013ce9246c047bfd098383"; // 如果這邊的 token 是沒被授權過的，就無法正常使用 API
 let city = prompt("Where weather do you want to get?");
 let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myKey}`;
 
@@ -112,7 +122,7 @@ getWeather();
 
 ## 8. HTTP Request made by Node to API
 
-trouble → see next
+trouble → see next chapter
 
 ## 9. Node Fetch
 
