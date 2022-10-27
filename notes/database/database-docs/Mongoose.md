@@ -1,45 +1,39 @@
 # Mongoose
 
-# Table of Contents
-
 - [Mongoose](#mongoose)
-- [Table of Contents](#table-of-contents)
-- [1. Intro to Mongoose](#1-intro-to-mongoose)
-- [2. Model and Schema](#2-model-and-schema)
-- [3. 連接 MongoDB](#3-連接-mongodb)
-- [4. Defining your schema](#4-defining-your-schema)
-- [5. Creating a model](#5-creating-a-model)
-- [6. Create an object and Save to DB](#6-create-an-object-and-save-to-db)
-- [7. Mongoose C.R.U.D](#7-mongoose-crud)
-    - [7.1 Finding in Mongoose](#71-finding-in-mongoose)
-    - [7.2 Updating in Mongoose](#72-updating-in-mongoose)
-    - [7.3 Deleting in Mongoose](#73-deleting-in-mongoose)
-- [8. Schema Types Validators](#8-schema-types-validators)
-  - [8.1 All Schema Types Validators](#81-all-schema-types-validators)
-  - [8.2 String Validators](#82-string-validators)
-  - [8.3 Number Validators](#83-number-validators)
-  - [8.4 Example](#84-example)
+  - [1. Intro to Mongoose](#1-intro-to-mongoose)
+  - [2. Model and Schema](#2-model-and-schema)
+  - [3. 連接 MongoDB](#3-連接-mongodb)
+  - [4. Defining your schema](#4-defining-your-schema)
+  - [5. Creating a model](#5-creating-a-model)
+  - [6. Create an object and Save to DB](#6-create-an-object-and-save-to-db)
+  - [7. Mongoose C.R.U.D](#7-mongoose-crud)
+  - [8. Schema Types Validators](#8-schema-types-validators)
+    - [8.1 All Schema Types Validators](#81-all-schema-types-validators)
+    - [8.2 String Validators](#82-string-validators)
+    - [8.3 Number Validators](#83-number-validators)
+    - [8.4 Example](#84-example)
   - [8.5 Update with Validators](#85-update-with-validators)
-- [9. Instance Method](#9-instance-method)
-- [10. Static Method](#10-static-method)
-- [11. Middleware](#11-middleware)
-  - [11.1 Pre](#111-pre)
-  - [11.2 Post middleware](#112-post-middleware)
+  - [9. Instance Method](#9-instance-method)
+  - [10. Static Method](#10-static-method)
+  - [11. Middleware](#11-middleware)
+    - [11.1 Pre](#111-pre)
+    - [11.2 Post middleware](#112-post-middleware)
 
-# 1. Intro to Mongoose
+## 1. Intro to Mongoose
 
 - Mongoose is a **ODM (Object Document Modeling)** that is used to **connect MongoDB to our web projects**.
 - SQL used ORM (Object Relational Modeling), NoSQL used ODM.
 - It’s a **module** in npmjs.
 - Mongoose Offical Website → [https://mongoosejs.com/](https://mongoosejs.com/)
 
-# 2. Model and Schema
+## 2. Model and Schema
 
 - **Everything in Mongoose starts with a Schema**. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
 - Models are higher-order constructors that take a schema and create an instance of a document equivalent to recodes in a database. (That’s why we don’t do finding in schema, instead, we do finding in model.)
 - **Model** is just like a **table** in SQL, and **Schema** is the **creating table steps**.
 
-# 3. 連接 MongoDB
+## 3. 連接 MongoDB
 
 ```jsx
 const mongoose = require("mongoose");
@@ -55,7 +49,7 @@ mongoose
   });
 ```
 
-# 4. Defining your schema
+## 4. Defining your schema
 
 Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
 
@@ -72,7 +66,7 @@ const studentSchema = new mongoose.Schema({
 });
 ```
 
-# 5. Creating a model
+## 5. Creating a model
 
 To use our schema definition, we need to convert our `studentSchema` into a [Model](https://mongoosejs.com/docs/models.html) we can work with. To do so, we pass it into
 
@@ -83,7 +77,7 @@ To use our schema definition, we need to convert our `studentSchema` into a [M
 const Student = mongoose.model("Student", studentSchema);
 ```
 
-# 6. Create an object and Save to DB
+## 6. Create an object and Save to DB
 
 ```jsx
 // create an object
@@ -105,24 +99,20 @@ Jon.save()
   });
 ```
 
-# 7. Mongoose C.R.U.D
+## 7. Mongoose C.R.U.D
 
-### 7.1 Finding in Mongoose
+@pass
 
-### 7.2 Updating in Mongoose
+## 8. Schema Types Validators
 
-### 7.3 Deleting in Mongoose
-
-# 8. Schema Types Validators
-
-## 8.1 All Schema Types Validators
+### 8.1 All Schema Types Validators
 
 - `required`
 - `default`
 - more schema types→ [https://mongoosejs.com/docs/schematypes.html](https://mongoosejs.com/docs/schematypes.html)
 - more validators → [https://mongoosejs.com/docs/validation.html](https://mongoosejs.com/docs/validation.html)
 
-## 8.2 String Validators
+### 8.2 String Validators
 
 | Name           |
 | -------------- |
@@ -132,7 +122,7 @@ Jon.save()
 | ` minlength()` |
 | `maxlength()`  |
 
-## 8.3 Number Validators
+### 8.3 Number Validators
 
 | Name   |
 | ------ |
@@ -140,7 +130,7 @@ Jon.save()
 | `min`  |
 | `enum` |
 
-## 8.4 Example
+### 8.4 Example
 
 ```jsx
 // define a schema
@@ -187,7 +177,7 @@ Student.findOneAndUpdate(
 );
 ```
 
-# 9. Instance Method
+## 9. Instance Method
 
 - We set methods to the schema so that all the instances in the schema can have the same method.
 - 改變後要 save
@@ -203,16 +193,16 @@ studentSchema.methods.totalScholarship = function () {
 };
 ```
 
-# 10. Static Method
+## 10. Static Method
 
 - Static method **belongs to the model**, even though it looks like it belongs to the schema.
 
-# 11. Middleware
+## 11. Middleware
 
 - Mongoose - Middleware → [https://mongoosejs.com/docs/middleware.html](https://mongoosejs.com/docs/middleware.html)
 - **Middleware** (also called **pre** and **post *hooks***) are **functions which are passed control during execution of asynchronous functions**. Middleware is specified on the schema level and is useful for writing [plugins](https://mongoosejs.com/docs/plugins.html).
 
-## 11.1 Pre
+### 11.1 Pre
 
 Pre middleware functions are executed one after another, when each middleware calls `next`.
 
@@ -238,7 +228,7 @@ schema.pre("save", async function () {
 });
 ```
 
-## 11.2 Post middleware
+### 11.2 Post middleware
 
 [post](https://mongoosejs.com/docs/api.html#schema_Schema-post) middleware are executed *after* the hooked method and all of its `pre`middleware have completed.
 
