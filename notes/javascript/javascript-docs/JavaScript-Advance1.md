@@ -1,6 +1,21 @@
 # JavaScript - Advance 1
 
-## What is JavaScript
+- [JavaScript - Advance 1](#javascript---advance-1)
+  - [What is JavaScript?](#what-is-javascript)
+  - [1. 串接陣列](#1-串接陣列)
+    - [1.1 在 Js 如何串接陣列](#11-在-js-如何串接陣列)
+    - [1.2 判斷是否為陣列](#12-判斷是否為陣列)
+    - [1.3 Spread Operators and Rest Parameters](#13-spread-operators-and-rest-parameters)
+  - [2. NaN and Infinity](#2-nan-and-infinity)
+  - [3. Primitive and Reference](#3-primitive-and-reference)
+    - [3.1 Primitive Data Type](#31-primitive-data-type)
+    - [3.2 Reference Data Type](#32-reference-data-type)
+  - [4. Advanced Array Functions](#4-advanced-array-functions)
+  - [5. More For Loop Methods](#5-more-for-loop-methods)
+    - [5.1 for of loop](#51-for-of-loop)
+    - [5.2 for in loop](#52-for-in-loop)
+
+## What is JavaScript?
 
 - JavaScript 並不是由任何語言並不是由任何語言所寫成。
   它只是一個由 ECMA 制定的標準。
@@ -36,7 +51,7 @@
   ```jsx
   ["a", "b", "c", "d", "e", "f"];
   ```
-- 也可以使用 Spread operator & rest parameter `...`
+- 也可以使用 Spread operator & rest parameter `...` 來串接陣列
   ```jsx
   let res = [...arr1, ...arr2];
   console.log(res);
@@ -52,6 +67,8 @@
 
 ```jsx
 arr = ["a", "b", "c"];
+
+Array.isArray(a); // true
 ```
 
 ### 1.3 Spread Operators and Rest Parameters
@@ -91,40 +108,52 @@ console.log(isNaN(res)); // true
 
 ### 3.1 Primitive Data Type
 
-- Primitive Data Types means that they are not objects, and they don’t have its own properties and methods
-- Also, these primitive data types container variables do own the value, not just a reference to the memory.
+- Primitive Data Types means that they are _not objects_, and they don’t have its own properties and methods
+- Also, these primitive data types container variables do _own the value, not just a reference to the memory_.
 
 Why do primitive still own properties and methods ?
 
-- We stated that primitive don’t have properties and methods, but apparently, we still access properties and use methods. Why is that possible ? (ex. A string can use .length to get the property and toLowerCase() function)
+- We stated that primitive don’t have properties and methods, but apparently, we still access properties and use methods. Why is that possible ? (ex. A string can use `.length` to get the property and `toLowerCase()` function)
 - JavaScript has a property called **coercion**, when it comes to primitives; it silently **converts the primitive to an object** and then accesses the prototype method of the newly constructed object.
 - If we want to, their is an object syntax to create a string, but what it does is just making extra memory allocation to this string, JS doesn’t recommend using this kind of string declaration.
 
 ### 3.2 Reference Data Type
 
-- Objects and Array are reference data type.
-- Variable that are assigned a non-primitive value are given a reference to that value. That reference points to the object’s location in memory. The variables don’t actually contain the value.
+- _Objects_ and _Arrays_ are reference data type.
+- Variable that are assigned a non-primitive value are given a reference to that value. _That reference points to the object’s location in memory_. The variables don’t actually contain the value.
 
 ## 4. Advanced Array Functions
 
 `map()`
 
-- **creates a new array** populated with the results of calling a provided function (callback function) on every element in the calling array
+- **creates a new array** populated with the results of calling a provided function (callback function) on every element in the calling array.
+- Example
+
+  ```js
+  const array1 = [1, 4, 9, 16];
+
+  // pass a function to map
+  const map1 = array1.map((x) => x * 2);
+
+  console.log(map1);
+  // expected output: Array [2, 8, 18, 32]
+  ```
 
 `find()` 、 `filter()`
 
-- find 只回傳在 array 中第一個符合條件的 element。若沒有符合條件的則回傳 `undefined`.
-- filter 回傳在 array 中所有符合條件的 elements。若沒有符合條件的則回傳一個 empty array.
+- find 只回傳在 array 中*第一個*符合條件的 element。若沒有符合條件的則回傳 `undefined`.
+- filter 回傳在 array 中*所有*符合條件的 elements。若沒有符合條件的則回傳一個 empty array `[]`.
 
 `some()` 、`every()`
 
-- some 檢查 array 中只要有一個 element 符合條件就回傳 `true`
-- filter 檢查 array 中所有 element 都要符合條件才回傳 `true`
+- some 檢查 array 中*只要有一個* element *符合*條件就回傳 `true`
+- filter 檢查 array 中*所有* element *都要*符合條件才回傳 `true`
 
 `sort()`
 
-- 可以透過 callback function 改變排序的規則，若沒設置一率視為 string comparison (一個一個字比)
+- 可以透過 **callback function** _改變排序的規則_，若沒設置一率視為 string comparison (一個一個字比)
 - **EX1 - 按照字串長度**
+
   ```jsx
   let arr = ["Apple", "Lemon", "Watermelon", "Orange"];
   console.log(
@@ -133,6 +162,7 @@ Why do primitive still own properties and methods ?
     })
   ); // [ 'Apple', 'Lemon', 'Orange', 'Watermelon' ]g
   ```
+
 - **EX2 - 數字小到大**
   ```jsx
   let arr = [125, 12, 41, 51, 25, 120];
@@ -151,42 +181,40 @@ Why do primitive still own properties and methods ?
   ); // [ 125, 120, 51, 41, 25, 12 ]
   ```
 
-## 5. More For Loop
+## 5. More For Loop Methods
 
 - 前面學了 for loop 以及 forEach ，現在就來學第三種以及第四種
 
 ### 5.1 for of loop
 
-- The for...of statement creates a loop iterating over **iterable objects**, including: built-in String, Array, array-like objects (e.g., NodeList)
-- 只能用在 iterable 的物件
-- 可以增加程式碼閱讀性
+- The **_for...of_** statement creates a loop iterating over **iterable objects**, including: built-in String, Array, array-like objects (e.g., NodeList)
+- 只能用在 *iterable *的物件
+- 可以增加程式碼閱讀性(Readability)
+- Example
 
-**EX**
+  ```jsx
+  let arr = ["a", "b", "c"];
 
-```jsx
-let arr = ["a", "b", "c"];
-
-for (let c of arr) {
-  console.log(c);
-}
-```
+  for (let c of arr) {
+    console.log(c);
+  }
+  ```
 
 ### 5.2 for in loop
 
-- The for..in statement iterates over **all enumerable properties of an object** that are keyed by strings
+- The _for..in_ statement iterates over **all enumerable properties of an object** that are keyed by strings
 - 可以用在 array 也能用在 object
+- Example
 
-**EX**
+  ```jsx
+  let person = {
+    name: "rjun",
+    age: 19,
+    height: 178,
+  };
 
-```jsx
-let person = {
-  name: "rjun",
-  age: 19,
-  height: 178,
-};
-
-for (let i in person) {
-  console.log(i); // name age height
-  console.log(person[i]); // rjun 19 178
-}
-```
+  for (let i in person) {
+    console.log(i); // name age height
+    console.log(person[i]); // rjun 19 178
+  }
+  ```
