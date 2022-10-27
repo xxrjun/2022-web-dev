@@ -1,5 +1,13 @@
 # EJS
 
+- [EJS](#ejs)
+  - [What is EJS ?](#what-is-ejs-)
+  - [Related Links](#related-links)
+  - [Installation](#installation)
+  - [Features](#features)
+  - [Example](#example)
+  - [Basic usage](#basic-usage)
+
 ## What is EJS ?
 
 - EJS stands for Embedded JavaScript.
@@ -12,13 +20,13 @@
 - [EJS Docs](https://ejs.co/#docs)
 - VSSode 裡面有 ejs language support 的 extension
 
-## I**nstallation**
+## Installation
 
 ```bash
 $ npm install ejs
 ```
 
-## **Features**
+## Features
 
 - Control flow with `<% %>`
 - Escaped output with `<%= %>` (escape function configurable)
@@ -32,7 +40,7 @@ $ npm install ejs
 - Static caching of templates
 - Complies with the [Express](http://expressjs.com/) view system
 
-## **Example**
+## Example
 
 ```html
 <% if (user) { %>
@@ -40,11 +48,11 @@ $ npm install ejs
 <% } %>
 ```
 
-Try EJS online at: [https://ionicabizau.github.io/ejs-playground/](https://ionicabizau.github.io/ejs-playground/).
+Try EJS online at: [EJS Playground](https://ionicabizau.github.io/ejs-playground/).
 
-## **Basic usage**
+## Basic usage
 
-要 render 的 ejs 文件要放在 **views** folder 並取名為 **index.ejs**
+要 render 的 ejs 文件要放在 `views` folder 並取名為 `index.ejs`
 
 ```jsx
 let template = ejs.compile(str, options);

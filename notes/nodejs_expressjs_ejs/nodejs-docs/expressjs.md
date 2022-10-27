@@ -1,12 +1,26 @@
 # Express.js
 
-# 1. What is Express ?
+- [Express.js](#expressjs)
+  - [1. What is Express ?](#1-what-is-express-)
+  - [2. Server](#2-server)
+  - [3. HTTP Requests](#3-http-requests)
+  - [4. Routing in Express](#4-routing-in-express)
+    - [4.1 Request Handling](#41-request-handling)
+    - [4.2 Send and SendFile](#42-send-and-sendfile)
+    - [4.3 POST & GET](#43-post--get)
+  - [5. Static File](#5-static-file)
+  - [6. HTTP Status Code](#6-http-status-code)
+    - [6.1 HTTP Status Code cheat sheet](#61-http-status-code-cheat-sheet)
+    - [6.2 HTTP 404 Not Found](#62-http-404-not-found)
+    - [6.3 HTTP 302 Found](#63-http-302-found)
+
+## 1. What is Express ?
 
 - It’s a npm **module**.
 - It’s a **framework** for Node.js applications.
 - It help up to write Node.js faster
 
-# 2. Server
+## 2. Server
 
 ```jsx
 const express = require("express");
@@ -20,7 +34,7 @@ app.get("/", (req, res) => {
 app.listen(3000); // port
 ```
 
-# 3. HTTP Requests
+## 3. HTTP Requests
 
 - Get Request
 - Post Request
@@ -28,13 +42,13 @@ app.listen(3000); // port
 - Patch Request
 - Delete Request
 
-# 4. Routing in Express
+## 4. Routing in Express
 
-## 4.1 **Request Handling**
+### 4.1 Request Handling
 
 - handle different request
-- **routing for pattern**: 要用 `:`
-- **routing for al**l: `*`
+- routing for _pattern_: 要用 `:`
+- routing for _all_: `*`
 
 ```jsx
 // handle different requst
@@ -60,13 +74,13 @@ app.get("*", (req, res) => {
 });
 ```
 
-## 4.2 Send and SendFile
+### 4.2 Send and SendFile
 
-- `send()` 裡面可以放 object, text, html...
+- `send()` 裡面可以放 object, text, html file...
 - **一次 request 只能 send 一次**
 - 如果想 send 整個 html 檔案要用 `sendFile()`:
 
-**Example**
+Example
 
 ```jsx
 const express = require("express");
@@ -78,18 +92,20 @@ app.get("/", (req, res) => {
 });
 ```
 
-## 4.3 POST & GET
+### 4.3 POST & GET
 
-### 4.3.1 action
+#### 4.3.1 action
 
-`**action=””` 設定提交後網頁路徑，並將 `input` 的資料給要前往的網頁\*\*
+`action=""` 設定提交後網頁路徑，並將 `input` 的資料給要前往的網頁
 
-### 4.3.2 POST
+#### 4.3.2 POST
 
-- `**method=”POST"**`
-- **需要 `body-parser` 跟 `middleware` 來取得資料**
+- `method=”POST"`
+- 需要 `body-parser` 跟 `middleware` 來取得資料
 
-**Example** 在 html 做一個 form
+Example:
+
+首先在 html 做一個 form
 
 ```jsx
 <form action="/formHandling" method="POST">
@@ -101,7 +117,7 @@ app.get("/", (req, res) => {
 </form>
 ```
 
-**method 為 `POST` 的話，取得資料要用 `body-parser` 這個 module，並在 middleware 中去執行**
+method 為 `POST` 的話，取得資料要用 `body-parser` 這個 module，並在 middleware 中去執行
 
 ```jsx
 const bodyParser = require("body-parser");
@@ -110,7 +126,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 ```
 
-**使用 body 取得輸入的資料**
+使用 body 取得輸入的資料
 
 ```jsx
 // routing for query
@@ -120,12 +136,12 @@ app.post("/formHandling", (req, res) => {
 });
 ```
 
-### 4.3.3 GET
+#### 4.3.3 GET
 
-- `**method=”GET"**`
-- **直接從 `query` 取得資料**
+- `method="GET"`
+- 直接從 `query` 取得資料
 
-**Example**
+Example
 
 ```jsx
 // routing for pattern
@@ -135,9 +151,9 @@ app.get("/formHandling", (req, res) => {
 });
 ```
 
-# 5. Static File
+## 5. Static File
 
-**架 nodejs server 後，如果網頁要導入 CSS 必須用 middleware 導入 static file**
+架 nodejs server 後，如果網頁要導入 CSS 必須用 middleware 導入 _static file_
 
 ```jsx
 // serving a static file
@@ -145,30 +161,31 @@ app.get("/formHandling", (req, res) => {
 app.use(express.static("public")); // 習慣用 public
 ```
 
-**創建 public folder ，將要用的 CSS 文件放入**，記得更改 `link`，路徑加不加 public 都行
+**創建 public folder ，將要用的 CSS 文件放入**，記得更改 `<link/>` 中的路徑位置，路徑加不加 public 都行
 
 ```jsx
 <link rel="stylesheet" href="./styles/style.css" />
 ```
 
-# 6. HTTP Status Code
+## 6. HTTP Status Code
 
 - Status codes are issued by a server in response to a client’s request made to the server.
 - **HTTP status code represents the response of the server**.
 - All HTTP response status code are separated into five classes or categories.
 
-## 6.1 HTTP Status Code cheat sheet
+### 6.1 HTTP Status Code cheat sheet
 
-| 1\*\* | Hold on. (something is gonna happen)                      |
-| ----- | --------------------------------------------------------- |
-| 2\*\* | Here you go. (successful code return)                     |
-| 3\*\* | Go away. (some security issues invoked)                   |
-| 4\*\* | User screw up. (You request something that doesn’t exist) |
-| 5\*\* | I screw up. (You request something that doesn’t exist)    |
+| Status | Meaning                                                   |
+| ------ | --------------------------------------------------------- |
+| 1 X X  | Hold on. (something is gonna happen)                      |
+| 2 X X  | Here you go. (successful code return)                     |
+| 3 X X  | Go away. (some security issues invoked)                   |
+| 4 X X  | User screw up. (You request something that doesn’t exist) |
+| 5 X X  | I screw up. (You request something that doesn’t exist)    |
 
-## 6.2 HTTP 404 Not Found
+### 6.2 HTTP 404 Not Found
 
-**Example**
+Example
 
 ```jsx
 // 404
@@ -178,11 +195,11 @@ app.get("*", (req, res) => {
 });
 ```
 
-## 6.3 HTTP 302 Found
+### 6.3 HTTP 302 Found
 
-- **Moved Temporarily**。可以簡單的理解為該資源原本確實存在，但已經被**臨時**改變了位置
+- **Moved Temporarily**: 可以簡單的理解為該資源原本確實存在，但已經被**臨時**改變了位置
 
-**Example**
+Example
 
 ```jsx
 // 403
