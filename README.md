@@ -13,21 +13,21 @@ Thanks Wilson Ren for this amazing course on Udemy!
 - [2022-Web-Develop](#2022-web-develop)
 - [目錄](#目錄)
 - [Notes](#notes)
-    - [HTML](#html)
-    - [CSS](#css)
-    - [JavaScript](#javascript)
-    - [Database](#database)
-    - [Nodejs + Expressjs + EJS](#nodejs--expressjs--ejs)
-    - [Middlewares and Error Handling](#middlewares-and-error-handling)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#javascript)
+  - [Database](#database)
+  - [Nodejs + Expressjs + EJS](#nodejs--expressjs--ejs)
+  - [Middlewares and Error Handling](#middlewares-and-error-handling)
 - [Projects](#projects)
 - [Important Official Docs](#important-official-docs)
 - [Other Relative Links](#other-relative-links)
-    - [Npm Modules](#npm-modules)
-    - [Free Image](#free-image)
-    - [Deployment](#deployment)
-    - [Template](#template)
-    - [Tools](#tools)
-    - [Others](#others)
+  - [Npm Modules](#npm-modules)
+  - [Free Image](#free-image)
+  - [Deployment](#deployment)
+  - [Template](#template)
+  - [Tools](#tools)
+  - [Others](#others)
 
 # Notes
 
@@ -67,14 +67,14 @@ Thanks Wilson Ren for this amazing course on Udemy!
 
 ### Nodejs + Expressjs + EJS
 
-- [Node.js](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/nodejs_expressjs_ejs/Nodejs/nodejs.md)
-- [Express.js](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/nodejs_expressjs_ejs/Nodejs/expressjs.md)
-- [EJS](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/nodejs_expressjs_ejs/Nodejs/ejs.md)
-- [Express and Mongoose - Student Project](https://github.com/xxrjun/2022-Web-Develop/blob/main/notes/nodejs_expressjs_ejs/Nodejs/express_and_mongoose_student_project.md)
+- [Node.js](./notes/nodejs_expressjs_ejs/nodejs-docs/nodejs.md)
+- [Express.js](./notes/nodejs_expressjs_ejs/nodejs-docs/expressjs.md)
+- [EJS](./notes/nodejs_expressjs_ejs/nodejs-docs/ejs.md)
+- [Express and Mongoose - Student Project](./student-project/)
 
 ### Middlewares and Error Handling
 
-- [Middlewares and Error Handling](https://github.com/xxrjun/2022-Web-Develop/tree/main/notes/middlewares_and_error_handling)
+- [Middlewares and Error Handling](./notes/middlewares_and_error_handling/README.md)
 
 # Projects
 
