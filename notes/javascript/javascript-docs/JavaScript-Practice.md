@@ -4,18 +4,22 @@
 
 Download the `Code Runner` extension from VS Code. This extension allows you to run JavaScript code with only one click.
 
-Also, download `Node.js` from [https://nodejs.org/en/](https://nodejs.org/en/)
-and choose the LTS version so that the code runner can run JavaScript code.
+Also, download `Node.js` from [Node](https://nodejs.org/en/)
+and choose the _LTS_ version so that the code runner can run JavaScript code.
+
+Node.js 可以讓 JavaScript 在瀏覽器(Browser)外的環境運行，例如你的本地環境。
 
 ## Practice
 
 ### 31 題
 
-[https://yuhsien.notion.site/JS-Practice-a692c4dc450c476a8a7d9f8fe997deda#a5cc55bd734345ff84d8b2c3d8fc914b](https://www.notion.so/JS-Practice-a692c4dc450c476a8a7d9f8fe997deda)
+[JS Practice - Notion](https://www.notion.so/JS-Practice-a692c4dc450c476a8a7d9f8fe997deda)
 
 ## 我覺得有趣的
 
 ### JS swap
+
+JavaScript 跟 Python 的 swap 都有內建語法，蠻方便的。
 
 ```jsx
 const a = ["a", "b", "c", "e", "d"];
@@ -24,6 +28,8 @@ const a = ["a", "b", "c", "e", "d"];
 ```
 
 ### flatten
+
+平坦化陣列，對於多維陣列的資料比較好做儲存。
 
 ```jsx
 function flatten(arr) {
@@ -42,6 +48,8 @@ function flatten(arr) {
 ```
 
 ### quick sort
+
+時間複雜度最好的排序法之一。
 
 ```jsx
 function quickSort(arr, low, high) {
